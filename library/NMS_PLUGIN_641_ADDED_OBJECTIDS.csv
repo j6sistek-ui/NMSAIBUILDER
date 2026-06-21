@@ -1,0 +1,27 @@
+ObjectID,NiceName,Category,SubCategory,ModelName,IsNewFBX,bShowInDrawer,PlugClassIDs,SocketClassIDs,extent_x,extent_y,extent_z,center_x,center_y,center_z
+EXPD_DECAL22,SWARM DECAL,Wall Art,Decals,EXPD_DECAL22,YES,True,,,2.0,0.331312,2.0,0.0,0.0,0.0
+EXPD_POSTER22A,ROYALS POSTER,Wall Art,Posters,EXPD_POSTER22A,YES,True,,,0.788574,0.0,1.079102,0.0,0.0,0.0
+EXPD_POSTER22B,SAGES POSTER,Wall Art,Posters,EXPD_POSTER22B,YES,True,,,0.788574,0.0,1.079102,0.0,0.0,0.0
+EXPD_POSTER22C,WEAVERS POSTER,Wall Art,Posters,EXPD_POSTER22C,YES,True,,,0.788574,0.0,1.079102,0.0,0.0,0.0
+HOLO_DISCO_0,WONDER PROJECTOR,Advanced Technology,General Utility,HOLO_DISCO_0,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_B_MONU_FA,SET_B_MONU_FA,Furnishings,Settlement,SET_B_MONU_FA,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_CLASS_A,SET_CLASS_A,Furnishings,Settlement,SET_CLASS_A,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_CLASS_B,SET_CLASS_B,Furnishings,Settlement,SET_CLASS_B,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_CLASS_S,SET_CLASS_S,Furnishings,Settlement,SET_CLASS_S,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_FISHPOND,SET_FISHPOND,Furnishings,Settlement,SET_FISHPOND,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_LZ,ALTERNATIVE LANDING PAD,Furnishings,Settlement,SET_LZ,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_LZ_SHIPBUIL,ALTERNATIVE LANDING PAD,Furnishings,Settlement,SET_LZ_SHIPBUIL,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_SFXCONST_S0,SET_SFXCONST_S0,Furnishings,Settlement,SET_SFXCONST_S0,NO_existing_model_or_definition_only,True,,,,,,,,
+SET_STAFFBUILD,SET_STAFFBUILD,Furnishings,Settlement,SET_STAFFBUILD,NO_existing_model_or_definition_only,True,,,,,,,,
+SPEC_FIREWORK07,RED TITAN FIREWORK,Deployable Technology,Fireworks,SPEC_FIREWORK07,NO_existing_model_or_definition_only,True,,,,,,,,
+SPEC_FIREWORK08,GOLDEN TITAN FIREWORK,Deployable Technology,Fireworks,SPEC_FIREWORK08,NO_existing_model_or_definition_only,True,,,,,,,,
+SPEC_FIREWORK09,GREEN TITAN FIREWORK,Deployable Technology,Fireworks,SPEC_FIREWORK09,NO_existing_model_or_definition_only,True,,,,,,,,
+SWARM_FLAG_B1,WEAVERS FLAG,Decoration,Structural Adornments,SWARM_FLAG_B1,YES,True,,,0.205933,3.638306,0.205994,0.000732,1.665222,0.000214
+SWARM_FLAG_B2,SWALLOWTAIL WEAVERS FLAG,Decoration,Structural Adornments,SWARM_FLAG_B2,YES,True,,,1.895508,0.453354,0.326172,0.0,0.19886,-1.306641
+SWARM_FLAG_B3,TAPERED WEAVERS FLAG,Decoration,Structural Adornments,SWARM_FLAG_B3,YES,True,,,0.33606,1.47168,0.28595,0.000305,0.73584,0.044159
+SWARM_FLAG_G1,SAGES FLAG,Decoration,Structural Adornments,SWARM_FLAG_G1,YES,True,,,0.205933,3.638306,0.205994,0.000732,1.665222,0.000214
+SWARM_FLAG_G2,SWALLOWTAIL SAGES FLAG,Decoration,Structural Adornments,SWARM_FLAG_G2,YES,True,,,1.895508,0.453354,0.326172,0.0,0.19886,-1.306641
+SWARM_FLAG_G3,TAPERED SAGES FLAG,Decoration,Structural Adornments,SWARM_FLAG_G3,YES,True,,,0.33606,1.47168,0.28595,0.000305,0.73584,0.044159
+SWARM_FLAG_R1,ROYALS FLAG,Decoration,Structural Adornments,SWARM_FLAG_R1,YES,True,,,0.205933,3.638306,0.205994,0.000732,1.665222,0.000214
+SWARM_FLAG_R2,SWALLOWTAIL ROYALS FLAG,Decoration,Structural Adornments,SWARM_FLAG_R2,YES,True,,,1.895508,0.453354,0.326172,0.0,0.19886,-1.306641
+SWARM_FLAG_R3,TAPERED ROYALS FLAG,Decoration,Structural Adornments,SWARM_FLAG_R3,YES,True,,,0.33606,1.47168,0.28595,0.000305,0.73584,0.044159

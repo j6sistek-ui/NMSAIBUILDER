@@ -1,0 +1,12 @@
+# Jurassic Beach foosball/toolkit feature-isolation helper
+# Use this after importing/recreating the JSON base in Blender if object names include SourceIndex custom props.
+# It prints candidate source indices found from the JSON analysis.
+FOOSBALL_CANDIDATE_SOURCE_INDICES = [982, 1007, 1031, 1056, 1072, 1074, 1079, 1093, 1094, 1095, 1096, 1098, 1099, 1101, 1103, 1105, 1118, 1119, 1120, 1130, 1131, 1146, 1147, 1148, 1164, 1176, 1177, 1179, 1180, 1181, 1182, 1183, 1184, 1186, 1187, 1193, 1365, 1368, 1371, 1578, 1798, 1834, 1835, 1836, 1838, 1839, 1842, 1846, 1847, 1848, 1849, 1850, 1851, 1852, 1853, 1854, 1855, 1858, 1859, 1860, 1868, 1869, 1875, 1877, 1878, 1879, 1880, 1881, 1882, 2100, 2101, 2102, 2103, 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 2113, 2114, 2115, 2121, 2122, 2123, 2124, 2157, 2158, 2159, 2167, 2168, 2181, 2182, 2183]
+FOSSIL_OBJECT_IDS = ["FOS_SKULL", "BLD_SKULL", "FOS_BIRD_DIS"]
+POWERLINE_OBJECT_IDS = ["U_POWERLINE", "POWERLINE_HIDER", "U_SWITCHPROX", "U_SWITCHWALL"]
+
+print("Foosball candidate source indices:", FOOSBALL_CANDIDATE_SOURCE_INDICES)
+print("Fossil ObjectIDs:", FOSSIL_OBJECT_IDS)
+print("Powerline ObjectIDs:", POWERLINE_OBJECT_IDS)
+
+# Note: C_GDOOR / S_GDOOR dinosaur-mouth placements are intentionally excluded from toolkit promotion.

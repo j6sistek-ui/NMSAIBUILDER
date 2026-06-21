@@ -1,0 +1,77 @@
+{
+  "schema": "NMS_PART_PLACEMENT_WORKLIST",
+  "generated": "2026-06-07",
+  "summary": {
+    "total_tracked_parts": 2078,
+    "bounds_validated": 2078,
+    "placement_validated": 0,
+    "per_part_partmaps": 12,
+    "orientation_override_parts": [
+      "BILLBOARD"
+    ],
+    "bounds_only_awaiting_placement": 2066
+  },
+  "open_frontier": [
+    {
+      "part_id": "BILLBOARD",
+      "validation_status": "UNTESTED",
+      "orientation_override": true
+    },
+    {
+      "part_id": "B_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "C_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "C_TRIFLOOR",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": true
+    },
+    {
+      "part_id": "C_TRIFLOOR_Q",
+      "validation_status": "UNTESTED",
+      "orientation_override": false
+    },
+    {
+      "part_id": "F_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "F_TRIFLOOR",
+      "validation_status": "UNTESTED",
+      "orientation_override": false
+    },
+    {
+      "part_id": "F_TRIFLOOR_Q",
+      "validation_status": "UNTESTED",
+      "orientation_override": false
+    },
+    {
+      "part_id": "M_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "S_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "T_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "W_RAMP",
+      "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    }
+  ],
+  "note": "bounds are validated for all tracked parts; placement is unvalidated until a map-only proof build passes and the user agrees. Orientation overrides (e.g. BILLBOARD) are carried from PART_ORIENTATION_OVERRIDES and are evidence-validated for orientation only."
+}

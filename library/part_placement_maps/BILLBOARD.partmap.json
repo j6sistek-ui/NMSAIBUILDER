@@ -1,0 +1,101 @@
+{
+  "schema": "NMS_PART_PLACEMENT_MAP_ORIENTATION_OVERRIDE",
+  "part_id": "BILLBOARD",
+  "part_family": "BILLBOARD",
+  "status": "SEEDED",
+  "source_evidence": {
+    "generated_from": "rules/PART_ORIENTATION_OVERRIDES.json",
+    "nice_name": "STATION BILLBOARD"
+  },
+  "fbx_bounds": {
+    "extent_x": 1.530273,
+    "extent_y": 0.278203,
+    "extent_z": 2.171875,
+    "center_x": 0.0,
+    "center_y": 0.139707,
+    "center_z": 0.0,
+    "FBXPath": "models/decoration/BILLBOARD.fbx",
+    "provenance": "OBSERVED_FACT"
+  },
+  "canonical_local_frame": {
+    "Up": "Up = normalize(source.Up)",
+    "At": "At = normalize(source.At projected perpendicular to Up)",
+    "Right": "Right = normalize(Up cross At)"
+  },
+  "scale_mapping": {
+    "baseline_scale": "source/control scale"
+  },
+  "source_transform_invariants": [
+    "Position",
+    "Up",
+    "At"
+  ],
+  "neighbor_offset_clusters_local": {
+    "status": "NEED_STUDY",
+    "provenance": "DERIVED_RULE_PENDING"
+  },
+  "rotation_delta_clusters": {
+    "status": "VALIDATED_ORIENTATION_OVERRIDE",
+    "provenance": "VALIDATED_RULE",
+    "rule": {
+      "default_rx_degrees": 0,
+      "do_not_inherit_generic_rx90": true,
+      "rz_by_side_degrees": {
+        "N": 0,
+        "S": 180,
+        "E": 270,
+        "W": 90
+      },
+      "nonuniform_scale_allowed_when_design_requires_flat_or_landscape_signage": true
+    }
+  },
+  "fitment_modes": [
+    "NEED_STUDY"
+  ],
+  "construction_applications": [],
+  "failure_modes": [
+    "applying the generic rx=90 facade rule misorients this part (e.g. a billboard sign protrudes perpendicular like a shelf)"
+  ],
+  "allowed_variation_slots": [
+    "material substitution"
+  ],
+  "forbidden_substitutions": [
+    "inheriting the generic rx=90 facade rule"
+  ],
+  "validation": {
+    "status": "UNTESTED",
+    "_legacy_status": "orientation_override_validated_placement_unmapped",
+    "note": "orientation override is evidence-validated; full placement not yet map-only proven",
+    "validated_with_algorithm": null,
+    "validated_date": null,
+    "validation_build": null,
+    "validation_evidence": {
+      "orientation_override": "PART_ORIENTATION_OVERRIDES evidence chain (FBX->Python->JSON->screenshots)",
+      "placement": "none"
+    }
+  },
+  "storage_receipt": {
+    "partmap_path": "library/part_placement_maps/BILLBOARD.partmap.json",
+    "index_path": "library/part_placement_maps/part_placement_map_index.json",
+    "source": "PART_ORIENTATION_OVERRIDES"
+  },
+  "orientation_override": {
+    "native_geometry_evidence": {
+      "extent_x": 1.530273,
+      "extent_y": 0.278203,
+      "extent_z": 2.171875,
+      "interpretation": "Thin local-Y depth with wide/tall sign plane. It is already a vertical sign plane in the tested JSON->Python/Builder path."
+    },
+    "placement_rule": {
+      "default_rx_degrees": 0,
+      "do_not_inherit_generic_rx90": true,
+      "rz_by_side_degrees": {
+        "N": 0,
+        "S": 180,
+        "E": 270,
+        "W": 90
+      },
+      "nonuniform_scale_allowed_when_design_requires_flat_or_landscape_signage": true
+    }
+  }
+}

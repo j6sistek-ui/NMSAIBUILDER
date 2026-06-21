@@ -1,0 +1,53 @@
+{
+  "built": "2026-06-18 10:19:11.421397",
+  "results": [
+    {
+      "label": "triangle control",
+      "a": "S_TRIFLOOR",
+      "b": "S_TRIFLOOR",
+      "groupA": "TRI",
+      "groupB": "TRI",
+      "closest_file_snappoint_gap": 0.0,
+      "matched_points": [
+        "NORTH",
+        "SOUTH_UP"
+      ],
+      "are_named_opposites": false,
+      "live_offset_mag": 3.079,
+      "live_rot_deg": 60.0,
+      "MAP_MATCHES_LIVE": true
+    },
+    {
+      "label": "floor+floor",
+      "a": "S_GFLOOR",
+      "b": "S_GFLOOR",
+      "groupA": "FLOORS",
+      "groupB": "FLOORS",
+      "closest_file_snappoint_gap": 0.0,
+      "matched_points": [
+        "SOUTH",
+        "NORTH"
+      ],
+      "are_named_opposites": true,
+      "live_offset_mag": 5.3379,
+      "live_rot_deg": 0.0,
+      "MAP_MATCHES_LIVE": true
+    },
+    {
+      "label": "floor+wall cross-group",
+      "a": "S_GFLOOR",
+      "b": "S_CHEV_WALL",
+      "groupA": "FLOORS",
+      "groupB": "WALLS",
+      "closest_file_snappoint_gap": 0.0,
+      "matched_points": [
+        "SOUTH",
+        "BOTTOM"
+      ],
+      "are_named_opposites": false,
+      "live_offset_mag": 2.669,
+      "live_rot_deg": 0.0,
+      "MAP_MATCHES_LIVE": true
+    }
+  ]
+}

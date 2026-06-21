@@ -1,0 +1,233 @@
+{
+  "schema": "NMS_PART_PLACEMENT_MAP_2.14.00",
+  "part_id": "C_RAMP",
+  "part_family": "STAIR_FULL_RAMP",
+  "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+  "source_evidence": {
+    "source_docs_revision": "2.14.00",
+    "validation_branch": "STAIR_V25_TO_V42",
+    "validated_control_parts": [
+      "S_RAMP",
+      "C_RAMP"
+    ],
+    "user_visual_acceptance": "V42 review: normal stairs appear validated for general placement and use case; switchback and stadium/U-corner accepted.",
+    "evidence_files": [
+      "nms_stair_equal_step_corner_v42.py",
+      "Pasted text.txt exported V42 JSON",
+      "V42 Blender review screenshot"
+    ],
+    "scope_note": "Validated for normal full ramps. Half ramps and special ramp types remain separate validation work."
+  },
+  "fbx_bounds": {
+    "FBXPath": "models/legacy_structures/C_RAMP.fbx",
+    "extent_x": 4.833932,
+    "extent_y": 3.806864,
+    "extent_z": 5.595291,
+    "center_x": 0.0,
+    "center_y": 1.535044,
+    "center_z": 0.148896
+  },
+  "canonical_local_frame": {
+    "Up": "normalize(source.Up)",
+    "At": "normalize(source.At projected perpendicular to Up)",
+    "Right": "normalize(Up cross At)",
+    "Origin": "source.Position",
+    "note": "Stair origin may be below/inside visual stair body; placement is governed by semantic stair edge and repeat rules."
+  },
+  "placement_signature": {
+    "local_frame_repeat_rule": "Position[n+1] = Position[n] + At * RUN_STEP + Up * RISE_STEP",
+    "RAMP_RUN_STEP": 5.33334,
+    "RAMP_RISE_STEP": 3.33333,
+    "STAIR_CONTACT_TUNE": 0.985,
+    "RUN_STEP": 5.2533399,
+    "RISE_STEP": 3.28333005,
+    "side_step": 0.0,
+    "edge_start_rule": "EDGE_START_BASE = FLOOR_HALF + RAMP_HALF_DEPTH - SMALL_OVERLAP",
+    "SMALL_OVERLAP": 0.1,
+    "EDGE_START_PRIMARY": "EDGE_START_BASE",
+    "floor_rule": "Floors are anchors; stairs move."
+  },
+  "fitment_modes": [
+    "floor_to_stair_edge_start",
+    "local_frame_stair_chain",
+    "terminal_landing",
+    "switchback",
+    "stadium_side_bank",
+    "stadium_back_bank",
+    "five_lane_equal_step_u_corner"
+  ],
+  "corner_rule": {
+    "accepted_pattern": "five_lane_equal_step_u_corner",
+    "right_angles_deg": [
+      15,
+      30,
+      45,
+      60,
+      75
+    ],
+    "left_angles_deg": [
+      165,
+      150,
+      135,
+      120,
+      105
+    ],
+    "status": "USER_ACCEPTED_FOR_NORMAL_FULL_RAMPS",
+    "half_ramp_inheritance": "NOT_ASSUMED_PENDING_VALIDATION"
+  },
+  "semantic_float_gate": {
+    "status": "ADOPTED_FOR_NORMAL_FULL_RAMP_STAIR_RELATIONS",
+    "raw_aabb_required": true,
+    "raw_aabb_verdict_must_be_preserved": true,
+    "approved_semantic_checks": [
+      "stair_to_stair_local_frame_repeat",
+      "floor_to_stair_edge_start",
+      "terminal_landing_local_frame_relation"
+    ],
+    "not_applicable_to": [
+      "non_stair_parts",
+      "half_ramps_pending_validation",
+      "special_ramps_pending_validation",
+      "global_aabb_tolerance"
+    ]
+  },
+  "validation_status": {
+    "ladder_status": "BLENDER_USER_CHECK",
+    "scope": "general placement/use for normal full ramps",
+    "script_validated": true,
+    "blender_validated": true,
+    "user_accepted": true,
+    "in_game_final_status": "not separately claimed unless user confirms in-game",
+    "known_exceptions": [
+      "Generic AABB may false-fail terminal stair landings; use adopted stair semantic validator for approved normal full ramps.",
+      "Half ramps require next validation."
+    ],
+    "_legacy_ladder_status": "USER_ACCEPTED"
+  },
+  "family_equivalence": {
+    "classification": "SAME_RULE_FOR_NORMAL_FULL_RAMP_FAMILY",
+    "members": [
+      "B_RAMP",
+      "C_RAMP",
+      "F_RAMP",
+      "M_RAMP",
+      "S_RAMP",
+      "T_RAMP",
+      "W_RAMP"
+    ],
+    "excluded_pending": [
+      "B_RAMP_H",
+      "C_RAMP_H",
+      "F_RAMP_H",
+      "M_RAMP_H",
+      "S_RAMP_H",
+      "T_RAMP_H",
+      "W_RAMP_H",
+      "BUILDRAMP",
+      "RACE_RAMP",
+      "B_RAMP_Q_TOP",
+      "F_RAMP_Q_TOP",
+      "S_RAMP_Q_TOP",
+      "T_RAMP_Q_TOP"
+    ]
+  },
+  "next_validation_needed": "Half-ramp / half-stair variants.",
+  "scale_mapping": {
+    "baseline_scale": "source/control scale unless explicitly parameterized",
+    "scale_behavior": "UNIFORM_UP_LENGTH_SCALE_ONLY_UNLESS_EXPLICITLY_PARAMETERIZED",
+    "note": "Do not use scale to hide stair/floor fitment errors."
+  },
+  "source_transform_invariants": [
+    "Position",
+    "Up",
+    "At"
+  ],
+  "neighbor_offset_clusters_local": {
+    "status": "USER_ACCEPTED_STAIR_LOCAL_FRAME_REPEAT",
+    "primary_repeat": {
+      "delta_local": "At * RUN_STEP + Up * RISE_STEP",
+      "RUN_STEP": 5.2533399,
+      "RISE_STEP": 3.28333005,
+      "side_step": 0.0
+    },
+    "edge_start": "floor_center + At * EDGE_START_PRIMARY",
+    "terminal_landing": "prior_ramp + At * RUN_STEP + Up * RISE_STEP"
+  },
+  "rotation_delta_clusters": {
+    "status": "USER_ACCEPTED_LOCAL_FRAME_AT_DIRECTION",
+    "rule": "Use local At vector for stair run/ascent direction; rotations are represented by desired At direction.",
+    "corner_rule": "V42 equal-step five-lane fan accepted for normal full ramps."
+  },
+  "construction_applications": [
+    {
+      "application": "vertical_stair_chain",
+      "status": "USER_ACCEPTED",
+      "rule": "Position[n+1]=Position[n]+At*RUN_STEP+Up*RISE_STEP"
+    },
+    {
+      "application": "switchback_staircase",
+      "status": "USER_ACCEPTED",
+      "rule": "single landings only; no companion floor pads"
+    },
+    {
+      "application": "stadium_u_corner",
+      "status": "USER_ACCEPTED",
+      "rule": "five-lane equal-step fan"
+    }
+  ],
+  "failure_modes": [
+    "Do not move floors to fix stairs.",
+    "Do not add floor pads to satisfy float gate.",
+    "Do not interpret stair origin/AABB as the sole connection point.",
+    "Do not inherit normal full-ramp rule to half ramps without validation."
+  ],
+  "allowed_variation_slots": [
+    "target_position",
+    "At direction",
+    "lane_count for validated pattern",
+    "lane spacing within validated corner algorithm",
+    "material/ObjectID within approved normal full-ramp family"
+  ],
+  "forbidden_substitutions": [
+    "floor grid compression",
+    "extra floor pads",
+    "global AABB tolerance loosening",
+    "half-ramp inheritance without validation"
+  ],
+  "validation": {
+    "status": "BLENDER_USER_CHECK",
+    "source_docs_revision": "2.14.00",
+    "script_validated": true,
+    "blender_visual_review": "accepted by user V42",
+    "gate_rule": "raw AABB preserved; semantic stair validator adopted for normal full-ramp relations",
+    "scope": "normal full-ramp stair general placement/use",
+    "_legacy_status": "USER_ACCEPTED"
+  },
+  "storage_receipt": {
+    "part_id": "C_RAMP",
+    "partmap_path": "library/part_placement_maps/C_RAMP.partmap.json",
+    "index_path": "library/part_placement_maps/part_placement_map_index.json",
+    "master_sheet_path": "library/part_placement_maps/part_placement_master_sheet.csv",
+    "status": "stored",
+    "source_evidence": "reports/2.14.00_STAIR_V42_ACCEPTANCE_AND_PARTMAP_UPDATE.md",
+    "validation": "partmap_storage_check"
+  },
+  "execution_receipt_requirements": {
+    "required_manifest": "USED_PART_LOGIC",
+    "partmap_path": "library/part_placement_maps/C_RAMP.partmap.json",
+    "validated_algorithm": "STAIR_LOCAL_FRAME_REPEAT_AND_EDGE_START",
+    "reuse_modes_allowed": [
+      "DIRECT_REUSE",
+      "IMPORTED_RECIPE",
+      "ADAPTED_VERIFIED"
+    ],
+    "source_transform_invariants_required": [
+      "Position",
+      "Up",
+      "At"
+    ],
+    "recipe_source": "toolkit/validated_recipes/stairs.py",
+    "gate": "validation/validated_logic_reuse_check.py",
+    "notes": "Do not place by global axis stepping unless At/Up match the local-frame recipe."
+  }
+}
