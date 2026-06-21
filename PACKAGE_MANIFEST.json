@@ -1,0 +1,383 @@
+{
+ "package": "NMS_master_docs_5.04.03_ONBOARDING_VALIDATION_BUILD_HYGIENE_PASS",
+ "source": "NMS master docs 1.03.03 CONSOLIDATED CLEANUP",
+ "updated": "2026-06-20",
+ "purpose": "Release hygiene correction for the current 5.04.03 onboarding validation build package.",
+ "file_count": 326,
+ "gate_test": {
+  "script": "release/release_check.py",
+  "status": "release_check PASS",
+  "release_gate_report": "reports/5.00.00_RELEASE_GATE_REPORT.txt",
+  "note": "run for 5.00.00 placement-precedence constitution + compliance manifest",
+  "report": "reports/5.03.00_RELEASE_GATE_REPORT.txt",
+  "version": "5.04.03"
+ },
+ "validation": {
+  "release_check": "PASS_after_5.04.03_hygiene_patch",
+  "json_parse": "PASS_via_release_check",
+  "python_compile": "PASS_via_release_check",
+  "run_gate_part_wrapper_self_tests": "PASS_via_release_check",
+  "run_gate_connectivity_self_tests": "PASS_via_release_check",
+  "partmap_storage_check": "PASS_via_release_check",
+  "partmap_generation_drift_check": "PASS_via_release_check",
+  "request_router_check": "PASS",
+  "manifest_file_count_check": "PASS_via_release_check",
+  "zip_integrity": "PASS_after_final_write",
+  "validated_logic_reuse_check": "PASS_via_release_check",
+  "protocol_banner_check": "PASS",
+  "blender_runtime_script_check": "PASS_via_release_check",
+  "geometry_construction_manifest_check": "PASS_via_release_check",
+  "feature_recipe_lookup_check": "PASS",
+  "ai_review_bundle_check": "PASS",
+  "ai_capture_compliance_check": "PASS_via_release_check",
+  "ai_review_bundle_check_v01_v04": "PASS_via_release_check",
+  "run_gate_ai_capture_compliance": "PASS_via_release_check",
+  "feature_recipe_lookup_self_test": "PASS",
+  "ai_review_bundle_self_test": "PASS",
+  "placement_intelligence_infrastructure_check": "PASS_via_release_check",
+  "compliance_manifest_check": "PASS_self_test_via_release_check",
+  "note": "Governance documentation patch created in chat; run release/release_check.py locally before final authoritative release."
+ },
+ "version": "5.07.00",
+ "legacy_source": "NMS_master_docs_1.03.02_WORKING_JSON_CAPA_GATE_MERGED.zip",
+ "versioning_policy": "rules/MASTER_DOC_VERSIONING_POLICY.md",
+ "release_level": "patch",
+ "release_reason": "Owner confirmed 5.04.03 is current and requested package hygiene correction through release checks.",
+ "supersedes_version": "5.04.02",
+ "update_type": "patch_release_hygiene_correction",
+ "1.03.00_updates": {
+  "json_evidence_mapping_gate": true,
+  "systematic_failure_capa_protocol": true,
+  "run_gate_require_json_evidence": true
+ },
+ "1.03.01_updates": {
+  "working_json_first_principle": true,
+  "json_evidence_gate_reinforced": true,
+  "run_gate_indentation_fixed": true,
+  "release_check_compiles_python": true,
+  "json_context_distinction_clarified": true
+ },
+ "1.03.02_updates": {
+  "preserves_1.03.01_working_json_first_principle": true,
+  "systematic_failure_capa_enforcement_hardened": true,
+  "airlock_direct_known_json_recipe_rule_corrected": true,
+  "validation_gate_hardening_rule_added": true,
+  "run_gate_part_wrapper_misuse_detection": true,
+  "run_gate_zero_placement_failure": true,
+  "release_check_run_gate_behavioral_self_tests": true
+ },
+ "1.03.03_updates": {
+  "single_consolidated_changelog": true,
+  "shipped_bytecode_removed": true,
+  "archive_and_superseded_reports_split_to_attic": true,
+  "file_inventory_regenerated": true,
+  "start_here_read_order_spine_added": true,
+  "build_generation_behavior_change": false
+ },
+ "2.00.00_updates": {
+  "request_router_checklist": true,
+  "request_router_executable_gate": true,
+  "run_gate_require_router": true,
+  "systematic_failure_hard_stop_reinforced": true,
+  "document_purpose_and_routing_review": true
+ },
+ "2.00.01_updates": {
+  "start_here_current_baseline_fixed": true,
+  "readme_title_fixed": true,
+  "file_inventory_title_fixed": true,
+  "run_gate_banner_fixed": true,
+  "release_check_active_version_claim_scan_added": true,
+  "release_gate_report_added": true
+ },
+ "2.01.00_updates": {
+  "semantic_request_type_membership_check": true,
+  "critical_bundle_mapping_enforced": true,
+  "ambiguous_request_seeks_user_input": true,
+  "documented_new_request_type_process": true,
+  "per_response_confirmation_banner": true
+ },
+ "2.02.00_updates": {
+  "build_generation_deep_full_knowledge_base": true,
+  "build_specific_addition_tier_added": true,
+  "build_refinement_or_optimization_tier_added": true,
+  "full_build_knowledge_mapped_to_deep_tier": true
+ },
+ "2.03.00_updates": {
+  "current_bootstrap_teaches_router_tiers_banner": true,
+  "stale_bootstraps_retired_to_attic": true,
+  "release_gate_polices_bootstrap_version": true,
+  "single_combined_build_invocation": true
+ },
+ "2.03.01_updates": {
+  "bootstrap_rx90_wording_corrected": true,
+  "bootstrap_json_orientation_mapping_requirement_added": true,
+  "environment_wording_aligned_to_blender_5_0_1_confirmed_working": true,
+  "release_check_blocks_pycache_and_pyc": true,
+  "release_check_validates_manifest_file_count": true,
+  "file_inventory_regenerated": true,
+  "build_generation_behavior_change": false
+ },
+ "2.04.00_updates": {
+  "protocol_wiring_fixed_in_package_root": true,
+  "protocol_confirmation_required": true,
+  "json_feature_concept_extraction_protocol": true,
+  "airlock_iris_parametric_recipe_rule": true,
+  "airlock_recipe_required_references": [
+   "rules/AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE.md",
+   "toolkit/AIRLOCK_IRIS_PARAMETRIC_GENERATOR_SKELETON.py"
+  ],
+  "json_feature_protocol_required_reference": "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md"
+ },
+ "2.04.01_updates": {
+  "airlock_parametric_overlap_rule_added": true,
+  "central_pivot_overlap_density_default": true,
+  "chord_preserving_radius_expansion_requires_explicit_approval": true,
+  "airlock_generator_skeleton_radius_mode_added": true,
+  "router_recall_recipe_library_updated": true,
+  "stale_active_version_claims_fixed": true
+ },
+ "2.04.02_updates": {
+  "spire_visual_recipe_notes": true,
+  "evidence": "screenshots_only",
+  "pending": "future spire JSON extraction",
+  "rule_file": "rules/SPIRE_TAPERED_TOWER_VISUAL_RECIPE_NOTES.md"
+ },
+ "2.04.03_updates": {
+  "spire_mini_json_preliminary_extraction": true,
+  "source": "Jenness WIP Townhome inline JSON",
+  "status": "partial observation, not locked exact recipe",
+  "rule_file": "rules/SPIRE_MINI_JSON_PRELIMINARY_EXTRACTION_NOTES.md"
+ },
+ "2.04.04_updates": {
+  "power_utility_default_exclusion": true,
+  "rule_file": "rules/POWER_UTILITY_EXCLUSION_RULE.md",
+  "default_excluded_patterns": [
+   "U_POWERLINE",
+   "POWERLINE_HIDER",
+   "U_SWITCH*",
+   "U_SWITCHWALL",
+   "U_SWITCHPROX",
+   "U_BATTERY*",
+   "U_SOLAR*",
+   "U_BIOGENERATOR"
+  ],
+  "forbidden_docs_updated": [
+   "rules/FORBIDDEN_DEFAULT_EXCLUDED_OBJECTID_USAGE.md"
+  ]
+ },
+ "2.04.05_updates": {
+  "connected_piece_curvature_grammar": true,
+  "rule_file": "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md",
+  "generalizes": [
+   "dome",
+   "cylindrical habitat",
+   "spire",
+   "Taj dome",
+   "Bumblebee body shell",
+   "vehicle hull",
+   "rounded shells"
+  ]
+ },
+ "2.04.06_updates": {
+  "prompt_routing_rule_application_gate": true,
+  "rule_file": "rules/REQUEST_ROUTER_CHECKLIST.md",
+  "requires_protocol_confirmation": true,
+  "requires_protocol_application_audit_for_source_doc_updates": true,
+  "image_retention_gate_required": true
+ },
+ "2_05_00_updates": {
+  "version_location_registry_added": true,
+  "release_gate_enforces_registry": true,
+  "reconciled_2_04_label_drift": true
+ },
+ "2.05.01_updates": {
+  "disconnected_assembly_hardstop_rule_added": true,
+  "rule_file": "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md",
+  "capa_report": "reports/BATMAN_V11_DISCONNECTED_ASSEMBLY_CAPA_2.05.01.md",
+  "protocol_application_audit": "reports/PROTOCOL_APPLICATION_AUDIT_2.05.01_DISCONNECTED_ASSEMBLY_MERGE.md",
+  "request_router_updated": true,
+  "generator_contract_updated": true,
+  "rule_matrix_updated": true,
+  "recall_index_updated": true,
+  "behavioral_impact": "assembled subsystem connection proof is required before delivery"
+ },
+ "2.06.00_updates": {
+  "objective_charter": true,
+  "execution_kernel": true,
+  "control_to_variant_protocol": true,
+  "prompt_to_feature_router": true,
+  "json_geometry_intelligence_protocol": true,
+  "json_recipe_signature_index": true,
+  "placement_recipe_library_geometry_templates": true,
+  "request_router_bundle_updates": true
+ },
+ "2.06.01_updates": {
+  "build_vs_image_routing_guard": true,
+  "nms_build_language_defaults_to_python": true,
+  "gothic_castle_airlock_prompt_route_added": true,
+  "protocol_breach_capa_prevention": true
+ },
+ "added_files_2_07_01": [
+  "rules/SYSTEMATIC_FAILURE_CAPA_PROTOCOL.md",
+  "rules/SYSTEMATIC_FAILURE_CAPA_PROTOCOL.json",
+  "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md",
+  "rules/SELECTIVE_VISUAL_MEMORY_POLICY.json",
+  "release/RELEASE_NOTES_2.07.01.md"
+ ],
+ "2.07.02_updates": {
+  "part_placement_map_schema": true,
+  "part_data_mapping_algorithm": true,
+  "partmap_storage_compliance_protocol": true,
+  "partmap_storage_check": true,
+  "seeded_trifloor_partmaps": true
+ },
+ "2.12.00_updates": {
+  "c_trifloor_placement_validated": true,
+  "master_part_placement_algorithm_added": true,
+  "future_part_validation_directive_added": true,
+  "partmap_schema_extended_with_part_profile_fields": true,
+  "c_trifloor_q_marked_distinct_unvalidated": true,
+  "part_placement_master_sheet_extended": true
+ },
+ "zip_artifact": "NMS_master_docs_4.01.00_PLACEMENT_INTELLIGENCE_GOVERNANCE_INFRASTRUCTURE.zip",
+ "2.12.01_updates": {
+  "numeric_source_docs_rev_banner": true,
+  "docs_avail_for_update_banner_field": true,
+  "docs_update_availability_protocol_added": true,
+  "protocol_confirmation_rule_updated": true,
+  "banner_template_updated": true
+ },
+ "2.13.00_updates": {
+  "universal_placement_doctrine_promoted": true,
+  "local_frame_repeat_rule_documented": true,
+  "partmap_schema_expanded": true,
+  "validation_status_ladder_added": true,
+  "trifloor_family_validation_framework_added": true,
+  "stair_placement_doctrine_added": true,
+  "corner_transition_algorithms_added": true,
+  "semantic_float_gate_proposal_added": true,
+  "future_part_validation_directive_expanded": true
+ },
+ "open_items_after_release": {
+  "v38_user_review": "pending",
+  "semantic_float_gate_adoption": "proposed_not_adopted",
+  "trifloor_family_equivalence_classification": "pending",
+  "user_accepted_status_for_families": "pending_explicit_user_acceptance"
+ },
+ "2.13.01_updates": {
+  "docs_avail_definition_clarified": true,
+  "open_topics_log_protocol_added": true,
+  "source_doc_evaluation_checklist_added": true,
+  "protocol_banner_rule_corrected_numeric_source_rev_docs_avail": true,
+  "raw_validation_verdict_preservation_hardened": true,
+  "gate_scope_reporting_required": true,
+  "semantic_float_gate_remains_proposed_not_adopted": true,
+  "v38_v39_v40_stair_lessons_recorded": true,
+  "request_router_updated_for_source_doc_and_protocol_correction": true
+ },
+ "release_name": "3.01.01_PIPE_BUBPIPE_VALIDATION_EXCEPTION",
+ "summary": "5.04.03 normalizes active version labels, resolves file-count and dangling-reference drift, adds transfer placeholder files, adds RPAM coverage for transfer/triage rules, and records release-check pass status.",
+ "updated_rules": [
+  "rules/FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL.md"
+ ],
+ "supersedes": "5.04.02",
+ "2.19.00_updates": {
+  "recipe_first_final_rollout": true,
+  "feature_recipe_lookup_validation": true,
+  "part_placement_aid_ledger": true,
+  "wall_shell_enclosure_recipe": true,
+  "ai_review_bundle_intake_protocol": true,
+  "feature_recipe_route_index": true
+ },
+ "2.19.01_updates": {
+  "inactive_archive_removed_from_main_source": true,
+  "single_changelog_retained": true,
+  "master_lessons_cleaned": true,
+  "master_recipes_recipe_first_priority_reinforced": true,
+  "separate_runtime_pack_not_used": true,
+  "source_docs_themselves_are_lean": true
+ },
+ "3.00.00_updates": {
+  "blender_visual_feedback_harness_protocol": true,
+  "ai_capture_compliance_contract": true,
+  "nms_ai_review_bundle_addon_v04_toolkit": true,
+  "run_gate_ai_capture_compliance_gate": true,
+  "ai_review_bundle_check_v01_v04": true,
+  "semantic_collection_contract": true,
+  "single_collection_fallback_and_noop_detection": true,
+  "capture_budget_protocol": true
+ },
+ "3.01.00_updates": {
+  "added": [
+   "verified part-map data protocol",
+   "verified part map JSON/CSV",
+   "exception index",
+   "contradiction report"
+  ],
+  "changed": [
+   "active part dimensions library now carries verified fields",
+   "root docs explain verified overlay precedence after recipes"
+  ],
+  "not_changed": [
+   "recipe-first routing remains assembly authority"
+  ]
+ },
+ "3.01.01_updates": {
+  "pipe_zero_bbox_reclassified_not_do_not_use": true,
+  "bubpipe_family_blender_visual_orientation_not_authoritative": true,
+  "connected_pipe_assembly_requires_in_game_or_json_validation": true,
+  "verified_partmap_status_downgraded_for_pipe_bubpipe_family": true,
+  "rx90_may_fix_individual_parts_but_not_confirm_assembly_continuity": true
+ },
+ "supersedes_package": "NMS_master_docs_5.04.02_TRIAGE_GOVERNANCE_PROJECT_TRANSFER",
+ "4.01.00_updates": {
+  "placement_intelligence_governance_protocol": true,
+  "method_authority_table": true,
+  "placement_precedence": true,
+  "negative_knowledge_index": true,
+  "master_placement_intelligence_index_seed": true,
+  "receipt_and_snapshot_schemas": true,
+  "assembly_context_supersedes_component_context": true,
+  "creative_style_separation": true,
+  "single_active_open_topics_log": true,
+  "external_validator_deferred": true
+ },
+ "5.00.00_updates": [
+  "00_FOUNDATIONAL_DOCTRINE.md (loads first; THIS IS THE LAW; precedence is first duty; deviation is failure)",
+  "rules/PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE.md (Intent->Precedence->Method, per ObjectID, mandatory)",
+  "rules/BUILD_COMPLIANCE_MANIFEST_RULE.md + schemas/BUILD_COMPLIANCE_MANIFEST.schema.json + templates/BUILD_COMPLIANCE_MANIFEST_TEMPLATE.json",
+  "validation/compliance_manifest_check.py (executable receipt verifier; wired into release gate)",
+  "rules/BLENDER_PARITY_RULE.md (live Blender == generated Python)",
+  "rules/PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE.md (FBX demoted to last-resort fallback)",
+  "rules/SESSION_ONBOARDING_CHECKLIST_RULE.md (READ/SKIPPED onboarding output)",
+  "banner now carries router+precedence receipt (PER_RESPONSE_PROTOCOL_CONFIRMATION_RULE.md)",
+  "negative knowledge += FOS_LIMBS, FOS_SKULL, FOS_TAIL, SET_B_MONU_FA, SET_LZ, SET_SFXCONST_S0 (live null-spawn, 5.00.00 study)",
+  "reports/NONSNAP_PLACEMENT_STUDY_5.00.00_FINDINGS.md"
+ ],
+ "5.01.00_updates": [
+  "Added 00_OPERATING_CARD.md (single always-hold page: build loop, precedence tiers, mechanical-vs-creative firewall, banner).",
+  "Added validation/part_context_resolver.py: resolves intended ObjectIDs into a small PROJECT BUILD PLACEMENT PACKET (MANDATORY_PLACEMENT_CONTEXT forced vs CREATIVE_CONTEXT offered).",
+  "Added data/RULE_PART_APPLICABILITY_MAP.json (RPAM): all 113 rules mapped to parts/families (54 family/assembly, 26 universal, 19 part-specific, 6 creative, 8 needs-review) + validation/rpam_coverage_check.py.",
+  "Hardened validation/compliance_manifest_check.py to re-read cited sources: source_ref-in-file, ObjectID-in-file, tier highest-applicable (snap beats partmap; negative-knowledge overrides; recipe tiers need a verifiable ref), method authorized per part/context.",
+  "Wired resolver self-test + RPAM coverage into release/release_check.py; entry docs (bootstrap, START_HERE) now load the operating card and resolve a packet first."
+ ],
+ "5.01.01_updates": [
+  "validation/run_gate.py: recipe-conformance and intent-graph gates DEFER (not FAIL) when no exported NMS JSON is supplied; verdict passes at SCRIPT_VALIDATED with JSON validation pending; post-build --require-conformance/--require-intent-graph <json> still enforce.",
+  "Root cause: gate demanded a post-build artifact during the pre-build pass; generated Python could never pass run_gate.",
+  "gate_test report regenerated for 5.01.01; all run_gate self-tests remain green."
+ ],
+ "5.03.00_updates": [
+  "Added validation/capa_escalation.py + data/CAPA_ESCALATION_STATE.json (review-logged open/clear/status of the deeper-manifest escalation).",
+  "run_gate: active escalation requires a passing compliance_manifest_check (PROJECT_COMPLIANCE_MANIFEST) on top of the lean builder sheet; --capa-state override.",
+  "SYSTEMATIC_FAILURE_CAPA_PROTOCOL: source-skipping escalation section; operating card updated.",
+  "Includes 5.02.00 build-sheet gate (generated packet coverage/population/integrity enforced at run_gate)."
+ ],
+ "5.04.03_updates": {
+  "version_hygiene_normalized": true,
+  "active_version_labels_updated": true,
+  "manifest_file_count_corrected": true,
+  "dangling_transfer_refs_resolved": true,
+  "rpam_coverage_completed": true,
+  "release_check_required": true
+ }
+}

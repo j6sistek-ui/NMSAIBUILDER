@@ -1,0 +1,1 @@
+All major deliverables must include a Project Transfer Summary.
