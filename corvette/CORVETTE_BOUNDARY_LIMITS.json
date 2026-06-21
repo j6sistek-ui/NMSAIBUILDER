@@ -1,0 +1,59 @@
+{
+  "schema": "NMS_Corvette_Boundary_Limits_v48",
+  "updated": "2026-05-28",
+  "scope": "corvette_mode_entire_final_assembly",
+  "source_status": {
+    "user_supplied_evidence": "2026-05-28 screenshot of Reddit warning showing Corvette build boundary visualization and reporting boundary around 100m / little under 330 ft.",
+    "user_correction_v48": "Boundary applies to the total Corvette footprint including non-Corvette/base/decorative parts placed on or in the Corvette, not only Category == Corvette objects.",
+    "official_context": "Swarm/6.40 patch notes include Corvette-adjacent stability and performance work but do not explicitly confirm the 100m boundary in reviewed sources.",
+    "verification_level": "strict_conservative_operating_rule_until_superseded"
+  },
+  "limits_meters": {
+    "absolute_boundary_side_m": 100.0,
+    "safe_boundary_side_m": 95.0,
+    "absolute_half_extent_m": 50.0,
+    "safe_half_extent_m": 47.5
+  },
+  "validation_formula": "abs(part_center_axis - corvette_origin_axis) + rotated_half_extent_axis <= 47.5",
+  "generator_requirements": [
+    "Audit the entire final Corvette assembly, not only Category == Corvette objects.",
+    "Include all non-Corvette/base/decorative parts placed on or in the Corvette.",
+    "Use occupied rotated bounding boxes, not center-only checks.",
+    "Use FBX extents multiplied by scale for each ObjectID.",
+    "Map rotated part extents into world axes before computing bounds.",
+    "Fail or redesign if any total build axis span exceeds 95m.",
+    "Print final X/Y/Z spans in validation report.",
+    "Reject imported/third-party Corvette blueprints over 95m side length."
+  ],
+  "boundary_audit_includes": [
+    "required Corvette core modules",
+    "Corvette hull/plating/window/wing/shield/storage/utility modules",
+    "non-Corvette exterior decorations mounted on the Corvette",
+    "non-Corvette interior decorations and furniture placed in the Corvette",
+    "lights, signs, decals, pipes, greebles, plants, props, or kitbash elements that remain in the final Corvette export",
+    "any helper/scaffold/template object that remains in the final Corvette export"
+  ],
+  "boundary_audit_excludes": [
+    "temporary generation templates not exported as part of the Corvette",
+    "deleted scaffolds",
+    "external labels/debug grids/reference markers not exported as part of the Corvette"
+  ],
+  "scope_firewall": {
+    "applies_to": [
+      "functional Corvette builds",
+      "Corvette Workshop module layouts",
+      "Corvette exterior decoration passes",
+      "Corvette interior decoration passes",
+      "Blender/save-editor/third-party blueprints intended for Corvette use",
+      "any non-Corvette/base/decorative part placed on or in the Corvette"
+    ],
+    "does_not_apply_to": [
+      "planetary bases",
+      "freighter bases",
+      "megacities",
+      "landmark/architecture builds",
+      "organic/Jurassic scenes",
+      "decorative non-Corvette builds using Corvette ObjectIDs as greebles"
+    ]
+  }
+}

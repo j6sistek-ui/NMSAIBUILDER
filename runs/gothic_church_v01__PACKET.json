@@ -1,0 +1,518 @@
+{
+ "schema": "PROJECT_BUILD_PLACEMENT_PACKET_1.1",
+ "generated_from_rev": "5.04.00",
+ "build_intent": "Gothic church: cruciform nave + perimeter walls, pointed window walls, flying buttresses, big glass dome over the crossing (radial-ring taper), twin west-front spires, west portal",
+ "MANDATORY_PLACEMENT_CONTEXT": {
+  "parts": {
+   "S_FLOOR_Q": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "FLOOR_Q_;_FLOOR_Q;FLOOR_Q_;_WALL_H"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[2.651872, 2.651873, 0.26173]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -0.130865,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 0.130865,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [],
+    "applicable_part_rules": [
+     "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+     "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+     "COMPOSITE_BUILD_INTENT_GRAPH_PROTOCOL",
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "CURATED_DETAIL_HIERARCHY_RULE",
+     "C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "EXPERIMENTAL_REQUEST_PROTOCOL",
+     "MONUMENT_BUILD_WORKFLOW",
+     "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+     "RECIPE_CONFORMANCE_PROTOCOL",
+     "RECIPE_PARAMETERIZATION_PROTOCOL",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "STAIR_PLACEMENT_DOCTRINE",
+     "TRIFLOOR_FAMILY_VALIDATION_FRAMEWORK",
+     "VALIDATION_GATE_HARDENING_RULE",
+     "WALL_SHELL_ENCLOSURE_RECIPE"
+    ],
+    "build_application": "cruciform floor footprint (nave + transept arms)"
+   },
+   "S_WALLM": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_;_WALL;WALL_;_WALL_T;WALL_;_WALL_B;WALL_;_WALL_H;WALL_;_WALL_H_T;WALL_;_FLOOR;WALL_;_FLOOR_Q_A;WALL_;_FLOOR_Q_B"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.691406, 0.678235, 3.332033]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.332032,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [
+     "toolkit/PLACEMENT_RECIPE_LIBRARY.json"
+    ],
+    "applicable_part_rules": [
+     "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+     "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "CURATED_DETAIL_HIERARCHY_RULE",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "DOME_STUDY_LESSONS",
+     "EXPERIMENTAL_REQUEST_PROTOCOL",
+     "JSON_EVIDENCE_MAPPING_GATE",
+     "JSON_GEOMETRY_VALIDATION_LOOP",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "NMS_BUILD_VS_IMAGE_ROUTING_GUARD",
+     "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "RECIPE_PARAMETERIZATION_PROTOCOL",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "WALL_SHELL_ENCLOSURE_RECIPE",
+     "WORKING_JSON_FIRST_PRINCIPLE"
+    ],
+    "build_application": "nave perimeter + west-front + east-apse marble walls (2 courses)"
+   },
+   "S_WALLM_WIN1": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_;_WALL;WALL_;_WALL_T;WALL_;_WALL_B;WALL_;_WALL_H;WALL_;_WALL_H_T;WALL_;_FLOOR;WALL_;_FLOOR_Q_A;WALL_;_FLOOR_Q_B"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.835336, 0.678235, 3.332033]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.332032,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [],
+    "applicable_part_rules": [
+     "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+     "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "CURATED_DETAIL_HIERARCHY_RULE",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "DOME_STUDY_LESSONS",
+     "EXPERIMENTAL_REQUEST_PROTOCOL",
+     "JSON_EVIDENCE_MAPPING_GATE",
+     "JSON_GEOMETRY_VALIDATION_LOOP",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "NMS_BUILD_VS_IMAGE_ROUTING_GUARD",
+     "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "RECIPE_PARAMETERIZATION_PROTOCOL",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "WALL_SHELL_ENCLOSURE_RECIPE",
+     "WORKING_JSON_FIRST_PRINCIPLE"
+    ],
+    "build_application": "pointed gothic window walls in the upper course"
+   },
+   "S_RAMP": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "RAMP_;_RAMP;FLOOR_;_FLOOR_Q_A;FLOOR_;_FLOOR_Q_A;FLOOR_;_FLOOR;RAMP_;_RAMP_L;RAMP_;_RAMP_R"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.332032, 5.452899, 3.491063]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -0.237147,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.253916,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [],
+    "applicable_part_rules": [
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "JSON_EVIDENCE_MAPPING_GATE",
+     "JSON_GEOMETRY_VALIDATION_LOOP",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "STAIR_PLACEMENT_DOCTRINE",
+     "VALIDATION_GATE_HARDENING_RULE"
+    ],
+    "build_application": "flying buttresses anchored outside the nave walls (experimental variant)"
+   },
+   "S_ROOF_M_WIN": {
+    "governing_precedence_tier": 4,
+    "data_backed_tiers": [
+     4,
+     5
+    ],
+    "snap": {
+     "nature": "free_computed_placement_not_snappable"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.427458, 5.40382, 3.22829]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": 0.087062,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.315352,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [
+     "DOME_RADIAL_RING_TAPER"
+    ],
+    "forbidden": null,
+    "recipe_candidates": [
+     "toolkit/PLACEMENT_RECIPE_LIBRARY.json"
+    ],
+    "applicable_part_rules": [
+     "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+     "COMPOSITE_BUILD_INTENT_GRAPH_PROTOCOL",
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "CURATED_DETAIL_HIERARCHY_RULE",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "DOME_STUDY_LESSONS",
+     "EXPERIMENTAL_REQUEST_PROTOCOL",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "REQUEST_ROUTER_CHECKLIST",
+     "STAIR_PLACEMENT_DOCTRINE",
+     "TRIFLOOR_FAMILY_VALIDATION_FRAMEWORK",
+     "VALIDATION_GATE_HARDENING_RULE",
+     "WALL_SHELL_ENCLOSURE_RECIPE"
+    ],
+    "build_application": "BIG glass dome glazing panels over the crossing (radial-ring taper)"
+   },
+   "S_WALL_Q": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4,
+     5
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_Q_;_WALL_Q;WALL_Q_;_WALL_Q_B;WALL_Q_;_WALL_Q_T;WALL_Q_;_WALL_B;WALL_Q_;_WALL_T"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.835336, 0.635854, 0.824932]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 0.824931,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [
+     "DOME_RADIAL_RING_TAPER"
+    ],
+    "forbidden": null,
+    "recipe_candidates": [
+     "toolkit/PLACEMENT_RECIPE_LIBRARY.json"
+    ],
+    "applicable_part_rules": [
+     "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+     "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "CURATED_DETAIL_HIERARCHY_RULE",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "DOME_STUDY_LESSONS",
+     "EXPERIMENTAL_REQUEST_PROTOCOL",
+     "JSON_EVIDENCE_MAPPING_GATE",
+     "JSON_GEOMETRY_VALIDATION_LOOP",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "NMS_BUILD_VS_IMAGE_ROUTING_GUARD",
+     "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "RECIPE_PARAMETERIZATION_PROTOCOL",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "WALL_SHELL_ENCLOSURE_RECIPE",
+     "WORKING_JSON_FIRST_PRINCIPLE"
+    ],
+    "build_application": "glass dome base rib ring (sloped ribs)"
+   },
+   "S_WALLM_DIAGONA": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_;_WALL;WALL_;_WALL_T;WALL_;_WALL_B;WALL_;_WALL_H;WALL_;_WALL_H_T;WALL_;_FLOOR;WALL_;_FLOOR_Q_A;WALL_;_FLOOR_Q_B"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.835336, 0.572277, 3.394533]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.394532,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [],
+    "applicable_part_rules": [
+     "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+     "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+     "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+     "CURATED_DETAIL_HIERARCHY_RULE",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "DOME_STUDY_LESSONS",
+     "EXPERIMENTAL_REQUEST_PROTOCOL",
+     "JSON_EVIDENCE_MAPPING_GATE",
+     "JSON_GEOMETRY_VALIDATION_LOOP",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "NMS_BUILD_VS_IMAGE_ROUTING_GUARD",
+     "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "RECIPE_PARAMETERIZATION_PROTOCOL",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "WALL_SHELL_ENCLOSURE_RECIPE",
+     "WORKING_JSON_FIRST_PRINCIPLE"
+    ],
+    "build_application": "twin west-front spire faces (tapering courses)"
+   },
+   "S_ARCH": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_;_WALL;WALL_;_WALL_T;WALL_;_WALL_B;WALL_;_WALL_H;WALL_;_WALL_H_T;WALL_;_FLOOR;WALL_;_FLOOR_Q_A;WALL_;_FLOOR_Q_B"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.817139, 0.572277, 3.394533]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.394532,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [],
+    "applicable_part_rules": [],
+    "build_application": "pointed-arch nave arcade (two rows)"
+   },
+   "S_GDOOR": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_;_WALL;WALL_;_WALL_T;WALL_;_WALL_B;WALL_;_WALL_H;WALL_;_WALL_H_T;WALL_;_FLOOR;WALL_;_FLOOR_Q_A;WALL_;_FLOOR_Q_B"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.691406, 3.117647, 3.332042]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.332041,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [
+     "toolkit/PLACEMENT_RECIPE_LIBRARY.json",
+     "data/JSON_RECIPE_SIGNATURE_INDEX.json"
+    ],
+    "applicable_part_rules": [
+     "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+     "COMPOSITE_BUILD_INTENT_GRAPH_PROTOCOL",
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "JSON_EVIDENCE_MAPPING_GATE",
+     "NMS_BUILDER_EXECUTION_KERNEL",
+     "NMS_BUILD_VS_IMAGE_ROUTING_GUARD",
+     "PROMPT_TO_FEATURE_ROUTER",
+     "RECIPE_CONFORMANCE_PROTOCOL",
+     "RECIPE_PARAMETERIZATION_PROTOCOL",
+     "REQUEST_ROUTER_CHECKLIST",
+     "SPACING_CONNECTION_SCALE_RULES",
+     "WALL_SHELL_ENCLOSURE_RECIPE"
+    ],
+    "build_application": "west portal entrance door"
+   }
+  },
+  "universal_process_rules": [
+   "AI_CAPTURE_COMPLIANCE_CONTRACT",
+   "BLENDER_PARITY_RULE",
+   "BUILD_COMPLIANCE_MANIFEST_RULE",
+   "BUILD_PLACEMENT_SNAPSHOT_PROTOCOL",
+   "DOCS_UPDATE_AVAILABILITY_PROTOCOL",
+   "FULL_VERSION_CONTINUITY_REVIEW_RULE",
+   "GROUND_ZERO_FOUNDATION_RULE",
+   "GROUND_ZERO_FOUNDATION_RULE",
+   "MASTER_DOC_VERSIONING_POLICY",
+   "OBJECT_USE_RECORDING_PROTOCOL",
+   "OPEN_TOPICS_LOG_PROTOCOL",
+   "PART_PLACEMENT_MAP_SCHEMA",
+   "PER_RESPONSE_PROTOCOL_CONFIRMATION_RULE",
+   "PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE",
+   "PROJECT_CONTEXT_PROTOCOL",
+   "PROTOCOL_BANNER_HARD_FAIL_RULE",
+   "PROTOCOL_BANNER_HARD_FAIL_RULE",
+   "REQUEST_ROUTER_CHECKLIST",
+   "SESSION_ONBOARDING_CHECKLIST_RULE",
+   "SINGLE_MASTER_CHANGELOG_GOVERNANCE_RULE",
+   "SOURCE_DOC_EVALUATION_CHECKLIST",
+   "SYSTEMATIC_FAILURE_CAPA_PROTOCOL",
+   "VERIFIED_PARTMAP_DATA_PROTOCOL",
+   "VERIFIED_PARTMAP_DATA_PROTOCOL",
+   "PROJECT_TRANSFER_SUMMARY_RULE",
+   "TRIAGE_REVIEW_ASSISTANCE_TOOL_RULE",
+   "SINGLE_CURRENT_STATE_SOURCE_RULE"
+  ],
+  "note": "FORCED. Build only from these parts; cite each in the BUILD COMPLIANCE MANIFEST; verified by compliance_manifest_check.py."
+ },
+ "CREATIVE_CONTEXT": {
+  "style_index": "data/CREATIVE_USE_CASE_AND_STYLE_INDEX.json",
+  "creative_rules": [
+   "PART_USE_CASE_CATALOG",
+   "PART_USE_CASE_CATALOG",
+   "PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE"
+  ],
+  "part_character": {
+   "S_WALLM": {
+    "profile": "standard_wall",
+    "dims": [
+     5.69,
+     3.33,
+     0.68
+    ],
+    "smooth_surface_capable": true,
+    "note": "drum/wall courses; N=8 octagon minimum"
+   },
+   "S_ROOF_M_WIN": {
+    "profile": "profiled_glass_roof_tile",
+    "smooth_surface_capable": false,
+    "note": "GLASS; shingles into scales, will not form a smooth surface (see ROOF_TILE_SHINGLING_NONSMOOTH)"
+   },
+   "S_WALL_Q": {
+    "profile": "low_long_wall",
+    "dims": [
+     5.84,
+     0.82,
+     0.64
+    ],
+    "long_axis": "local_X",
+    "smooth_surface_capable": false,
+    "note": "ideal as a radial rib aimed at an apex; chain end-to-end for length"
+   }
+  },
+  "applicable_failure_modes": {
+   "APEX_SWIRL_INTERLEAVED_CONVERGENCE": {
+    "severity": "HIGH",
+    "symptom": "facets collide at the tiny top radius and pinwheel into a swirl",
+    "fix": "stop facets before convergence; apply SOLID_FINIAL_CAP (truncate at a usable radius, plug with a single un-stacked cap)"
+   },
+   "OUTWARD_BULGE_SPIKINESS": {
+    "severity": "MEDIUM",
+    "symptom": "panels jut outward as spikes/scales",
+    "fix": "keep tilt inward (negative phi); drop the radial outset for clean surfaces"
+   },
+   "ROOF_TILE_SHINGLING_NONSMOOTH": {
+    "severity": "MEDIUM",
+    "symptom": "profiled roof tile shingles into overlapping scales; cannot form a smooth continuous surface (worsened by an RZ180 spin)",
+    "fix": "for a smooth glass surface use a FLAT glass panel (e.g. PANEL_GLASS) or plain vertical facets; accept scales only when texture is the goal"
+   },
+   "PART_WIDTH_EXCEEDS_BASE": {
+    "severity": "MEDIUM",
+    "symptom": "panels overlap chaotically / splay",
+    "fix": "match part width to base circumference; N=8 octagon is the reliable minimum for the standard _M walls"
+   },
+   "TIER_GAP_RING_SPACING": {
+    "severity": "LOW",
+    "symptom": "horizontal gaps appear between stacked rings",
+    "fix": "ring z-spacing must be <= the facet's vertical extent for a connected surface"
+   }
+  },
+  "placement_recipes": [
+   {
+    "id": "CONVERGING_RIB_CONE",
+    "orientation": "rib_aim",
+    "parts": [
+     "S_WALL_Q"
+    ],
+    "params": [
+     "rib_count",
+     "base_radius",
+     "apex_height",
+     "scale"
+    ],
+    "note": "ribs chained to one apex; double rib_count to close gaps; half-scale + tighter base = tall pointy spire"
+   },
+   {
+    "id": "CONVERGING_BEAM_CONE",
+    "orientation": "aim_at_apex",
+    "parts": [
+     "SET_CLASS_A",
+     "SET_CLASS_B",
+     "SET_CLASS_S"
+    ],
+    "params": [
+     "emitter_count",
+     "radius",
+     "apex_height",
+     "color_variant"
+    ],
+    "note": "single rim ring tilted to one apex = true converging light cone; density = ring spacing"
+   },
+   {
+    "id": "COUNTER_CHEVRON_GAP_FILL",
+    "orientation": "lean(opposite sign to spire)",
+    "parts": [
+     "match the spire part"
+    ],
+    "note": "snap to the drum top; counter the spire's lean to close a floating base gap"
+   },
+   {
+    "id": "SHINGLE_INFILL",
+    "orientation": "lean",
+    "parts": [
+     "S_WALLM_H"
+    ],
+    "note": "tile between ribs with scale variation + azimuth stagger for overlap texture"
+   },
+   {
+    "id": "SOLID_FINIAL_CAP",
+    "orientation": "n/a",
+    "parts": [
+     "CORNERPOST",
+     "single small cap"
+    ],
+    "note": "truncate facets BEFORE convergence; cap with a single un-stacked piece; anti-swirl"
+   }
+  ],
+  "orientation_recipes": {
+   "lean": "base Euler(90,0,a+90); rotate phi about tangent t=(-sin a, cos a, 0). NEGATIVE phi = inward (clean cone); positive = outward (spiky).",
+   "aim_at_apex": "vertical at azimuth a; tilt by -atan(radius/apex_height) about the tangent so the axis converges on the apex point.",
+   "rib_aim": "basis columns (d, up x d, d x (up x d)) with d=(apex-base).normalized(); the part's LOCAL X maps to d; chain copies along d for length.",
+   "api_quirk": "BUILDER.add_part(id) templates; .duplicate() returns an UNLINKED object - must collection.objects.link(obj) or it will not render."
+  },
+  "fit_rules": [
+   "ring z-spacing <= facet vertical extent (else tier gaps)",
+   "facet width <= base circumference / facet count (else chaotic overlap; N=8 octagon min for _M walls)",
+   "truncate a lower cone stage WIDE before a collar (else the upper stage collapses)",
+   "solidity/smoothness = part count at a fixed envelope and scale; add segments, do not enlarge (finding 19)"
+  ],
+  "note": "OFFERED, not gated. part_character, failure-mode cautions, recipes and fit-rules inform part choice & composition; they can never override precedence/negative-knowledge or fail the gate. MANDATORY_PLACEMENT_CONTEXT is the only forced surface."
+ }
+}
