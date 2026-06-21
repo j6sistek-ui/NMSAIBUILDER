@@ -1,0 +1,535 @@
+{
+ "schema": "NMS_Creative_Use_Case_And_Style_Index_0.2",
+ "source_docs_rev": "5.04.00",
+ "status": "active_creative_index",
+ "rule": "This index records style/use-case/concept knowledge only. It must not override MASTER_PLACEMENT_INTELLIGENCE_INDEX or METHOD_AUTHORITY_TABLE placement mechanics.",
+ "planned_domains": [
+  "gothic_castle",
+  "gotham_city",
+  "lighting_tricks",
+  "industrial_megastructure",
+  "decoration_semantics",
+  "composition_and_silhouette"
+ ],
+ "deferred_until": [
+  "color_mutability validation",
+  "lighting technique validation",
+  "creative recipe studies"
+ ],
+ "logged_motifs": [
+  {
+   "id": "glasshouse_dome",
+   "structure": "dome/roundhouse",
+   "aesthetic": "glasshouse/organic",
+   "placement_method_ref": "DOME_RADIAL_RING_TAPER",
+   "note": "style only; color/lighting deferred"
+  },
+  {
+   "id": "converging_rib_cone",
+   "structure": "cone/spire",
+   "aesthetic": "gothic/architectural",
+   "placement_method_ref": "CONVERGING_RIB_CONE",
+   "note": "cleanest spire found; short walls chained to one apex"
+  },
+  {
+   "id": "converging_beam_cone",
+   "structure": "light cone",
+   "aesthetic": "FX/beacon",
+   "placement_method_ref": "CONVERGING_BEAM_CONE",
+   "note": "SET_CLASS_* rim ring aimed at one apex; color via A/B/S"
+  },
+  {
+   "id": "scaly_glass_cone",
+   "structure": "cone",
+   "aesthetic": "organic/scaled",
+   "placement_method_ref": "SHINGLE_INFILL",
+   "note": "S_ROOF_M_WIN RZ180 scales; texture only, will not smooth"
+  }
+ ],
+ "recognizability_levers": [
+  {
+   "id": "hyper_dense_focal_showpiece",
+   "finding": 10,
+   "summary": "high part count, low type variety; reserve for one focal accent; ~1200 parts/m^3; budget vs ~4-5k flicker ceiling"
+  },
+  {
+   "id": "low_budget_silhouette_variety",
+   "finding": 15,
+   "summary": "low count, high type variety (~54% unique); recognizability from a few signature silhouette parts + cheap interior variety"
+  },
+  {
+   "id": "canonical_proportions_placement_color",
+   "finding": 18,
+   "summary": "replica reads via correct proportions + standard feature placement + per-instance color on identical parts, not part variety"
+  },
+  {
+   "id": "gap_closing_densification_finish",
+   "finding": 19,
+   "summary": "solidity/smoothness = part count at fixed envelope+scale; add segments, don't enlarge"
+  },
+  {
+   "id": "converging_rib_cone_spire",
+   "finding": 20,
+   "summary": "radial short-wall ribs chained to ONE apex make the cleanest spire; doubling rib count closes inter-rib gaps; half-scale walls + tighter base = tall pointy spire"
+  },
+  {
+   "id": "converging_beam_cone_color",
+   "finding": 21,
+   "summary": "SET_CLASS_A/B/S are geometry-identical, color-only (magenta/blue/gold); a beam cone is freely recolored or mixed by swapping the emitter"
+  },
+  {
+   "id": "counter_angle_gap_fill",
+   "finding": 22,
+   "summary": "close a floating base gap by snapping the same part to the drum and angling it OPPOSITE the spire (chevron); same-angle extension reads unfinished"
+  },
+  {
+   "id": "roof_tile_shingle_limit",
+   "finding": 23,
+   "summary": "profiled roof tiles (S_ROOF_M_WIN) shingle into scales and cannot smooth; for a smooth glass surface use a flat panel or vertical facets"
+  },
+  {
+   "id": "fan_vault_not_a_point",
+   "finding": 24,
+   "summary": "S_LARGETRYE0 is a fan/star vault, not a pyramid; never use it as a clean finial point"
+  },
+  {
+   "id": "inward_tilt_clean_outward_spiky",
+   "finding": 25,
+   "summary": "facet tilt about the tangent: negative=inward=clean cone; positive/radial-outset=outward=spiky"
+  }
+ ],
+ "logged_studies": [
+  {
+   "id": "winged_corvette",
+   "finding": 7,
+   "note": "geometry-over-name; light-as-brush; function inversion; graded scale; bilateral symmetry"
+  },
+  {
+   "id": "sword",
+   "finding": 12,
+   "note": "panel-stacked blade + graded radial canister cluster"
+  },
+  {
+   "id": "helicopter",
+   "finding": 15,
+   "note": "68 parts/37 types; rotor=6xT_WALL_Q1, canopy=VIEWSPHERE, tail=S_ANTENNA3, skids=4xC_RAMP_H"
+  },
+  {
+   "id": "pool_table",
+   "finding": 18,
+   "note": "2:1 bed, regulation 6-pocket layout, 15-color ball set on identical SPHERESHAPE; cue=tapered stacked cylinders"
+  },
+  {
+   "id": "airlock_iris_densified",
+   "finding": 19,
+   "note": "12->32 S_GDOOR on identical circle to close gaps; envelope unchanged"
+  }
+ ],
+ "supersedes": "CREATIVE_USE_CASE_AND_STYLE_INDEX_STUB.json (0.1)",
+ "failure_mode_ref": "data/GEOMETRIC_FAILURE_MODE_INDEX.json",
+ "part_geometric_character": {
+  "S_WALL_Q": {
+   "profile": "low_long_wall",
+   "dims": [
+    5.84,
+    0.82,
+    0.64
+   ],
+   "long_axis": "local_X",
+   "smooth_surface_capable": false,
+   "note": "ideal as a radial rib aimed at an apex; chain end-to-end for length"
+  },
+  "S_WALLM_H": {
+   "profile": "narrow_half_wall",
+   "dims": [
+    3.02,
+    3.48,
+    0.43
+   ],
+   "smooth_surface_capable": true,
+   "note": "finer facets and shingle infill between ribs"
+  },
+  "S_WALLM": {
+   "profile": "standard_wall",
+   "dims": [
+    5.69,
+    3.33,
+    0.68
+   ],
+   "smooth_surface_capable": true,
+   "note": "drum/wall courses; N=8 octagon minimum"
+  },
+  "S_ROOF_M_WIN": {
+   "profile": "profiled_glass_roof_tile",
+   "smooth_surface_capable": false,
+   "note": "GLASS; shingles into scales, will not form a smooth surface (see ROOF_TILE_SHINGLING_NONSMOOTH)"
+  },
+  "S_LARGETRYE0": {
+   "profile": "fan_star_vault",
+   "dims": [
+    2.25,
+    0.93,
+    2.25
+   ],
+   "smooth_surface_capable": false,
+   "note": "NOT a pyramid/point; fans when stacked (see FAN_VAULT_MISUSE_AS_POINT)"
+  },
+  "SET_CLASS_A": {
+   "profile": "beam_emitter",
+   "dims": [
+    1.31,
+    11.22,
+    1.31
+   ],
+   "color": "magenta",
+   "color_variant_family": "SET_CLASS"
+  },
+  "SET_CLASS_B": {
+   "profile": "beam_emitter",
+   "dims": [
+    1.31,
+    11.22,
+    1.31
+   ],
+   "color": "blue",
+   "color_variant_family": "SET_CLASS"
+  },
+  "SET_CLASS_S": {
+   "profile": "beam_emitter",
+   "dims": [
+    1.31,
+    11.22,
+    1.31
+   ],
+   "color": "gold",
+   "color_variant_family": "SET_CLASS"
+  }
+ },
+ "color_variant_families": {
+  "SET_CLASS": {
+   "members": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "identical_geometry": true,
+   "dims": [
+    1.31,
+    11.22,
+    1.31
+   ],
+   "colors": {
+    "A": "magenta",
+    "B": "blue",
+    "S": "gold"
+   },
+   "note": "swap freely for color; footprint 1.31 (pack on 1.31, not the 11.22 height)"
+  }
+ },
+ "orientation_recipes": {
+  "lean": "base Euler(90,0,a+90); rotate phi about tangent t=(-sin a, cos a, 0). NEGATIVE phi = inward (clean cone); positive = outward (spiky).",
+  "aim_at_apex": "vertical at azimuth a; tilt by -atan(radius/apex_height) about the tangent so the axis converges on the apex point.",
+  "rib_aim": "basis columns (d, up x d, d x (up x d)) with d=(apex-base).normalized(); the part's LOCAL X maps to d; chain copies along d for length.",
+  "api_quirk": "BUILDER.add_part(id) templates; .duplicate() returns an UNLINKED object - must collection.objects.link(obj) or it will not render."
+ },
+ "placement_recipes": [
+  {
+   "id": "CONVERGING_RIB_CONE",
+   "orientation": "rib_aim",
+   "parts": [
+    "S_WALL_Q"
+   ],
+   "params": [
+    "rib_count",
+    "base_radius",
+    "apex_height",
+    "scale"
+   ],
+   "note": "ribs chained to one apex; double rib_count to close gaps; half-scale + tighter base = tall pointy spire"
+  },
+  {
+   "id": "CONVERGING_BEAM_CONE",
+   "orientation": "aim_at_apex",
+   "parts": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "params": [
+    "emitter_count",
+    "radius",
+    "apex_height",
+    "color_variant"
+   ],
+   "note": "single rim ring tilted to one apex = true converging light cone; density = ring spacing"
+  },
+  {
+   "id": "COUNTER_CHEVRON_GAP_FILL",
+   "orientation": "lean(opposite sign to spire)",
+   "parts": [
+    "match the spire part"
+   ],
+   "note": "snap to the drum top; counter the spire's lean to close a floating base gap"
+  },
+  {
+   "id": "SHINGLE_INFILL",
+   "orientation": "lean",
+   "parts": [
+    "S_WALLM_H"
+   ],
+   "note": "tile between ribs with scale variation + azimuth stagger for overlap texture"
+  },
+  {
+   "id": "SOLID_FINIAL_CAP",
+   "orientation": "n/a",
+   "parts": [
+    "CORNERPOST",
+    "single small cap"
+   ],
+   "note": "truncate facets BEFORE convergence; cap with a single un-stacked piece; anti-swirl"
+  }
+ ],
+ "fit_rules": [
+  "ring z-spacing <= facet vertical extent (else tier gaps)",
+  "facet width <= base circumference / facet count (else chaotic overlap; N=8 octagon min for _M walls)",
+  "truncate a lower cone stage WIDE before a collar (else the upper stage collapses)",
+  "solidity/smoothness = part count at a fixed envelope and scale; add segments, do not enlarge (finding 19)"
+ ],
+ "live_build_disciplines": [
+  "screenshot-verify every build step before continuing",
+  "checkpoint-save the .blend / export through the add-on after each batch (a crash resets the live scene to default)",
+  "live creative geometry is BLENDER-tier, not GAME_VALIDATED"
+ ],
+ "part_effect_and_use_findings": {
+  "schema": "migrated_from_PART_FAMILY_RULES",
+  "authority": "INFORMATIVE \u2014 suggests what to build; never overrides placement mechanics/recipes/snap/exceptions",
+  "note": "Effect and use findings for distinctive parts. Discovery-side only.",
+  "families": [
+   {
+    "family_id": "B_SHL_E_RED_LENS_EFFECT",
+    "status": "validated in-game",
+    "members": [
+     {
+      "ObjectID": "B_SHL_E",
+      "NiceName": "AERON POWERSHIELD"
+     }
+    ],
+    "support_parts": [
+     {
+      "ObjectID": "B_DECO_P",
+      "NiceName": "RADAR DOME",
+      "role": "center dome/core, not red glow"
+     }
+    ],
+    "rules": [
+     "B_SHL_E is the red glow source.",
+     "B_DECO_P does not create the red glow.",
+     "Hide/recess/bury B_SHL_E bodies where possible.",
+     "Use as red lens, eye, beacon, iris, oculus, crown, or reactor glow.",
+     "Avoid exposed dense fields of identical shield bases."
+    ],
+    "best_current_use": "tower/skyscraper crown or fa\u00e7ade band",
+    "promising_uses": [
+     "ceiling-embedded reactor oculus",
+     "single-ring wall iris",
+     "buried ritual floor nodes"
+    ],
+    "weak_current_uses": [
+     "dense exposed floor mandala",
+     "overbuilt wall wreath with visible bases"
+    ]
+   },
+   {
+    "family_id": "TURRET_ABAND_BEAM_PROJECTOR",
+    "status": "validated in-game effect; invisible in Blender",
+    "members": [
+     {
+      "ObjectID": "TURRET_ABAND",
+      "NiceName": null
+     }
+    ],
+    "effect": "orange dotted/solid beams plus triangular orange/pink fan plane",
+    "rules": [
+     "Use as hidden beam projector, not decorative body.",
+     "Evaluate in-game.",
+     "Best current arrangement is circular scanner/oculus ring.",
+     "Needs architectural framing to avoid looking like loose beams."
+    ],
+    "applications": [
+     "security grid",
+     "portal threshold",
+     "reactor halo",
+     "ceiling light-web",
+     "skyscraper scanner nodes"
+    ]
+   },
+   {
+    "family_id": "TITAN_HEAVY_BOOSTER_ELECTRICITY",
+    "status": "validated in-game temporary FX",
+    "members": [
+     {
+      "ObjectID": "B_WNG_A",
+      "NiceName": "TITAN HEAVY BOOSTER"
+     }
+    ],
+    "effect": "temporary blue electric/glitch visual effect after load-in, fades after roughly 5\u201310 minutes",
+    "rules": [
+     "Use B_WNG_A specifically when electricity is required.",
+     "Can be buried inside geometry.",
+     "Do not require it to be visible.",
+     "Architecture must still read after effect fades."
+    ]
+   },
+   {
+    "family_id": "AERON_BLADE_CONE_OCULUS",
+    "status": "locked core options from V25",
+    "members": [
+     {
+      "ObjectID": "B_WNG_R_T",
+      "NiceName": "AERON BLADE",
+      "locked": "D5 n=192"
+     },
+     {
+      "ObjectID": "B_WNG_R",
+      "NiceName": "AERON BLADE wide",
+      "locked": "W3 n=112 fallback; W7 high-density option/reduced V25 option"
+     }
+    ],
+    "rules": [
+     "D5 n=192 narrow Aeron rotation is correct and locked.",
+     "Do not continue density testing past n192 unless requested.",
+     "Wide Aeron W3 and W7 are permanent options; choose by part budget/performance.",
+     "n135 underside-up half-buried oculus is a separate locked experimental option."
+    ]
+   },
+   {
+    "family_id": "DEEP_SEA_ROOM_SKYSCRAPER_TOPPERS",
+    "status": "validated design-family pattern",
+    "members": [
+     {
+      "ObjectID": "MAINROOM_WATER",
+      "NiceName": "DEEPWATER CHAMBER",
+      "role": "circular macro room / rotunda / topper mass"
+     },
+     {
+      "ObjectID": "MAINROOMCUBE_W",
+      "NiceName": "SQUARE DEEPWATER CHAMBER",
+      "role": "square macro room / penthouse block / pod / roof adapter"
+     }
+    ],
+    "use_cases": [
+     "skyscraper roof adapters",
+     "colored modular tower tops",
+     "AI-control penthouse",
+     "docking pods",
+     "skybridge sockets",
+     "machine rooms",
+     "rotunda crown",
+     "asymmetric skyline topper"
+    ],
+    "rules": [
+     "Use as structural fabric, not decoration.",
+     "Do not only stack rooms vertically.",
+     "Create distinct silhouettes through offsets, pods, overhangs, bridges, receivers, cranes, dishes, and layered modules.",
+     "Attach antennas/spires to visible mounts or room tops.",
+     "Use color deliberately for function/district identity.",
+     "Avoid repeating red lens band + antenna crown + stacked room as the default topper pattern."
+    ],
+    "failure_modes": [
+     "conservative repeated room-stack crowns",
+     "floating antennas",
+     "micro details before macro silhouette",
+     "topper not integrated to roof interface"
+    ],
+    "validation": [
+     "view from skyline distance",
+     "view from rooftop/player scale",
+     "check all antennas/details visibly mount to room geometry",
+     "verify distinct silhouette per variant"
+    ]
+   },
+   {
+    "family_id": "MACHINE_AUTOMATION_AND_ROBOTIC_GANTRY",
+    "status": "study-derived design-family rule",
+    "members": [
+     {
+      "ObjectID": "B_ROBOTARM",
+      "role": "large mounted robotic arm"
+     },
+     {
+      "ObjectID": "ROBOTICARM",
+      "role": "small precision arm"
+     },
+     {
+      "ObjectID": "BASE_ROBOTOY",
+      "role": "robot/drone body"
+     },
+     {
+      "ObjectID": "BLD_CRYS_DRONE",
+      "role": "crystallised drone/pod"
+     },
+     {
+      "ObjectID": "B_WALL_CARG1",
+      "role": "cargo rack / conveyor cassette / machine module"
+     },
+     {
+      "ObjectID": "SERVERBOX1",
+      "role": "server block"
+     },
+     {
+      "ObjectID": "SERVERBOX2",
+      "role": "server block"
+     },
+     {
+      "ObjectID": "SERVERSTACK",
+      "role": "vertical server stack"
+     }
+    ],
+    "rules": [
+     "Robotic arms require visible mounts and a target task.",
+     "Conveyor/cargo parts must read as cassettes, racks, rails, or machine modules.",
+     "Repeated conveyor modules must use consistent orientation and spacing.",
+     "Drone hives need visible docking collars, service bays, or wall racks.",
+     "Avoid sparse robot parts on a pad."
+    ],
+    "known_issues": [
+     "B_WALL_CARG1 orientation can read as random barrels if no rails/cassette context is provided.",
+     "Robot arms look toy-like without mounts and task targets.",
+     "Hive drone parts look loose unless connected by service struts/collars."
+    ]
+   },
+   {
+    "family_id": "GROUNDED_SIGNAL_AND_ANTENNA_CROWN",
+    "status": "study-derived issue/fix rule",
+    "members": [
+     {
+      "ObjectID": "B_ANTENNA0"
+     },
+     {
+      "ObjectID": "B_ANTENNA1"
+     },
+     {
+      "ObjectID": "B_ANTENNA2"
+     },
+     {
+      "ObjectID": "B_ANTENNA3"
+     },
+     {
+      "ObjectID": "S_ANTENNA0"
+     }
+    ],
+    "rules": [
+     "Antennas/spires must be mounted to visible bases, pylons, rooms, scaffolds, or tower caps.",
+     "Do not float antennas high above a structure unless the design explicitly includes a holographic suspension system.",
+     "Antenna crowns need a named function: broadcast, scanner, docking guidance, defense, weather, relay, or AI-control signal.",
+     "Vary height and role when many antennas are used, but keep them structurally connected."
+    ],
+    "failure_modes": [
+     "floating antennas",
+     "generic antenna crowns with no role",
+     "unconnected signal objects"
+    ]
+   }
+  ]
+ }
+}

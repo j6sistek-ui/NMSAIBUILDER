@@ -1,0 +1,192 @@
+{
+  "schema": "NMS_FEATURE_RECIPE_ROUTE_INDEX_2.19.00",
+  "status": "active_feature_to_recipe_index",
+  "purpose": "Compact lookup table for known user feature requests. This index confirms that recipe/signature lookup occurs before part-map component lookup.",
+  "route_priority": [
+    "request_router",
+    "feature_recipe_route",
+    "current_build_json",
+    "validated_recipe_or_signature",
+    "part_specific_rule",
+    "part_map_component_validation",
+    "raw_fbx_fallback"
+  ],
+  "routes": [
+    {
+      "feature": "airlock_iris_door",
+      "terms": [
+        "airlock",
+        "iris",
+        "vault door",
+        "aperture",
+        "portal"
+      ],
+      "recipes": [
+        "radial_airlock_iris_s_gdoor_control",
+        "airlock_iris_parametric_recipe_v2_04_00"
+      ],
+      "required_rules": [
+        "rules/AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE.md",
+        "rules/AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE.md",
+        "rules/RECIPE_CONFORMANCE_PROTOCOL.md"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "feature": "wall_shell_enclosure",
+      "terms": [
+        "building",
+        "room",
+        "tower",
+        "skyscraper",
+        "enclosed wall",
+        "wall shell",
+        "city block",
+        "gotham tower"
+      ],
+      "recipes": [
+        "wall_shell_enclosure_recipe_v2_19_00",
+        "tower_stacked_facade_recipe_v2_19_00"
+      ],
+      "required_rules": [
+        "rules/WALL_SHELL_ENCLOSURE_RECIPE.md",
+        "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md",
+        "rules/PART_ORIENTATION_OVERRIDES.md"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "feature": "continuous_path_access",
+      "terms": [
+        "stairs",
+        "ramp",
+        "bridge",
+        "skybridge",
+        "catwalk",
+        "walkway",
+        "access bridge"
+      ],
+      "recipes": [
+        "endpoint_stair_ramp_connection_template",
+        "continuous_path_assembly_rule"
+      ],
+      "required_rules": [
+        "rules/CONTINUOUS_PATH_ASSEMBLY_RULE.md",
+        "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md",
+        "rules/SPACING_CONNECTION_SCALE_RULES.md"
+      ],
+      "part_map_role": "component_geometry_support"
+    },
+    {
+      "feature": "gotham_dark_city",
+      "terms": [
+        "gotham",
+        "batman",
+        "dark city",
+        "crime alley",
+        "dense city",
+        "scary city"
+      ],
+      "recipes": [
+        "gotham_dark_city_recipe_v2_19_00",
+        "wall_shell_enclosure_recipe_v2_19_00",
+        "continuous_path_assembly_rule"
+      ],
+      "required_rules": [
+        "MASTER_BUILD_RECIPES_AND_PLACEMENT_GUIDANCE.md",
+        "rules/WALL_SHELL_ENCLOSURE_RECIPE.md",
+        "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "feature": "ai_review_design_loop",
+      "terms": [
+        "NMS_AI_REVIEW",
+        "AI review bundle",
+        "review scene bundle",
+        "standard extraction"
+      ],
+      "recipes": [],
+      "required_rules": [
+        "rules/AI_CAPTURE_COMPLIANCE_CONTRACT.md"
+      ],
+      "part_map_role": "not_applicable"
+    },
+    {
+      "feature": "bladed_weapon",
+      "terms": [
+        "sword",
+        "blade",
+        "katana",
+        "dagger",
+        "melee weapon"
+      ],
+      "recipes": [
+        "bladed_weapon_panel_stack",
+        "bladed_weapon_graded_canister_cluster"
+      ],
+      "required_rules": [
+        "rules/RECIPE_CONFORMANCE_PROTOCOL.md",
+        "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md"
+      ],
+      "part_map_role": "component_geometry_support"
+    },
+    {
+      "feature": "spiral_staircase",
+      "terms": [
+        "spiral stair",
+        "helical stair",
+        "winding staircase",
+        "spiral steps"
+      ],
+      "recipes": [
+        "spiral_stair_from_wall_panels"
+      ],
+      "required_rules": [
+        "rules/STAIR_PLACEMENT_DOCTRINE.md",
+        "rules/SPACING_CONNECTION_SCALE_RULES.md",
+        "rules/PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE.md"
+      ],
+      "part_map_role": "component_geometry_support"
+    },
+    {
+      "feature": "tapered_shaft",
+      "terms": [
+        "pool cue",
+        "cue",
+        "spear",
+        "mast",
+        "pole",
+        "tapered column",
+        "antenna shaft"
+      ],
+      "recipes": [
+        "tapered_shaft_stacked_cylinders"
+      ],
+      "required_rules": [
+        "rules/RECIPE_CONFORMANCE_PROTOCOL.md",
+        "rules/SPACING_CONNECTION_SCALE_RULES.md"
+      ],
+      "part_map_role": "component_geometry_support"
+    },
+    {
+      "feature": "radial_emissive_fan",
+      "terms": [
+        "light fan",
+        "beam fan",
+        "radial lights",
+        "light wing",
+        "emissive fan"
+      ],
+      "recipes": [
+        "radial_emissive_fan_set_class"
+      ],
+      "required_rules": [
+        "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md",
+        "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md"
+      ],
+      "part_map_role": "component_validation_only"
+    }
+  ]
+}

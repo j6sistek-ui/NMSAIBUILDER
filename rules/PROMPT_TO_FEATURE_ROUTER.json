@@ -1,0 +1,221 @@
+{
+  "schema": "NMS_PROMPT_TO_FEATURE_ROUTER_2.19.00",
+  "status": "mandatory_feature_intent_router_recipe_first",
+  "updated": "2026-06-16",
+  "routes": [
+    {
+      "terms": [
+        "gothic",
+        "castle",
+        "fortress",
+        "battlement",
+        "buttress",
+        "entrance wall",
+        "front entrance",
+        "metal castle"
+      ],
+      "recipe_ids": [
+        "gothic_metal_castle_facade",
+        "radial_airlock_iris_door",
+        "spire_tapered_tower_visual_recipe_v2_04_02"
+      ],
+      "geometry_basis": "hybrid_grid_local_frame_ring",
+      "required_rules": [
+        "rules/NMS_BUILD_VS_IMAGE_ROUTING_GUARD.md",
+        "rules/RECIPE_PARAMETERIZATION_PROTOCOL.md",
+        "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md",
+        "rules/PART_FAMILY_RULES.md",
+        "toolkit/VISUAL_BUILD_TOOLKIT_AIRLOCK_GARAGE_IRIS_v53.md"
+      ],
+      "routing_note": "Castle/gothic style in NMS context is build_generation, not image generation, unless explicit visual-output terms are present."
+    },
+    {
+      "terms": [
+        "building",
+        "room",
+        "enclosed walls",
+        "wall enclosure",
+        "wall shell",
+        "city block",
+        "skyscraper",
+        "tower",
+        "gotham tower",
+        "facade shell"
+      ],
+      "recipe_ids": [
+        "wall_shell_enclosure_recipe_v2_19_00",
+        "tower_stacked_facade_recipe_v2_19_00"
+      ],
+      "geometry_basis": "closed_grid_shell_with_local_frame",
+      "required_rules": [
+        "rules/WALL_SHELL_ENCLOSURE_RECIPE.md",
+        "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md",
+        "rules/PART_ORIENTATION_OVERRIDES.md"
+      ],
+      "routing_note": "Known enclosure/building requests must load the wall shell recipe before using part-map component dimensions."
+    },
+    {
+      "terms": [
+        "gotham",
+        "batman city",
+        "dark city",
+        "crime alley",
+        "dense city",
+        "ominous city",
+        "scary city"
+      ],
+      "recipe_ids": [
+        "gotham_dark_city_recipe_v2_19_00",
+        "wall_shell_enclosure_recipe_v2_19_00",
+        "continuous_path_assembly_rule"
+      ],
+      "geometry_basis": "district_grid_with_enclosed_tower_shells_and_connected_alley_paths",
+      "required_rules": [
+        "MASTER_BUILD_RECIPES_AND_PLACEMENT_GUIDANCE.md",
+        "rules/WALL_SHELL_ENCLOSURE_RECIPE.md",
+        "rules/CONTINUOUS_PATH_ASSEMBLY_RULE.md",
+        "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md"
+      ],
+      "routing_note": "Gotham/dark-city requests are build_generation unless image output is explicitly requested; wall enclosure and connected paths are required."
+    },
+    {
+      "terms": [
+        "NMS_AI_REVIEW",
+        "AI review bundle",
+        "review scene bundle",
+        "standard extraction",
+        "nms_ai_review_objects"
+      ],
+      "recipe_ids": [],
+      "geometry_basis": "design_loop_review_bundle",
+      "required_rules": [
+        "rules/AI_CAPTURE_COMPLIANCE_CONTRACT.md"
+      ],
+      "routing_note": "Classify as validation_iteration/design_loop_review. Do not fix code unless requested."
+    },
+    {
+      "terms": [
+        "airlock",
+        "iris",
+        "vault door",
+        "aperture",
+        "portal"
+      ],
+      "recipe_ids": [
+        "radial_airlock_iris_door",
+        "airlock_iris_parametric_recipe_v2_04_00"
+      ],
+      "geometry_basis": "ring_depth_layers",
+      "required_rules": [
+        "rules/RECIPE_PARAMETERIZATION_PROTOCOL.md",
+        "rules/AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE.md"
+      ]
+    },
+    {
+      "terms": [
+        "stairs",
+        "stairway",
+        "ramp",
+        "steps",
+        "access bridge"
+      ],
+      "recipe_ids": [
+        "endpoint_stair_ramp_connection"
+      ],
+      "geometry_basis": "endpoint_path",
+      "required_rules": [
+        "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md",
+        "rules/SPACING_CONNECTION_SCALE_RULES.md",
+        "rules/RECIPE_PARAMETERIZATION_PROTOCOL.md"
+      ]
+    },
+    {
+      "terms": [
+        "dome",
+        "cupola",
+        "rounded roof",
+        "oculus"
+      ],
+      "recipe_ids": [
+        "dome_latitude_shell",
+        "connected_piece_curvature_grammar_v2_04_05"
+      ],
+      "geometry_basis": "latitude_shell",
+      "required_rules": [
+        "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md",
+        "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md"
+      ]
+    },
+    {
+      "terms": [
+        "curved wall",
+        "shell",
+        "arch",
+        "hull",
+        "pod",
+        "canopy"
+      ],
+      "recipe_ids": [
+        "connected_piece_curvature_grammar_v2_04_05"
+      ],
+      "geometry_basis": "ring_arc_shell_profile",
+      "required_rules": [
+        "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md"
+      ]
+    },
+    {
+      "terms": [
+        "spire",
+        "tower crown",
+        "taper",
+        "apex"
+      ],
+      "recipe_ids": [
+        "spire_tapered_tower_visual_recipe_v2_04_02",
+        "tapered_spire_shell"
+      ],
+      "geometry_basis": "tapered_shell",
+      "required_rules": [
+        "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md",
+        "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md"
+      ]
+    },
+    {
+      "terms": [
+        "vehicle",
+        "cart",
+        "rover",
+        "chassis"
+      ],
+      "recipe_ids": [
+        "jurassic_vehicle_chassis"
+      ],
+      "geometry_basis": "local_frame",
+      "required_rules": [
+        "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md",
+        "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md"
+      ]
+    }
+  ],
+  "fallback": "If no route matches and the build is placement-sensitive, use the execution kernel to declare a novel subsystem and create a provisional recipe signature. If the prompt is in NMS Builder context, do not generate images unless the user explicitly requests a visual artifact.",
+  "priority_rule": "known feature recipe/signature/toolkit lookup outranks part-map component lookup; part map validates/supports the selected assembly recipe and must not replace it.",
+  "required_manifest": "FEATURE_RECIPE_LOOKUP",
+  "required_manifest_fields": [
+    "feature_intent",
+    "matched_recipe_or_signature",
+    "recipe_files_checked",
+    "recipe_status",
+    "reason_if_none",
+    "part_map_role"
+  ],
+  "route_priority": [
+    "request_router",
+    "feature_recipe_lookup",
+    "current_build_json",
+    "validated_recipe_or_signature",
+    "part_specific_rule",
+    "part_map_component_validation",
+    "raw_fbx_fallback"
+  ],
+  "required_manifest_enforcement": "2.19.00 validation/feature_recipe_lookup_check.py detects known feature terms and fails missing or malformed receipt."
+}

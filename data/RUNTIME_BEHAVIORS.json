@@ -1,0 +1,37 @@
+{
+ "schema": "NMS_Runtime_Behaviors_v0_seed",
+ "status": "SEED — Wave 3 fills this for every KEEP RULE/RECIPE/NEGATIVE; resolver does not consume it yet (see reports/WAVE3_EXECUTION_PREP.md Fix 1)",
+ "note": "rule_id -> the actionable behavior a part must follow, the check that proves it, and authority. This turns 'rule applies' into 'here is what this part must do'.",
+ "behaviors": {
+  "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE": {
+   "authority": "mandatory",
+   "required_behavior": "Connected assemblies must have no unplanned floating or disconnected segments before delivery.",
+   "check": "connectivity / no-float gate on exported build"
+  },
+  "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL": {
+   "authority": "mandatory",
+   "required_behavior": "Use validated snap group placement for snap-enrolled parts; do not free-place when a snap relationship exists.",
+   "check": "snap nature + group_label present in part packet; placement matches snap tier"
+  },
+  "PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE": {
+   "authority": "mandatory",
+   "required_behavior": "Resolve placement by the precedence ladder; assembly context supersedes component context; data-backed tier wins.",
+   "check": "governing_precedence_tier set and honored in packet"
+  },
+  "PART_PLACEMENT_MAP_SCHEMA": {
+   "authority": "mandatory",
+   "required_behavior": "Place from the verified part map (SNAP_VALIDATED/GOLD tiers) where available; fall back to the documented derivation for non-snap parts.",
+   "check": "partmap coverage / tier in packet"
+  },
+  "CONNECTED_PIECE_CURVATURE_GRAMMAR": {
+   "authority": "mandatory",
+   "required_behavior": "For curved shells/domes/spires, follow the chord/ring grammar; do not stamp parts independently along a curve.",
+   "check": "ring chord <= limit; transform propagation present"
+  },
+  "PROHIBITED_AND_PLACEHOLDER_OBJECTS": {
+   "authority": "mandatory",
+   "required_behavior": "Do not place prohibited/placeholder ObjectIDs or apply unapproved non-uniform final scale; pipe/BUBPIPE connectors require in-game/JSON validation.",
+   "check": "prohibited ObjectID scan = 0; non-uniform scale scan = 0"
+  }
+ }
+}

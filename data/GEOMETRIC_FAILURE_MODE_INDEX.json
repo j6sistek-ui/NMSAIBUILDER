@@ -1,0 +1,111 @@
+{
+ "schema": "NMS_Geometric_Failure_Mode_Index_1.0",
+ "source_docs_rev": "5.04.00",
+ "tier": "ADVISORY_NON_GATED",
+ "purpose": "Machine-readable geometric/aesthetic failure modes observed in live builds. ADVISORY ONLY: surfaced in the packet CREATIVE_CONTEXT to steer composition; never overrides precedence, never appears in MANDATORY_PLACEMENT_CONTEXT, never fails the gate. Distinct from data/NEGATIVE_KNOWLEDGE_INDEX.json (which is mechanical, gate-routed tier 6).",
+ "evidence_tier": "BLENDER_tier (visual, not GAME_VALIDATED)",
+ "entries": {
+  "APEX_SWIRL_INTERLEAVED_CONVERGENCE": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "HIGH",
+   "trigger_patterns": [
+    "cone",
+    "spire",
+    "dome",
+    "converge",
+    "cap"
+   ],
+   "trigger_params": "16-facet rings built as 8 main + 8 interleaved corner facets (offset azimuth, radius x1.05) carried to a small apex radius",
+   "symptom": "facets collide at the tiny top radius and pinwheel into a swirl",
+   "fix": "stop facets before convergence; apply SOLID_FINIAL_CAP (truncate at a usable radius, plug with a single un-stacked cap)",
+   "trigger_parts": [
+    "S_WALLM_DIAGONA",
+    "S_ROOF_M_WIN"
+   ]
+  },
+  "OUTWARD_BULGE_SPIKINESS": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "MEDIUM",
+   "trigger_patterns": [
+    "onion",
+    "bulge",
+    "eave",
+    "flare",
+    "cap"
+   ],
+   "trigger_params": "positive (outward) tilt and/or the x1.05 radial outset on interleaved corner facets",
+   "symptom": "panels jut outward as spikes/scales",
+   "fix": "keep tilt inward (negative phi); drop the radial outset for clean surfaces",
+   "trigger_parts": [
+    "S_WALLM_DIAGONA"
+   ]
+  },
+  "FAN_VAULT_MISUSE_AS_POINT": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "MEDIUM",
+   "trigger_parts": [
+    "S_LARGETRYE0"
+   ],
+   "symptom": "stacked-and-rotated reads as a fan/pinwheel; a single one reads as an octagonal star-plate",
+   "fix": "do NOT use as a clean point/finial; it is a fan/star VAULT piece. Use a CORNERPOST spike or a converging-rib tip for a point"
+  },
+  "ROOF_TILE_SHINGLING_NONSMOOTH": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "MEDIUM",
+   "trigger_parts": [
+    "S_ROOF_M_WIN"
+   ],
+   "trigger_patterns": [
+    "smooth",
+    "continuous surface",
+    "glass cone"
+   ],
+   "symptom": "profiled roof tile shingles into overlapping scales; cannot form a smooth continuous surface (worsened by an RZ180 spin)",
+   "fix": "for a smooth glass surface use a FLAT glass panel (e.g. PANEL_GLASS) or plain vertical facets; accept scales only when texture is the goal"
+  },
+  "PART_WIDTH_EXCEEDS_BASE": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "MEDIUM",
+   "trigger_patterns": [
+    "square",
+    "4-sided",
+    "pyramid",
+    "small base",
+    "steeple"
+   ],
+   "trigger_params": "facet width > base circumference / facet count (e.g. a 5.84-wide diagonal on an N=4 small base)",
+   "symptom": "panels overlap chaotically / splay",
+   "fix": "match part width to base circumference; N=8 octagon is the reliable minimum for the standard _M walls",
+   "trigger_parts": [
+    "S_WALLM_DIAGONA",
+    "S_WALLM"
+   ]
+  },
+  "TIER_GAP_RING_SPACING": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "LOW",
+   "trigger_patterns": [
+    "cone",
+    "dome",
+    "tier",
+    "ring",
+    "stack"
+   ],
+   "symptom": "horizontal gaps appear between stacked rings",
+   "fix": "ring z-spacing must be <= the facet's vertical extent for a connected surface"
+  },
+  "COMPOUND_CONE_COLLAR_COLLAPSE": {
+   "status": "ADVISORY_CAUTION",
+   "severity": "MEDIUM",
+   "trigger_patterns": [
+    "compound",
+    "two-stage",
+    "collar",
+    "cathedral spire"
+   ],
+   "symptom": "the upper stage starts near-zero radius and collapses; finial floats",
+   "fix": "truncate the lower cone stage at a WIDER radius before the collar"
+  }
+ },
+ "source": "Roof-build session 2026-06-20 (live Blender dogfood, ~21 modules)"
+}

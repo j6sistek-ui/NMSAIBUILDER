@@ -1,0 +1,58 @@
+{
+  "schema": "NMS_WALL_SHELL_ENCLOSURE_RECIPE_2.19.00",
+  "status": "active_validated_pattern_requirement",
+  "recipe_id": "wall_shell_enclosure_recipe_v2_19_00",
+  "feature_terms": [
+    "building",
+    "tower",
+    "room",
+    "city block",
+    "skyscraper",
+    "wall shell",
+    "enclosed wall",
+    "gotham tower",
+    "facade"
+  ],
+  "geometry_basis": "closed_grid_shell_with_local_frame",
+  "assembly_priority": [
+    "recipe_controls_assembly",
+    "part_map_validates_components",
+    "raw_fbx_fallback_only_when_unresolved"
+  ],
+  "required_shell_roles": [
+    "foundation_or_plinth",
+    "floor_slab_or_grid",
+    "structural_wall_shell",
+    "corner_closure",
+    "window_or_opening_substitutions",
+    "facade_relief_or_trim",
+    "roof_or_top_closure",
+    "rooftop_attachments",
+    "access_path_or_door_relationship"
+  ],
+  "locked_invariants": [
+    "walls_form_closed_loops_or_declared_open_facades",
+    "wall_panels_contact_floor_foundation_adjacent_wall_or_shell_grid",
+    "corners_closed_by_overlap_perpendicular_or_explicit_join",
+    "floors_align_under_wall_footprint_unless_intentionally_voided",
+    "roof_or_top_closure_declared",
+    "facade_only_parts_not_counted_as_enclosure",
+    "window_parts_replace_structural_wall_positions_inside_grid",
+    "decorative_relief_requires_contact_proof"
+  ],
+  "failure_modes": [
+    "isolated_wall_panels_presented_as_building",
+    "facade_relief_used_as_structural_shell_without_contact",
+    "visible_corner_gaps",
+    "floating_walls",
+    "missing_roof_or_top_closure",
+    "no_build_intent_graph_for_shell_components"
+  ],
+  "required_receipts": [
+    "FEATURE_RECIPE_LOOKUP",
+    "BUILD_INTENT_GRAPH",
+    "USED_PART_LOGIC",
+    "JSON_EVIDENCE_PROVENANCE"
+  ],
+  "part_map_role": "component_validation_only"
+}

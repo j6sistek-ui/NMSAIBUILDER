@@ -1,0 +1,26 @@
+{
+  "schema_version": "v59",
+  "rule_id": "CONTINUOUS_PATH_ASSEMBLY_RULE",
+  "applicability": "Any bridge, tube, pipe, corridor, gantry, cable run, conveyor, rail, or repeated connector assembly between two endpoints. Not limited to megacity builds.",
+  "core_rule": "Compute one endpoint-to-endpoint path basis and apply it consistently to every repeated module, socket, collar, adapter, glass sleeve, rail, and support in the assembly.",
+  "required_steps": [
+    "Compute source and target endpoints from actual attachment faces/sockets, not object origins unless the origin is the intended socket.",
+    "Calculate path vector, length, yaw, and pitch/3D basis from those endpoints.",
+    "For each ObjectID, map its native long axis to the path axis before placement.",
+    "Repeat modules along the normalized path vector with deliberate overlap/tolerance.",
+    "Use identical corrected path orientation for all modules in the same span unless a part-specific axis offset has been separately validated.",
+    "Add visible face sockets/adapters where the connector meets a building, hull, wall, or platform."
+  ],
+  "known_part_axis_notes": {
+    "B_CON2_1": "Validated in V10C/V12 as a path-aligned industrial connector; treat as connector/truss module and verify local axis in JSON if reused.",
+    "B_CON_L_1": "Use same path-basis logic as the bridge connector family unless a new exported JSON proves a different native axis.",
+    "B_CON_R_1": "Use same path-basis logic as the bridge connector family unless a new exported JSON proves a different native axis.",
+    "CORRIDOR_WATER": "Previously produced visible axis mismatch as glass tube. Do not use as a bridge sleeve unless its native axis is explicitly aligned and then confirmed in exported JSON/screenshots."
+  },
+  "failure_modes": [
+    "Connector modules stair-step or stagger because centers follow a path but rotations remain generic.",
+    "Glass tube pieces point in a different direction than structural connectors.",
+    "Modules appear floating because endpoints were measured from object centers rather than attachment faces.",
+    "Long parts are stretched instead of repeated at real module scale."
+  ]
+}

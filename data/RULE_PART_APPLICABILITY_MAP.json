@@ -1,0 +1,1200 @@
+{
+  "schema": "NMS_Rule_Part_Applicability_Map_1.0",
+  "source_docs_rev": "5.04.06",
+  "purpose": "Maps every rule to the parts/families/contexts it governs so the resolver can pull only relevant rules. Scope: PART_SPECIFIC | FAMILY_OR_ASSEMBLY | UNIVERSAL_PROCESS | CREATIVE | NEEDS_REVIEW.",
+  "note": "Auto-seeded by keyword/ObjectID detection; NEEDS_REVIEW entries require human/AI classification.",
+  "rules": [
+    {
+      "rule_id": "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE",
+      "file": "rules/AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "door",
+        "floor",
+        "iris",
+        "stair",
+        "wall"
+      ],
+      "kind": "RECIPE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "AI_CAPTURE_COMPLIANCE_CONTRACT",
+      "file": "rules/AI_CAPTURE_COMPLIANCE_CONTRACT.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "stair"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL",
+      "file": "rules/AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "floor",
+        "roof",
+        "trifloor",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "BLENDER_PARITY_RULE",
+      "file": "rules/BLENDER_PARITY_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "BUILD_COMPLIANCE_MANIFEST_RULE",
+      "file": "rules/BUILD_COMPLIANCE_MANIFEST_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "BUILD_PLACEMENT_SNAPSHOT_PROTOCOL",
+      "file": "rules/BUILD_PLACEMENT_SNAPSHOT_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "COMPOSITE_BUILD_INTENT_GRAPH_PROTOCOL",
+      "file": "rules/COMPOSITE_BUILD_INTENT_GRAPH_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "door",
+        "floor",
+        "roof",
+        "stair"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "CONNECTED_PIECE_CURVATURE_GRAMMAR",
+      "file": "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "decor",
+        "dome",
+        "floor",
+        "pipe",
+        "ramp",
+        "roof",
+        "spire",
+        "tower",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "CONTINUOUS_PATH_ASSEMBLY_RULE",
+      "file": "rules/CONTINUOUS_PATH_ASSEMBLY_RULE.json",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "bridge",
+        "corridor",
+        "pipe",
+        "rail",
+        "cable",
+        "tube",
+        "conveyor",
+        "catwalk"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "CONTINUOUS_PATH_ASSEMBLY_RULE",
+      "file": "rules/CONTINUOUS_PATH_ASSEMBLY_RULE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "bridge",
+        "corridor",
+        "pipe",
+        "rail",
+        "cable",
+        "tube",
+        "conveyor",
+        "catwalk"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "CURATED_DETAIL_HIERARCHY_RULE",
+      "file": "rules/CURATED_DETAIL_HIERARCHY_RULE.json",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "floor",
+        "pipe",
+        "roof",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "CURATED_DETAIL_HIERARCHY_RULE",
+      "file": "rules/CURATED_DETAIL_HIERARCHY_RULE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "pipe",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL",
+      "file": "rules/C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL.json",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "floor",
+        "trifloor"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL",
+      "file": "rules/C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "floor",
+        "trifloor"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+      "file": "rules/DISCONNECTED_ASSEMBLY_HARDSTOP_RULE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "catwalk",
+        "corridor",
+        "decor",
+        "door",
+        "floor",
+        "pipe",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "DOCS_UPDATE_AVAILABILITY_PROTOCOL",
+      "file": "rules/DOCS_UPDATE_AVAILABILITY_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "floor",
+        "trifloor"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "DOME_STUDY_LESSONS",
+      "file": "rules/DOME_STUDY_LESSONS.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "dome",
+        "roof",
+        "wall"
+      ],
+      "kind": "RECIPE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "EXPERIMENTAL_REQUEST_PROTOCOL",
+      "file": "rules/EXPERIMENTAL_REQUEST_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "floor",
+        "roof",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL",
+      "file": "rules/FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL.json",
+      "scope": "NEEDS_REVIEW",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL",
+      "file": "rules/FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "decor"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "FULL_VERSION_CONTINUITY_REVIEW_RULE",
+      "file": "rules/FULL_VERSION_CONTINUITY_REVIEW_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "GROUND_ZERO_FOUNDATION_RULE",
+      "file": "rules/GROUND_ZERO_FOUNDATION_RULE.json",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "GROUND_ZERO_FOUNDATION_RULE",
+      "file": "rules/GROUND_ZERO_FOUNDATION_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "ISSUE_FIX_LIBRARY",
+      "file": "rules/ISSUE_FIX_LIBRARY.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "TURRET_ABAND"
+      ],
+      "families": [
+        "airlock",
+        "billboard",
+        "bridge",
+        "corvette",
+        "decal",
+        "decor",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "trifloor",
+        "wall",
+        "window"
+      ],
+      "kind": "REFERENCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "JSON_EVIDENCE_MAPPING_GATE",
+      "file": "rules/JSON_EVIDENCE_MAPPING_GATE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "billboard",
+        "bridge",
+        "decal",
+        "dome",
+        "door",
+        "iris",
+        "pipe",
+        "ramp",
+        "stair",
+        "wall"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "JSON_GEOMETRY_VALIDATION_LOOP",
+      "file": "rules/JSON_GEOMETRY_VALIDATION_LOOP.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "ramp",
+        "stair",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "JSON_TO_PYTHON_RECREATION_PROTOCOL",
+      "file": "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "BASE_BARNACLE",
+        "BASE_CAVE3",
+        "BASE_FLAG",
+        "BASE_NEXUS2",
+        "BASE_TERRARIUM",
+        "BASE_TOYCUBE",
+        "BLD_PLANET_HOLO",
+        "DRESSING_TABLE",
+        "FOS_SKULL",
+        "S16_HEATER",
+        "SPAWNER_BALL"
+      ],
+      "families": [
+        "billboard",
+        "decal",
+        "door",
+        "floor",
+        "roof",
+        "tower",
+        "wall",
+        "window"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "MASTER_DOC_VERSIONING_POLICY",
+      "file": "rules/MASTER_DOC_VERSIONING_POLICY.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "airlock"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "MONUMENT_BUILD_WORKFLOW",
+      "file": "rules/MONUMENT_BUILD_WORKFLOW.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "bridge",
+        "dome",
+        "floor",
+        "tower"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "NMS_BUILDER_EXECUTION_KERNEL",
+      "file": "rules/NMS_BUILDER_EXECUTION_KERNEL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "dome",
+        "door",
+        "pipe",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "NMS_BUILD_VS_IMAGE_ROUTING_GUARD",
+      "file": "rules/NMS_BUILD_VS_IMAGE_ROUTING_GUARD.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "door",
+        "iris",
+        "wall"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "OBJECT_USE_RECORDING_PROTOCOL",
+      "file": "rules/OBJECT_USE_RECORDING_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "OPEN_TOPICS_LOG_PROTOCOL",
+      "file": "rules/OPEN_TOPICS_LOG_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "stair"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_BUDGET_OPTIMIZATION_PROTOCOL",
+      "file": "rules/PART_BUDGET_OPTIMIZATION_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "dome",
+        "floor",
+        "roof",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_FAMILY_RULES",
+      "file": "rules/PART_FAMILY_RULES.json",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "BASE_ROBOTOY",
+        "BLD_CRYS_DRONE",
+        "MAINROOMCUBE_W",
+        "MAINROOM_WATER",
+        "TURRET_ABAND"
+      ],
+      "families": [
+        "bridge",
+        "decor",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "trifloor",
+        "wall",
+        "window"
+      ],
+      "kind": "FINDING",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_FAMILY_RULES",
+      "file": "rules/PART_FAMILY_RULES.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "BASE_ROBOTOY",
+        "BLD_CRYS_DRONE",
+        "MAINROOMCUBE_W",
+        "MAINROOM_WATER",
+        "TURRET_ABAND"
+      ],
+      "families": [
+        "bridge",
+        "decor",
+        "dome",
+        "floor",
+        "iris",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "trifloor",
+        "wall"
+      ],
+      "kind": "FINDING",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_ORIENTATION_OVERRIDES",
+      "file": "rules/PART_ORIENTATION_OVERRIDES.json",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "billboard"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_ORIENTATION_OVERRIDES",
+      "file": "rules/PART_ORIENTATION_OVERRIDES.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "billboard"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_PLACEMENT_MAP_SCHEMA",
+      "file": "rules/PART_PLACEMENT_MAP_SCHEMA.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "billboard",
+        "floor",
+        "roof",
+        "trifloor"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_USE_CASE_CATALOG",
+      "file": "rules/PART_USE_CASE_CATALOG.json",
+      "scope": "CREATIVE",
+      "object_ids": [
+        "ABAND_BENCH",
+        "BASE_BEAMSTONE",
+        "BASE_BUBPIPE",
+        "BASE_CAVE2",
+        "BASE_ROBOTOY",
+        "BASE_SWAMP2",
+        "BLD_CRYS_DRONE",
+        "EXPD_DECAL22",
+        "EXPD_POSTER22A",
+        "EXPD_POSTER22B",
+        "EXPD_POSTER22C",
+        "HOLO_DISCO_0",
+        "MAINROOMCUBE_W",
+        "MAINROOM_WATER",
+        "SET_B_MONU",
+        "SET_B_MONU_FA",
+        "SET_CLASS_A",
+        "SET_CLASS_B",
+        "SET_CLASS_S",
+        "SET_FISHPOND",
+        "SET_LZ",
+        "SET_LZ_SHIPBUIL",
+        "SET_SFXCONST_S0",
+        "SET_STAFFBUILD",
+        "SET_S_TOWER",
+        "SPEC_FIREWORK07",
+        "SPEC_FIREWORK08",
+        "SPEC_FIREWORK09",
+        "SWARM_FLAG_B1",
+        "SWARM_FLAG_B2",
+        "SWARM_FLAG_B3",
+        "SWARM_FLAG_G1",
+        "SWARM_FLAG_G2",
+        "SWARM_FLAG_G3",
+        "SWARM_FLAG_R1",
+        "SWARM_FLAG_R2",
+        "SWARM_FLAG_R3"
+      ],
+      "families": [
+        "airlock",
+        "billboard",
+        "bridge",
+        "bubpipe",
+        "corridor",
+        "decal",
+        "decor",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "pipe",
+        "poster",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "wall",
+        "window"
+      ],
+      "kind": "REFERENCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PART_USE_CASE_CATALOG",
+      "file": "rules/PART_USE_CASE_CATALOG.md",
+      "scope": "CREATIVE",
+      "object_ids": [
+        "ABAND_BENCH",
+        "BASE_BEAMSTONE",
+        "BASE_CAVE2",
+        "BASE_ROBOTOY",
+        "BASE_SWAMP2",
+        "BASE_WEIRDCUBE",
+        "BLD_CRYS_DRONE",
+        "EXPD_DECAL22",
+        "EXPD_POSTER22A",
+        "EXPD_POSTER22B",
+        "EXPD_POSTER22C",
+        "HOLO_DISCO_0",
+        "LIGHT_VERT",
+        "MAINROOMCUBE_W",
+        "MAINROOM_WATER",
+        "SET_B_MONU",
+        "SET_S_TOWER",
+        "SPEC_FIREWORK07",
+        "SWARM_FLAG_B1",
+        "SWARM_FLAG_G1",
+        "SWARM_FLAG_R1",
+        "TURRET_ABAND"
+      ],
+      "families": [
+        "airlock",
+        "billboard",
+        "bridge",
+        "corridor",
+        "decal",
+        "decor",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "pipe",
+        "poster",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "wall",
+        "window"
+      ],
+      "kind": "REFERENCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PER_RESPONSE_PROTOCOL_CONFIRMATION_RULE",
+      "file": "rules/PER_RESPONSE_PROTOCOL_CONFIRMATION_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "roof",
+        "stair"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "DEVERSION"
+    },
+    {
+      "rule_id": "PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE",
+      "file": "rules/PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE.md",
+      "scope": "CREATIVE",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "stair"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE",
+      "file": "rules/PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PLUGIN_VERSION_AND_ENVIRONMENT",
+      "file": "rules/PLUGIN_VERSION_AND_ENVIRONMENT.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "HOLO_DISCO_0"
+      ],
+      "families": [],
+      "kind": "REFERENCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PROHIBITED_AND_PLACEHOLDER_OBJECTS",
+      "file": "rules/PROHIBITED_AND_PLACEHOLDER_OBJECTS.json",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "HOLO_DISCO_0"
+      ],
+      "families": [],
+      "kind": "NEGATIVE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PROHIBITED_AND_PLACEHOLDER_OBJECTS",
+      "file": "rules/PROHIBITED_AND_PLACEHOLDER_OBJECTS.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "HOLO_DISCO_0"
+      ],
+      "families": [],
+      "kind": "NEGATIVE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PROJECT_CONTEXT_PROTOCOL",
+      "file": "rules/PROJECT_CONTEXT_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "REPAIR"
+    },
+    {
+      "rule_id": "PROMPT_TO_FEATURE_ROUTER",
+      "file": "rules/PROMPT_TO_FEATURE_ROUTER.json",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "dome",
+        "door",
+        "iris",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PROMPT_TO_FEATURE_ROUTER",
+      "file": "rules/PROMPT_TO_FEATURE_ROUTER.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "dome",
+        "door",
+        "iris",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PROTOCOL_BANNER_HARD_FAIL_RULE",
+      "file": "rules/PROTOCOL_BANNER_HARD_FAIL_RULE.json",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "roof"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "CONSOLIDATE"
+    },
+    {
+      "rule_id": "PROTOCOL_BANNER_HARD_FAIL_RULE",
+      "file": "rules/PROTOCOL_BANNER_HARD_FAIL_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "roof"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "CONSOLIDATE"
+    },
+    {
+      "rule_id": "RECIPE_CONFORMANCE_PROTOCOL",
+      "file": "rules/RECIPE_CONFORMANCE_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "door",
+        "floor",
+        "stair",
+        "trifloor"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "RECIPE_PARAMETERIZATION_PROTOCOL",
+      "file": "rules/RECIPE_PARAMETERIZATION_PROTOCOL.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "decor",
+        "door",
+        "floor",
+        "iris",
+        "wall"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "REQUEST_ROUTER_CHECKLIST",
+      "file": "rules/REQUEST_ROUTER_CHECKLIST.json",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "corvette",
+        "decor",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "trifloor",
+        "wall"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "REQUEST_ROUTER_CHECKLIST",
+      "file": "rules/REQUEST_ROUTER_CHECKLIST.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "catwalk",
+        "corvette",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "ramp",
+        "roof",
+        "spire",
+        "stair",
+        "tower",
+        "trifloor",
+        "wall"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "RULE_UPDATE_PROTOCOL",
+      "file": "rules/RULE_UPDATE_PROTOCOL.md",
+      "scope": "NEEDS_REVIEW",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SCRIPT_VALIDATION_LOOP",
+      "file": "rules/SCRIPT_VALIDATION_LOOP.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "HOLO_DISCO_0"
+      ],
+      "families": [
+        "corvette",
+        "decal",
+        "decor",
+        "poster"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SELECTIVE_VISUAL_MEMORY_POLICY",
+      "file": "rules/SELECTIVE_VISUAL_MEMORY_POLICY.md",
+      "scope": "NEEDS_REVIEW",
+      "object_ids": [],
+      "families": [],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SESSION_ONBOARDING_CHECKLIST_RULE",
+      "file": "rules/SESSION_ONBOARDING_CHECKLIST_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "roof"
+      ],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SINGLE_MASTER_CHANGELOG_GOVERNANCE_RULE",
+      "file": "rules/SINGLE_MASTER_CHANGELOG_GOVERNANCE_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SOURCE_DOC_EVALUATION_CHECKLIST",
+      "file": "rules/SOURCE_DOC_EVALUATION_CHECKLIST.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SPACING_CONNECTION_SCALE_RULES",
+      "file": "rules/SPACING_CONNECTION_SCALE_RULES.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "decor",
+        "dome",
+        "door",
+        "floor",
+        "iris",
+        "ramp",
+        "spire",
+        "stair",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "STAIR_PLACEMENT_DOCTRINE",
+      "file": "rules/STAIR_PLACEMENT_DOCTRINE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "floor",
+        "ramp",
+        "roof",
+        "stair",
+        "trifloor"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SYSTEMATIC_FAILURE_CAPA_PROTOCOL",
+      "file": "rules/SYSTEMATIC_FAILURE_CAPA_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "TRIFLOOR_FAMILY_VALIDATION_FRAMEWORK",
+      "file": "rules/TRIFLOOR_FAMILY_VALIDATION_FRAMEWORK.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "floor",
+        "roof",
+        "stair",
+        "trifloor"
+      ],
+      "kind": "FINDING",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "UNIVERSAL_RULES",
+      "file": "rules/UNIVERSAL_RULES.json",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "HOLO_DISCO_0"
+      ],
+      "families": [
+        "corvette",
+        "decor",
+        "dome",
+        "ramp",
+        "spire",
+        "stair",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "UNIVERSAL_RULES",
+      "file": "rules/UNIVERSAL_RULES.md",
+      "scope": "PART_SPECIFIC",
+      "object_ids": [
+        "HOLO_DISCO_0"
+      ],
+      "families": [
+        "corvette",
+        "decor",
+        "dome",
+        "door",
+        "ramp",
+        "spire",
+        "stair",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "VALIDATION_GATE_HARDENING_RULE",
+      "file": "rules/VALIDATION_GATE_HARDENING_RULE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "floor",
+        "ramp",
+        "roof",
+        "stair"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "VERIFIED_PARTMAP_DATA_PROTOCOL",
+      "file": "rules/VERIFIED_PARTMAP_DATA_PROTOCOL.json",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "VERIFIED_PARTMAP_DATA_PROTOCOL",
+      "file": "rules/VERIFIED_PARTMAP_DATA_PROTOCOL.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "WALL_SHELL_ENCLOSURE_RECIPE",
+      "file": "rules/WALL_SHELL_ENCLOSURE_RECIPE.json",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "door",
+        "floor",
+        "roof",
+        "tower",
+        "wall",
+        "window"
+      ],
+      "kind": "RECIPE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "WALL_SHELL_ENCLOSURE_RECIPE",
+      "file": "rules/WALL_SHELL_ENCLOSURE_RECIPE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "decor",
+        "door",
+        "floor",
+        "roof",
+        "tower",
+        "wall",
+        "window"
+      ],
+      "kind": "RECIPE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "WORKING_JSON_FIRST_PRINCIPLE",
+      "file": "rules/WORKING_JSON_FIRST_PRINCIPLE.md",
+      "scope": "FAMILY_OR_ASSEMBLY",
+      "object_ids": [],
+      "families": [
+        "airlock",
+        "bridge",
+        "stair",
+        "tower",
+        "wall"
+      ],
+      "kind": "RULE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "PROJECT_TRANSFER_SUMMARY_RULE",
+      "file": "rules/PROJECT_TRANSFER_SUMMARY_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "TRIAGE_REVIEW_ASSISTANCE_TOOL_RULE",
+      "file": "rules/TRIAGE_REVIEW_ASSISTANCE_TOOL_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [
+        "review",
+        "triage",
+        "validation"
+      ],
+      "kind": "PROCESS",
+      "runtime_status": "KEEP"
+    },
+    {
+      "rule_id": "SINGLE_CURRENT_STATE_SOURCE_RULE",
+      "file": "rules/SINGLE_CURRENT_STATE_SOURCE_RULE.md",
+      "scope": "UNIVERSAL_PROCESS",
+      "object_ids": [],
+      "families": [],
+      "kind": "GOVERNANCE",
+      "runtime_status": "KEEP"
+    }
+  ]
+}

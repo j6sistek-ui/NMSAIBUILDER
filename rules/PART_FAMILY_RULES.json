@@ -1,0 +1,2237 @@
+{
+ "schema": "NMS_Part_Family_Findings_v2",
+ "updated": "2026-06-07",
+ "mission": "Informative findings about part families (dimensions, snap groups, effects). NOT placement law. Do NOT use these as pre-script placement rules \u2014 placement authority lives in the validated mechanics (CONNECTED_PIECE_CURVATURE_GRAMMAR, WALL_SHELL_ENCLOSURE_RECIPE, FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL, C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL, CONTINUOUS_PATH_ASSEMBLY_RULE, AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL, PART_PLACEMENT_MAP_SCHEMA). Effect/use findings are also catalogued in the creative index.",
+ "families": [
+  {
+   "family_id": "SHORT_WALL_TRIM_RING",
+   "status": "validated for stone; likely for related short-wall families by shared role/extents",
+   "members": [
+    {
+     "ObjectID": "F_WALL_Q",
+     "NiceName": "SMALL ALLOY WALL A",
+     "Category": "Alloy Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.825527,
+     "extent_y": 0.874023,
+     "extent_z": 0.511112,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_Q1",
+     "NiceName": "SMALL ALLOY WALL B",
+     "Category": "Alloy Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.3,
+     "extent_y": 0.874023,
+     "extent_z": 0.511112,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_Q_H",
+     "NiceName": "SHORT ALLOY WALL A",
+     "Category": "Alloy Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.680928,
+     "extent_y": 0.874023,
+     "extent_z": 0.511112,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_Q_H1",
+     "NiceName": "SHORT ALLOY WALL B",
+     "Category": "Alloy Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.680928,
+     "extent_y": 0.874023,
+     "extent_z": 0.511112,
+     "validated": false
+    },
+    {
+     "ObjectID": "B_WALL_Q",
+     "NiceName": "SMALL SALVAGED WALL A",
+     "Category": "Builder Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "",
+     "extent_x": 5.425781,
+     "extent_y": 0.917114,
+     "extent_z": 0.758789,
+     "validated": false
+    },
+    {
+     "ObjectID": "B_WALL_Q1",
+     "NiceName": "SMALL SALVAGED WALL B",
+     "Category": "Builder Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "",
+     "extent_x": 5.458984,
+     "extent_y": 0.919235,
+     "extent_z": 1.238281,
+     "validated": false
+    },
+    {
+     "ObjectID": "B_WALL_Q_H",
+     "NiceName": "SHORT SALVAGED WALL A",
+     "Category": "Builder Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "",
+     "extent_x": 2.808594,
+     "extent_y": 0.9208,
+     "extent_z": 0.665039,
+     "validated": false
+    },
+    {
+     "ObjectID": "B_WALL_Q_H1",
+     "NiceName": "SHORT SALVAGED WALL B",
+     "Category": "Builder Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "",
+     "extent_x": 2.662015,
+     "extent_y": 0.847486,
+     "extent_z": 0.488892,
+     "validated": false
+    },
+    {
+     "ObjectID": "C_WALL_Q",
+     "NiceName": "SMALL CONCRETE WALL",
+     "Category": "Legacy Structures",
+     "SubCategory": "Concrete",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 0.838964,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "C_WALL_Q_H",
+     "NiceName": "SHORT CONCRETE WALL",
+     "Category": "Legacy Structures",
+     "SubCategory": "Concrete",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.835989,
+     "extent_y": 0.838964,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "M_WALL_Q",
+     "NiceName": "SMALL METAL WALL",
+     "Category": "Legacy Structures",
+     "SubCategory": "Metal",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.671955,
+     "extent_y": 0.838964,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "M_WALL_Q_H",
+     "NiceName": "SHORT METAL WALL",
+     "Category": "Legacy Structures",
+     "SubCategory": "Metal",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.835978,
+     "extent_y": 0.838964,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_WALL_Q",
+     "NiceName": "SMALL WOODEN WALL",
+     "Category": "Legacy Structures",
+     "SubCategory": "Wood",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 0.838964,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_WALL_Q_H",
+     "NiceName": "SHORT WOODEN WALL",
+     "Category": "Legacy Structures",
+     "SubCategory": "Wood",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.835989,
+     "extent_y": 0.838964,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALL_Q",
+     "NiceName": "SMALL STONE WALL A",
+     "Category": "Stone Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 0.82493,
+     "extent_z": 0.635851,
+     "validated": true
+    },
+    {
+     "ObjectID": "S_WALL_Q1",
+     "NiceName": "SMALL STONE WALL B",
+     "Category": "Stone Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 0.82493,
+     "extent_z": 0.635851,
+     "validated": true
+    },
+    {
+     "ObjectID": "S_WALL_Q_H",
+     "NiceName": "SHORT STONE WALL A",
+     "Category": "Stone Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 3.062824,
+     "extent_y": 0.82493,
+     "extent_z": 0.635851,
+     "validated": true
+    },
+    {
+     "ObjectID": "S_WALL_Q_H1",
+     "NiceName": "SHORT STONE WALL B",
+     "Category": "Stone Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 3.062824,
+     "extent_y": 0.82493,
+     "extent_z": 0.635851,
+     "validated": true
+    },
+    {
+     "ObjectID": "T_WALL_Q",
+     "NiceName": "SMALL TIMBER WALL A",
+     "Category": "Timber Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.613894,
+     "extent_y": 0.853759,
+     "extent_z": 0.322788,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_Q1",
+     "NiceName": "SMALL TIMBER WALL B",
+     "Category": "Timber Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS",
+     "extent_x": 5.443556,
+     "extent_y": 0.881683,
+     "extent_z": 0.150305,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_Q_H",
+     "NiceName": "SHORT TIMBER WALL A",
+     "Category": "Timber Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.93993,
+     "extent_y": 0.853759,
+     "extent_z": 0.322788,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_Q_H1",
+     "NiceName": "SHORT TIMBER WALL B",
+     "Category": "Timber Structures",
+     "SubCategory": "Walls, Doors and Windows",
+     "SnapGroups": "SHORT_WALLS_HALF",
+     "extent_x": 2.707814,
+     "extent_y": 0.881683,
+     "extent_z": 0.150305,
+     "validated": false
+    }
+   ],
+   "use_cases": [
+    "cone collars",
+    "oculus trim",
+    "portal rings",
+    "tower crown bands",
+    "reactor halos",
+    "parapet trim"
+   ],
+   "critical_failure": "Correct tangent orientation still leaves gaps when radius/count/scale are arbitrary.",
+   "formula": "chord = 2 * radius * sin(pi / count)",
+   "spacing_rule": "target_chord <= visible_tangential_length * 0.96",
+   "orientation_rule": "Horizontal rings: rz = angle + 90 so long axis follows ring tangent.",
+   "dimension_rule": "Use the specific part's FBX extent_x as visible tangential length basis unless in-game calibration overrides it.",
+   "validated_basis": {
+    "S_WALL_Q": "5.835 * scale",
+    "S_WALL_Q1": "5.835 * scale",
+    "S_WALL_Q_H": "3.063 * scale",
+    "S_WALL_Q_H1": "3.063 * scale"
+   },
+   "validation": [
+    "overhead closure",
+    "low side view",
+    "with attached body present",
+    "in-game if shader/material affects read"
+   ],
+   "avoid": [
+    "arbitrary radius/count",
+    "hidden subterrain rings with no visible effect",
+    "ring-only pads used as proof of final-body fit"
+   ]
+  },
+  {
+   "family_id": "FLAT_WALL_STRUCTURAL_PANELS",
+   "status": "validated for S_WALL/S_WALLM; use FBX plus project-specific calibration for others",
+   "members": [
+    {
+     "ObjectID": "F_ARCH",
+     "NiceName": "ALLOY ARCH",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.0,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_ARCHB",
+     "NiceName": "ALLOY ARCH (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.0,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_ARCHM",
+     "NiceName": "ALLOY ARCH (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.0,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_ARCHT",
+     "NiceName": "ALLOY ARCH (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.0,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_ARCH_H",
+     "NiceName": "ALLOY HALF ARCH",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 2.703853,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_CHEV_DOOR",
+     "NiceName": "EXTRUDED ALLOY DOOR",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.355554,
+     "extent_y": 3.431604,
+     "extent_z": 1.329736,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_CHEV_WALL",
+     "NiceName": "EXTRUDED ALLOY WALL",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365732,
+     "extent_y": 3.431604,
+     "extent_z": 1.158159,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_CHEV_WIN0",
+     "NiceName": "EXTRUDED ALLOY WINDOW",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.621169,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_CHEV_WIN1",
+     "NiceName": "EXTRUDED ALLOY HORIZONTAL WINDOW",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365732,
+     "extent_y": 3.431604,
+     "extent_z": 1.158159,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_CHEV_WIN2",
+     "NiceName": "EXTRUDED ALLOY SMALL WINDOW",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365732,
+     "extent_y": 3.431604,
+     "extent_z": 1.158159,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOOR",
+     "NiceName": "ALLOY DOOR A",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOOR1",
+     "NiceName": "ALLOY DOOR B",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORB0",
+     "NiceName": "ALLOY DOOR A (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORB1",
+     "NiceName": "ALLOY DOOR B (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORM0",
+     "NiceName": "ALLOY DOOR A (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORM1",
+     "NiceName": "ALLOY DOOR B (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORT0",
+     "NiceName": "ALLOY DOOR A (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORT1",
+     "NiceName": "ALLOY DOOR B (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORWINB0",
+     "NiceName": "ALLOY FRONTAGE (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.355555,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORWINDOW",
+     "NiceName": "ALLOY FRONTAGE",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.355555,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORWINM0",
+     "NiceName": "ALLOY FRONTAGE (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.355555,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOORWINT0",
+     "NiceName": "ALLOY FRONTAGE (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.355555,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_DOOR_H",
+     "NiceName": "ALLOY DOORWAY",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 3.346033,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_GDOOR",
+     "NiceName": "ALLOY POWER DOOR",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 4.25323,
+     "extent_y": 2.905486,
+     "extent_z": 0.309144,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_GDOORB0",
+     "NiceName": "ALLOY POWER DOOR (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 4.25323,
+     "extent_y": 2.905486,
+     "extent_z": 0.309144,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_GDOORM0",
+     "NiceName": "ALLOY POWER DOOR (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 4.25323,
+     "extent_y": 2.905486,
+     "extent_z": 0.309144,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_GDOORT0",
+     "NiceName": "ALLOY POWER DOOR (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 4.25323,
+     "extent_y": 2.905486,
+     "extent_z": 0.309144,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL",
+     "NiceName": "ALLOY WALL",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLB",
+     "NiceName": "ALLOY WALL (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLB_WIN0",
+     "NiceName": "ALLOY WINDOW (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.966548,
+     "extent_y": 3.431604,
+     "extent_z": 0.701072,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLB_WIN1",
+     "NiceName": "IRREGULAR ALLOY WINDOW (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLB_WIN2",
+     "NiceName": "TWIN ALLOY WINDOWS (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLB_WIN3",
+     "NiceName": "HORIZONTAL ALLOY WINDOW (BASE)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLM",
+     "NiceName": "ALLOY WALL (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLM_WIN0",
+     "NiceName": "ALLOY WINDOW (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.966548,
+     "extent_y": 3.431604,
+     "extent_z": 0.701072,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLM_WIN1",
+     "NiceName": "IRREGULAR ALLOY WINDOW (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLM_WIN2",
+     "NiceName": "TWIN ALLOY WINDOWS (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLM_WIN3",
+     "NiceName": "HORIZONTAL ALLOY WINDOW (MID)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLT",
+     "NiceName": "ALLOY WALL (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 6.032288,
+     "extent_y": 3.431604,
+     "extent_z": 0.811365,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLT_WIN0",
+     "NiceName": "ALLOY WINDOW (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.966548,
+     "extent_y": 3.431604,
+     "extent_z": 0.701072,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLT_WIN1",
+     "NiceName": "IRREGULAR ALLOY WINDOW (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLT_WIN2",
+     "NiceName": "TWIN ALLOY WINDOWS (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALLT_WIN3",
+     "NiceName": "HORIZONTAL ALLOY WINDOW (TOP)",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_WIN",
+     "NiceName": "",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.355555,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_WIN1",
+     "NiceName": "IRREGULAR ALLOY WINDOW",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_WIN2",
+     "NiceName": "TWIN ALLOY WINDOWS",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_WIN3",
+     "NiceName": "HORIZONTAL ALLOY WINDOW",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.365619,
+     "extent_y": 3.431604,
+     "extent_z": 1.502296,
+     "validated": false
+    },
+    {
+     "ObjectID": "F_WALL_WINDOW",
+     "NiceName": "ALLOY WINDOW",
+     "Category": "Alloy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.966548,
+     "extent_y": 3.431604,
+     "extent_z": 0.701072,
+     "validated": false
+    },
+    {
+     "ObjectID": "C_ARCH",
+     "NiceName": "CONCRETE ARCH",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.657782,
+     "extent_y": 3.332744,
+     "extent_z": 0.397372,
+     "validated": false
+    },
+    {
+     "ObjectID": "C_DOORWINDOW",
+     "NiceName": "CONCRETE FRONTAGE",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.682076,
+     "extent_y": 3.329664,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "C_GDOOR",
+     "NiceName": "CONCRETE POWER DOOR",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 2.055296,
+     "validated": false
+    },
+    {
+     "ObjectID": "C_WALL_WINDOW",
+     "NiceName": "CONCRETE WINDOW PANEL",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "M_ARCH",
+     "NiceName": "METAL ARCH",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.657782,
+     "extent_y": 3.332744,
+     "extent_z": 0.397372,
+     "validated": false
+    },
+    {
+     "ObjectID": "M_DOORWINDOW",
+     "NiceName": "METAL FRONTAGE",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.66476,
+     "extent_y": 3.329662,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "M_GDOOR",
+     "NiceName": "METAL POWER DOOR",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 2.055296,
+     "validated": false
+    },
+    {
+     "ObjectID": "M_WALL_WINDOW",
+     "NiceName": "METAL WINDOW PANEL",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_ARCH",
+     "NiceName": "WOODEN ARCH",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.657782,
+     "extent_y": 3.332744,
+     "extent_z": 0.397372,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_DOOR",
+     "NiceName": "WOODEN DOOR FRAME",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.681397,
+     "extent_y": 3.329664,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_DOORWINDOW",
+     "NiceName": "WOODEN FRONTAGE",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.681397,
+     "extent_y": 3.329664,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_GDOOR",
+     "NiceName": "WOODEN POWER DOOR",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 2.055296,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_WALL",
+     "NiceName": "WOODEN WALL",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "W_WALL_WINDOW",
+     "NiceName": "WOODEN WINDOW PANEL",
+     "Category": "Legacy Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.671977,
+     "extent_y": 3.329666,
+     "extent_z": 0.394648,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_ARCH",
+     "NiceName": "STONE ARCH",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.817139,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_ARCHB",
+     "NiceName": "STONE ARCH (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.817139,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_ARCHM",
+     "NiceName": "STONE ARCH (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.817139,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_ARCHT",
+     "NiceName": "STONE ARCH (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.817139,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_ARCH_H",
+     "NiceName": "STONE HALF ARCH",
+     "Category": "Stone Structures",
+     "SnapGroups": "HALF_WALLS",
+     "extent_x": 2.910507,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_CHEV_DOOR",
+     "NiceName": "EXTRUDED STONE DOOR",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.332032,
+     "extent_y": 3.332031,
+     "extent_z": 1.81421,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_CHEV_WALL",
+     "NiceName": "EXTRUDED STONE WALL",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.332032,
+     "extent_y": 3.332031,
+     "extent_z": 1.623169,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_CHEV_WIN0",
+     "NiceName": "EXTRUDED PANELLED STONE WALL",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 1.702617,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_CHEV_WIN1",
+     "NiceName": "EXTRUDED STONE LARGE WINDOW",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 1.702617,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_CHEV_WIN2",
+     "NiceName": "EXTRUDED STONE SMALL WINDOW",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.332032,
+     "extent_y": 3.332031,
+     "extent_z": 1.623169,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOOR",
+     "NiceName": "STONE ARCH DOOR",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOOR1",
+     "NiceName": "STONE RECTANGULAR DOOR",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORB0",
+     "NiceName": "STONE ARCH DOOR (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORB1",
+     "NiceName": "STONE RECTANGULAR DOOR (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORM0",
+     "NiceName": "STONE ARCH DOOR (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORM1",
+     "NiceName": "STONE RECTANGULAR DOOR (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORT0",
+     "NiceName": "STONE ARCH DOOR (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORT1",
+     "NiceName": "STONE RECTANGULAR DOOR (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.4292,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORWINB0",
+     "NiceName": "STONE FRONTAGE (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORWINDOW",
+     "NiceName": "STONE FRONTAGE",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORWINM0",
+     "NiceName": "STONE FRONTAGE (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_DOORWINT0",
+     "NiceName": "STONE FRONTAGE (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_GDOOR",
+     "NiceName": "STONE POWER DOOR",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 3.117635,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_GDOORB0",
+     "NiceName": "STONE POWER DOOR (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 3.117635,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_GDOORM0",
+     "NiceName": "STONE POWER DOOR (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 3.117635,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_GDOORT0",
+     "NiceName": "STONE POWER DOOR (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 3.117635,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALL",
+     "NiceName": "STONE WALL",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": true
+    },
+    {
+     "ObjectID": "S_WALLB",
+     "NiceName": "STONE WALL (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLB_WIN0",
+     "NiceName": "STONE SLIT WINDOW (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLB_WIN1",
+     "NiceName": "STONE GRILLE WINDOW (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLB_WIN2",
+     "NiceName": "STONE LARGE WINDOW (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLB_WIN3",
+     "NiceName": "STONE CIRCLE WINDOW (BASE)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLM",
+     "NiceName": "STONE WALL (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": true
+    },
+    {
+     "ObjectID": "S_WALLM_WIN0",
+     "NiceName": "STONE SLIT WINDOW (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLM_WIN1",
+     "NiceName": "STONE GRILLE WINDOW (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLM_WIN2",
+     "NiceName": "STONE LARGE WINDOW (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLM_WIN3",
+     "NiceName": "STONE CIRCLE WINDOW (MID)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLT",
+     "NiceName": "STONE WALL (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.691406,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLT_WIN0",
+     "NiceName": "STONE SLIT WINDOW (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLT_WIN1",
+     "NiceName": "STONE GRILLE WINDOW (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLT_WIN2",
+     "NiceName": "STONE LARGE WINDOW (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALLT_WIN3",
+     "NiceName": "STONE CIRCLE WINDOW (TOP)",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALL_WIN1",
+     "NiceName": "STONE GRILLE WINDOW",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.678223,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALL_WIN2",
+     "NiceName": "STONE LARGE WINDOW",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.332031,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALL_WIN3",
+     "NiceName": "STONE CIRCLE WINDOW",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "S_WALL_WINDOW",
+     "NiceName": "STONE SLIT WINDOW",
+     "Category": "Stone Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.835336,
+     "extent_y": 3.394531,
+     "extent_z": 0.572265,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_ARCH",
+     "NiceName": "TIMBER ARCH",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.557536,
+     "extent_y": 3.351036,
+     "extent_z": 0.43156,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_ARCHB",
+     "NiceName": "TIMBER ARCH (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.557536,
+     "extent_y": 3.351036,
+     "extent_z": 0.43156,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_ARCHM",
+     "NiceName": "TIMBER ARCH (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.557536,
+     "extent_y": 3.351036,
+     "extent_z": 0.43156,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_ARCHT",
+     "NiceName": "TIMBER ARCH (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.557536,
+     "extent_y": 3.351036,
+     "extent_z": 0.43156,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_CHEV_DOOR",
+     "NiceName": "EXTRUDED TIMBER-GLASS DOOR",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.429236,
+     "extent_y": 3.332031,
+     "extent_z": 1.118747,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_CHEV_WALL",
+     "NiceName": "EXTRUDED TIMBER WALL A",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.424624,
+     "extent_y": 3.336023,
+     "extent_z": 0.792379,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_CHEV_WIN0",
+     "NiceName": "EXTRUDED TIMBER WALL B",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417968,
+     "extent_y": 3.337905,
+     "extent_z": 0.817378,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_CHEV_WIN1",
+     "NiceName": "EXTRUDED TIMBER LARGE WINDOW",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417968,
+     "extent_y": 3.337905,
+     "extent_z": 0.817378,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_CHEV_WIN2",
+     "NiceName": "EXTRUDED TIMBER SMALL WINDOW",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417968,
+     "extent_y": 3.337905,
+     "extent_z": 0.817378,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOOR",
+     "NiceName": "TIMBER RECTANGULAR DOOR",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOOR1",
+     "NiceName": "TIMBER ANGLED DOOR",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORB0",
+     "NiceName": "TIMBER RECTANGULAR DOOR (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORB1",
+     "NiceName": "TIMBER ANGLED DOOR (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORM0",
+     "NiceName": "TIMBER RECTANGULAR DOOR (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORM1",
+     "NiceName": "TIMBER ANGLED DOOR (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORT0",
+     "NiceName": "TIMBER RECTANGULAR DOOR (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORT1",
+     "NiceName": "TIMBER ANGLED DOOR (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.693828,
+     "extent_y": 3.351036,
+     "extent_z": 0.477778,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORWINB0",
+     "NiceName": "TIMBER FRONTAGE (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORWINDOW",
+     "NiceName": "TIMBER FRONTAGE",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORWINM0",
+     "NiceName": "TIMBER FRONTAGE (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_DOORWINT0",
+     "NiceName": "TIMBER FRONTAGE (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_GDOOR",
+     "NiceName": "TIMBER POWER DOOR",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 1.756086,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_GDOORB0",
+     "NiceName": "TIMBER POWER DOOR (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 1.756086,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_GDOORM0",
+     "NiceName": "TIMBER POWER DOOR (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 1.756086,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_GDOORT0",
+     "NiceName": "TIMBER POWER DOOR (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 1.756086,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL",
+     "NiceName": "TIMBER WALL",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLB",
+     "NiceName": "TIMBER WALL (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLB_WIN0",
+     "NiceName": "TWIN TIMBER WINDOWS (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.467706,
+     "extent_y": 3.351036,
+     "extent_z": 0.149842,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLB_WIN1",
+     "NiceName": "HORIZONTAL TIMBER WINDOWS (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.677368,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLB_WIN2",
+     "NiceName": "LARGE TIMBER DOUBLE WINDOW (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLB_WIN3",
+     "NiceName": "LARGE TIMBER TRIPLE WINDOW (BASE)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLM",
+     "NiceName": "TIMBER WALL (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLM_WIN0",
+     "NiceName": "TWIN TIMBER WINDOWS (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.467706,
+     "extent_y": 3.351036,
+     "extent_z": 0.149842,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLM_WIN1",
+     "NiceName": "HORIZONTAL TIMBER WINDOWS (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.677368,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLM_WIN2",
+     "NiceName": "LARGE TIMBER DOUBLE WINDOW (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLM_WIN3",
+     "NiceName": "LARGE TIMBER TRIPLE WINDOW (MID)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLT",
+     "NiceName": "TIMBER WALL (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLT_WIN0",
+     "NiceName": "TWIN TIMBER WINDOWS (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.467706,
+     "extent_y": 3.351036,
+     "extent_z": 0.149842,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLT_WIN1",
+     "NiceName": "HORIZONTAL TIMBER WINDOWS (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.677368,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLT_WIN2",
+     "NiceName": "LARGE TIMBER DOUBLE WINDOW (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALLT_WIN3",
+     "NiceName": "LARGE TIMBER TRIPLE WINDOW (TOP)",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_WIN1",
+     "NiceName": "HORIZONTAL TIMBER WINDOWS",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.677368,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_WIN2",
+     "NiceName": "LARGE TIMBER DOUBLE WINDOW",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.355556,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_WIN3",
+     "NiceName": "LARGE TIMBER TRIPLE WINDOW",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.417614,
+     "extent_y": 3.351036,
+     "extent_z": 0.119374,
+     "validated": false
+    },
+    {
+     "ObjectID": "T_WALL_WINDOW",
+     "NiceName": "TWIN TIMBER WINDOWS",
+     "Category": "Timber Structures",
+     "SnapGroups": "WALLS",
+     "extent_x": 5.467706,
+     "extent_y": 3.351036,
+     "extent_z": 0.149842,
+     "validated": false
+    }
+   ],
+   "formula": "placement_step = calibrated_visible_dimension * scale",
+   "known_calibration": {
+    "S_WALL/S_WALLM horizontal clean side-by-side": "approximately 5.25 * scale from user testing",
+    "FBX width basis": "5.691 * scale"
+   },
+   "rules": [
+    "Do not compress wall centers arbitrarily.",
+    "Do not stack vertical wall tiers at guessed increments.",
+    "Use explicit visible_bottom/visible_top targets when burying or stacking wall rings.",
+    "S_CHEV_WALL has much deeper protrusion than S_WALL/S_WALLM; use selectively for relief."
+   ]
+  },
+  {
+   "family_id": "B_SHL_E_RED_LENS_EFFECT",
+   "status": "validated in-game",
+   "members": [
+    {
+     "ObjectID": "B_SHL_E",
+     "NiceName": "AERON POWERSHIELD"
+    }
+   ],
+   "support_parts": [
+    {
+     "ObjectID": "B_DECO_P",
+     "NiceName": "RADAR DOME",
+     "role": "center dome/core, not red glow"
+    }
+   ],
+   "rules": [
+    "B_SHL_E is the red glow source.",
+    "B_DECO_P does not create the red glow.",
+    "Hide/recess/bury B_SHL_E bodies where possible.",
+    "Use as red lens, eye, beacon, iris, oculus, crown, or reactor glow.",
+    "Avoid exposed dense fields of identical shield bases."
+   ],
+   "best_current_use": "tower/skyscraper crown or fa\u00e7ade band",
+   "promising_uses": [
+    "ceiling-embedded reactor oculus",
+    "single-ring wall iris",
+    "buried ritual floor nodes"
+   ],
+   "weak_current_uses": [
+    "dense exposed floor mandala",
+    "overbuilt wall wreath with visible bases"
+   ]
+  },
+  {
+   "family_id": "TURRET_ABAND_BEAM_PROJECTOR",
+   "status": "validated in-game effect; invisible in Blender",
+   "members": [
+    {
+     "ObjectID": "TURRET_ABAND",
+     "NiceName": null
+    }
+   ],
+   "effect": "orange dotted/solid beams plus triangular orange/pink fan plane",
+   "rules": [
+    "Use as hidden beam projector, not decorative body.",
+    "Evaluate in-game.",
+    "Best current arrangement is circular scanner/oculus ring.",
+    "Needs architectural framing to avoid looking like loose beams."
+   ],
+   "applications": [
+    "security grid",
+    "portal threshold",
+    "reactor halo",
+    "ceiling light-web",
+    "skyscraper scanner nodes"
+   ]
+  },
+  {
+   "family_id": "TITAN_HEAVY_BOOSTER_ELECTRICITY",
+   "status": "validated in-game temporary FX",
+   "members": [
+    {
+     "ObjectID": "B_WNG_A",
+     "NiceName": "TITAN HEAVY BOOSTER"
+    }
+   ],
+   "effect": "temporary blue electric/glitch visual effect after load-in, fades after roughly 5\u201310 minutes",
+   "rules": [
+    "Use B_WNG_A specifically when electricity is required.",
+    "Can be buried inside geometry.",
+    "Do not require it to be visible.",
+    "Architecture must still read after effect fades."
+   ]
+  },
+  {
+   "family_id": "AERON_BLADE_CONE_OCULUS",
+   "status": "locked core options from V25",
+   "members": [
+    {
+     "ObjectID": "B_WNG_R_T",
+     "NiceName": "AERON BLADE",
+     "locked": "D5 n=192"
+    },
+    {
+     "ObjectID": "B_WNG_R",
+     "NiceName": "AERON BLADE wide",
+     "locked": "W3 n=112 fallback; W7 high-density option/reduced V25 option"
+    }
+   ],
+   "rules": [
+    "D5 n=192 narrow Aeron rotation is correct and locked.",
+    "Do not continue density testing past n192 unless requested.",
+    "Wide Aeron W3 and W7 are permanent options; choose by part budget/performance.",
+    "n135 underside-up half-buried oculus is a separate locked experimental option."
+   ]
+  },
+  {
+   "family_id": "MACRO_WALL_SHELL_AND_FACADE_OVERLAYS",
+   "status": "finding_only_placement_assertions_retired",
+   "scope": [
+    "S_WALL",
+    "S_WALLM",
+    "S_CHEV_WALL",
+    "facade overlays",
+    "trim/cornice bands"
+   ],
+   "rule": "When wall scale changes, recalculate facade and trim offsets from scaled FBX dimensions and push overlays outward from the scaled visible face.",
+   "outward_directions": {
+    "front_stair_side": "-Y",
+    "back": "+Y",
+    "left": "-X",
+    "right": "+X"
+   },
+   "formula": {
+    "scaled_depth": "native_depth * scale",
+    "overlay_offset": "wall_visible_face + outward_normal * (overlay_depth/2 + clearance)"
+   },
+   "never": "Do not reuse FACE_OFF, FACADE_PUSH, ring radius, or trim span constants after changing part scale unless they are re-derived from scaled dimensions.",
+   "source": "prior macro-wall cleanup macro-wall cleanup review",
+   "placement_authority_superseded_by": "WALL_SHELL_ENCLOSURE_RECIPE"
+  },
+  {
+   "family_id": "ORIGIN_BOUNDS_PLACEMENT",
+   "status": "finding_only_placement_assertions_retired",
+   "scope": "all ObjectIDs with FBX bounds",
+   "rules": [
+    "Use center_y/extent_y to compute bottom/top placement",
+    "Do not assume visible center origin"
+   ],
+   "formula": {
+    "bottom_rel": "(center_y - extent_y/2) * scale",
+    "top_rel": "(center_y + extent_y/2) * scale"
+   },
+   "placement_authority_superseded_by": "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL + PART_PLACEMENT_MAP_SCHEMA"
+  },
+  {
+   "family_id": "CONNECTED_TRIM_AND_ROW_RUNS",
+   "status": "finding_only_placement_assertions_retired",
+   "scope": "trim, wall rows, cornice bands, rings",
+   "rules": [
+    "Do not label trim continuous unless it touches/overlaps",
+    "Compute centers from visible scaled length and overlap",
+    "Add end/corner closures where needed"
+   ],
+   "placement_authority_superseded_by": "CONTINUOUS_PATH_ASSEMBLY_RULE"
+  },
+  {
+   "family_id": "GRAND_ARCH_HALF_ARCH_FACADE_STRUCTURES",
+   "status": "finding_only_placement_assertions_retired",
+   "scope": "large landmark facades using arches/half arches",
+   "members": [
+    "S_ARCH",
+    "S_ARCH_H",
+    "S_ARCHB",
+    "S_ARCHM",
+    "S_ARCHT",
+    "S_ARCHB_H",
+    "S_ARCHM_H",
+    "S_ARCHT_H",
+    "S_DOOR",
+    "S_DOOR_H",
+    "S_WALLM",
+    "S_WALL_Q_H1"
+   ],
+   "rules": [
+    "Use scale over quantity for grand facades",
+    "Build connected arch/half-arch assemblies",
+    "Avoid dense small cylinder/detail fields until macro read is correct",
+    "Follow exact user-requested compositions before interpretive variants"
+   ],
+   "placement_authority_superseded_by": "FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL"
+  },
+  {
+   "family_id": "DOME_SURFACE_ORIENTED_WALL_SHELLS",
+   "status": "finding_only_placement_assertions_retired",
+   "scope": "wall or half-wall pieces used as dome/shell surface tiles",
+   "rules": [
+    "Do not place wall shells as vertical cylinder bands",
+    "Orient local X as ring tangent, local Y as profile meridian/up, local Z as outward normal",
+    "Use chord spacing and taper ring count with radius"
+   ],
+   "placement_authority_superseded_by": "CONNECTED_PIECE_CURVATURE_GRAMMAR"
+  },
+  {
+   "family_id": "SCALE_OVER_QUANTITY_FOR_GRAND_STRUCTURES",
+   "status": "finding_only_placement_assertions_retired",
+   "scope": "large landmarks / monumental architecture",
+   "rules": [
+    "Macro silhouette and connected masses before micro details",
+    "Use larger scaled parts when they improve recognition",
+    "Micro details only after major read is correct"
+   ],
+   "placement_authority_superseded_by": "CURATED_DETAIL_HIERARCHY_RULE"
+  },
+  {
+   "family_id": "HALF_ARCH_MIRRORING_AND_HANDEDNESS",
+   "status": "finding_only_placement_assertions_retired",
+   "members": [
+    "S_ARCH_H",
+    "S_ARCHB_H",
+    "S_ARCHM_H",
+    "S_ARCHT_H",
+    "S_DOOR_H"
+   ],
+   "lesson": "Half arches are handed; mirrored sides require explicit RZ handedness table per facade.",
+   "initial_front_rear_table": {
+    "front_south_arch_rz_0": {
+     "left": "arch_rz + 180",
+     "right": "arch_rz"
+    },
+    "rear_north_arch_rz_180": {
+     "left": "arch_rz",
+     "right": "arch_rz + 180"
+    }
+   },
+   "checks": [
+    "open arch portions face inward",
+    "pull outward from macro wall face",
+    "side facades require separate calibration"
+   ],
+   "placement_authority_superseded_by": "PART_ORIENTATION_OVERRIDES (do not assume mirror handedness; verify per part)"
+  },
+  {
+   "family_id": "SURFACE_ORIENTED_DOME_WALL_PANELS",
+   "status": "finding_only_placement_assertions_retired",
+   "members": [
+    "S_WALLM_H",
+    "S_WALL_Q_H1",
+    "wall panels as shells"
+   ],
+   "lesson": "Orient dome wall panels to tangent/meridian/normal surface frames rather than vertical rings.",
+   "surface_axes": {
+    "local_X": "ring tangent",
+    "local_Y": "meridian/surface-up",
+    "local_Z": "outward normal"
+   },
+   "placement_authority_superseded_by": "CONNECTED_PIECE_CURVATURE_GRAMMAR"
+  },
+  {
+   "family_id": "DEEP_SEA_ROOM_SKYSCRAPER_TOPPERS",
+   "status": "validated design-family pattern",
+   "members": [
+    {
+     "ObjectID": "MAINROOM_WATER",
+     "NiceName": "DEEPWATER CHAMBER",
+     "role": "circular macro room / rotunda / topper mass"
+    },
+    {
+     "ObjectID": "MAINROOMCUBE_W",
+     "NiceName": "SQUARE DEEPWATER CHAMBER",
+     "role": "square macro room / penthouse block / pod / roof adapter"
+    }
+   ],
+   "use_cases": [
+    "skyscraper roof adapters",
+    "colored modular tower tops",
+    "AI-control penthouse",
+    "docking pods",
+    "skybridge sockets",
+    "machine rooms",
+    "rotunda crown",
+    "asymmetric skyline topper"
+   ],
+   "rules": [
+    "Use as structural fabric, not decoration.",
+    "Do not only stack rooms vertically.",
+    "Create distinct silhouettes through offsets, pods, overhangs, bridges, receivers, cranes, dishes, and layered modules.",
+    "Attach antennas/spires to visible mounts or room tops.",
+    "Use color deliberately for function/district identity.",
+    "Avoid repeating red lens band + antenna crown + stacked room as the default topper pattern."
+   ],
+   "failure_modes": [
+    "conservative repeated room-stack crowns",
+    "floating antennas",
+    "micro details before macro silhouette",
+    "topper not integrated to roof interface"
+   ],
+   "validation": [
+    "view from skyline distance",
+    "view from rooftop/player scale",
+    "check all antennas/details visibly mount to room geometry",
+    "verify distinct silhouette per variant"
+   ]
+  },
+  {
+   "family_id": "MACHINE_AUTOMATION_AND_ROBOTIC_GANTRY",
+   "status": "study-derived design-family rule",
+   "members": [
+    {
+     "ObjectID": "B_ROBOTARM",
+     "role": "large mounted robotic arm"
+    },
+    {
+     "ObjectID": "ROBOTICARM",
+     "role": "small precision arm"
+    },
+    {
+     "ObjectID": "BASE_ROBOTOY",
+     "role": "robot/drone body"
+    },
+    {
+     "ObjectID": "BLD_CRYS_DRONE",
+     "role": "crystallised drone/pod"
+    },
+    {
+     "ObjectID": "B_WALL_CARG1",
+     "role": "cargo rack / conveyor cassette / machine module"
+    },
+    {
+     "ObjectID": "SERVERBOX1",
+     "role": "server block"
+    },
+    {
+     "ObjectID": "SERVERBOX2",
+     "role": "server block"
+    },
+    {
+     "ObjectID": "SERVERSTACK",
+     "role": "vertical server stack"
+    }
+   ],
+   "rules": [
+    "Robotic arms require visible mounts and a target task.",
+    "Conveyor/cargo parts must read as cassettes, racks, rails, or machine modules.",
+    "Repeated conveyor modules must use consistent orientation and spacing.",
+    "Drone hives need visible docking collars, service bays, or wall racks.",
+    "Avoid sparse robot parts on a pad."
+   ],
+   "known_issues": [
+    "B_WALL_CARG1 orientation can read as random barrels if no rails/cassette context is provided.",
+    "Robot arms look toy-like without mounts and task targets.",
+    "Hive drone parts look loose unless connected by service struts/collars."
+   ]
+  },
+  {
+   "family_id": "GROUNDED_SIGNAL_AND_ANTENNA_CROWN",
+   "status": "study-derived issue/fix rule",
+   "members": [
+    {
+     "ObjectID": "B_ANTENNA0"
+    },
+    {
+     "ObjectID": "B_ANTENNA1"
+    },
+    {
+     "ObjectID": "B_ANTENNA2"
+    },
+    {
+     "ObjectID": "B_ANTENNA3"
+    },
+    {
+     "ObjectID": "S_ANTENNA0"
+    }
+   ],
+   "rules": [
+    "Antennas/spires must be mounted to visible bases, pylons, rooms, scaffolds, or tower caps.",
+    "Do not float antennas high above a structure unless the design explicitly includes a holographic suspension system.",
+    "Antenna crowns need a named function: broadcast, scanner, docking guidance, defense, weather, relay, or AI-control signal.",
+    "Vary height and role when many antennas are used, but keep them structurally connected."
+   ],
+   "failure_modes": [
+    "floating antennas",
+    "generic antenna crowns with no role",
+    "unconnected signal objects"
+   ]
+  },
+  {
+   "family_id": "TRIFLOOR_TRIANGLE_SURFACE_TILES",
+   "status": "finding_only_placement_assertions_retired",
+   "validated_member": "C_TRIFLOOR",
+   "members": [
+    {
+     "ObjectID": "C_TRIFLOOR",
+     "validated": true,
+     "rule_status": "PLACEMENT_VALIDATED"
+    },
+    {
+     "ObjectID": "C_TRIFLOOR_Q",
+     "validated": false,
+     "rule_status": "DISTINCT_GEOMETRY_UNVALIDATED"
+    },
+    {
+     "ObjectID": "F_TRIFLOOR",
+     "validated": false,
+     "rule_status": "FAMILY_CANDIDATE_UNVALIDATED"
+    },
+    {
+     "ObjectID": "F_TRIFLOOR_Q",
+     "validated": false,
+     "rule_status": "FAMILY_CANDIDATE_UNVALIDATED"
+    }
+   ],
+   "rule_summary": "C_TRIFLOOR is validated for phase-resolved equilateral triangular surface/solid tiling. Do not inherit this rule to Q/F variants until FBX equivalence and behavior proofs pass.",
+   "required_family_validation": [
+    "FBX equivalence check",
+    "default orientation check",
+    "origin/pivot check",
+    "scale behavior check",
+    "phase behavior check",
+    "small proof build"
+   ],
+   "placement_authority_superseded_by": "C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL"
+  }
+ ],
+ "authority": "INFORMATIVE_FINDINGS_NOT_PLACEMENT_AUTHORITY"
+}

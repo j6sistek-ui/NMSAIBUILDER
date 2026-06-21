@@ -1,0 +1,27 @@
+{
+  "schema": "NMS_Prohibited_Placeholder_Objects_v37",
+  "updated": "2026-05-28",
+  "objects": [
+    {
+      "ObjectID": "HOLO_DISCO",
+      "classification": "Wonder Projector",
+      "policy": "prohibited_generated_part",
+      "reason": "Requires in-game setup/configuration; cannot be meaningfully authored by generator.",
+      "allowed_exception": "Preserve explicitly provided already configured existing object only."
+    },
+    {
+      "ObjectID": "U_PARAGON",
+      "classification": "plugin/default placeholder or non-visible artifact",
+      "policy": "do_not_design_around",
+      "reason": "Not Wonder Projector; may appear as plugin/default item and does not show in game."
+    },
+    {
+      "ObjectID": "HOLO_DISCO_0",
+      "classification": "Wonder Projector",
+      "policy": "prohibited_generated_part",
+      "reason": "Requires in-game setup/configuration; cannot be meaningfully authored by generator.",
+      "allowed_exception": "Preserve explicitly provided already configured existing object only.",
+      "added_to_policy": "v50 plugin 6.4.1 update"
+    }
+  ]
+}
