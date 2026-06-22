@@ -1,8 +1,0 @@
-RequiredCategory,ObjectID,NiceName,Category,SubCategory,ModelName,extent_x,extent_y,extent_z,SpacingRule,Notes
-cockpit,B_COK_B,AMBASSADOR-CLASS COCKPIT,Corvette,Cockpits and Habitation Modules,B_COK_B,6.324219,4.624023,5.790321,"use FBX extents X=6.324, Y=4.624, Z=5.790 * scale",Required control/cockpit category for minimum Corvette validation.
-access_module,B_ALK_B,AMBASSADOR-CLASS LANDING BAY,Corvette,Access and Docking,B_ALK_B,5.929688,2.998047,3.697327,"use FBX extents X=5.930, Y=2.998, Z=3.697 * scale",Required access/docking/landing-bay category for minimum Corvette validation.
-habitation,B_HAB_C,AMBASSADOR-CLASS HAB,Corvette,Cockpits and Habitation Modules,B_HAB_C,5.847656,2.956696,11.820312,"use FBX extents X=5.848, Y=2.957, Z=11.820 * scale",Required habitable module category for minimum Corvette validation.
-reactor,B_GEN_0,ZENITH-CLASS REACTOR,Corvette,Reactors,B_GEN_0,6.0,3.766022,6.0,"use FBX extents X=6.000, Y=3.766, Z=6.000 * scale",Required reactor category; chosen explorer/courier baseline reactor.
-main_engine,B_TRU_C,KINEOSTREAM THRUSTER,Corvette,Thrusters,B_TRU_C,6.859375,6.859375,4.856274,"use FBX extents X=6.859, Y=6.859, Z=4.856 * scale",Required main engine/thruster category; chosen explorer/courier baseline engine.
-weapon_system,B_TUR_A,PHOTON CANNON ARRAY,Corvette,Defensive Systems,B_TUR_A,3.378906,2.175049,4.15625,"use FBX extents X=3.379, Y=2.175, Z=4.156 * scale",Required weapon category; chosen simple baseline weapon package.
-landing_gear,B_LND_B,MAG-FIELD LANDING THRUSTERS,Corvette,Access and Docking,B_LND_B,5.054688,2.299438,6.019531,"use FBX extents X=5.055, Y=2.299, Z=6.020 * scale",Required landing gear category; chosen low-profile baseline gear.

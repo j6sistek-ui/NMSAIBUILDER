@@ -1,1 +1,0 @@
-{ "schema": "NMS_CAPA_Escalation_State_1.0", "active": true, "reason": "fixture: skipped build sheet", "opened": "2026-06-19", "trigger_class": "BUILD_SHEET_FABRICATION/SHEET_NOT_UTILIZED", "history": [] }

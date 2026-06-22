@@ -1,9 +1,0 @@
-{
-  "schema": "C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL",
-  "status": "mandatory",
-  "source_rule": "rules/C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL.md",
-  "purpose": "NMS build-generation hardening rule.",
-  "required_for": [
-    "freeform C_TRIFLOOR builds"
-  ]
-}
