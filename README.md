@@ -1,4 +1,4 @@
-# NMS Master Docs 5.18.00
+# NMS Master Docs 5.19.03
 
 The current master reference for AI-assisted No Man's Sky Base Builder Python generation. This README is an orientation overview; the operating authority is `00_START_HERE_CURRENT.md`, and per-release history is in `CHANGELOG.md`.
 

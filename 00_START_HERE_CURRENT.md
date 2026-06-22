@@ -1,4 +1,4 @@
-# 00 — START HERE  (5.18.00 MASTER — current knowledge base & operating requirements)
+# 00 — START HERE  (5.19.03 MASTER — current knowledge base & operating requirements)
 
 ## ⛔ THIS IS THE LAW — READ 00_FOUNDATIONAL_DOCTRINE.md FIRST
 
@@ -420,7 +420,7 @@ Do not substitute placeholder geometry, proxy objects, or unsupported techniques
 
 # VERSION
 
-Current baseline: `5.18.00`
+Current baseline: `5.19.03`
 
 Release history: `CHANGELOG.md`
 

@@ -1,4 +1,15 @@
 # CHANGELOG — NMS master docs
+## 5.19.03 — Lighting/effect part data + placement-promotion runbook repair (2026-06-22)
+
+- Repaired the failed 5.19.02 placement-promotion candidate by adding the end-to-end trial-result -> existing store -> resolver/build-sheet runbook to `rules/RULE_UPDATE_PROTOCOL.md`.
+- Added user-supplied lighting/effect behavior to `data/CREATIVE_USE_CASE_AND_STYLE_INDEX.json`, including color-responsive emitters, fixture-tint-only cautions, wall-light color variants, SET_CLASS beam-cone composition, Race Booster purple glow, Planet Holo display effect, Base Shell colorable display, Corvette animated shield effects, and SWARM_TROPHY color variants.
+- Added provisional JSON-only part data for `SWARM_TROPHY_G`, `SWARM_TROPHY_B`, `SWARM_TROPHY_R`, and `B_SHL_D` without hand-editing the verified extraction overlay.
+- Updated `part_context_resolver.py` so effect findings are reachable in `CREATIVE_CONTEXT.part_effect_findings` and non-verified ObjectIDs can surface dimensions-library fallback geometry with explicit authority warnings.
+- Regenerated placement-map sheet/index/worklist/status and `discover_by_quality`; refreshed open topics and transfer prompt.
+
+
+## 5.19.00 — full per-part reconciliation into the build sheet
+- part_context_resolver.py: placement_spec now reconciles ALL per-part sources into one record — geometry (verified-map origin/bbox/FBX anchor), orientation (+ master-CSV phase/pivot + override), scale (+ behavior), placement_rules (snap + fallback + local axis rules + neighbor offsets + fitment + recipes), family, characteristics, method authority, role, cautions. Each section carries _source provenance + an overall validation block (geometry/orientation/scale status from the verified map; placement-trial-layer status from the master CSV) so unvalidated data is visible. Ties in nms_master_part_map_verified_data_v3, part_placement_master_sheet.csv, CREATIVE_USE_CASE_AND_STYLE_INDEX, METHOD_AUTHORITY_TABLE. connections_TODO flags cross-plane composed transforms as the next pass.
 
 ## 5.18.00 — consolidated per-part build-sheet hand-off (placement_spec)
 - part_context_resolver.py: every part now carries MANDATORY parts[oid].placement_spec — orientation (rotation + RX90/RY90/RZ90 footprints + override flag), scaling (world size at 0.5/1.0/1.5/2.0), placement (concrete snap + SpacingRule fallback + guidance + ring formula + recipes), role, cautions. Folds in the 5.16/5.17 curated-guidance and snap dicts. Mapped from existing library data; build_sheet integrity preserved.

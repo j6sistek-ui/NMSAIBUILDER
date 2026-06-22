@@ -1,9 +1,9 @@
 {
   "package": "NMS_master_docs",
   "source": "NMS master docs 1.03.03 CONSOLIDATED CLEANUP",
-  "updated": "2026-06-20",
+  "updated": "2026-06-22",
   "purpose": "Governance + placement-intelligence source package for AI-assisted No Man's Sky base building. Current state; see CHANGELOG.md for history.",
-  "file_count": 252,
+  "file_count": 257,
   "gate_test": {
     "script": "release/release_check.py",
     "status": "release_check PASS",
@@ -38,12 +38,12 @@
     "compliance_manifest_check": "PASS_self_test_via_release_check",
     "note": "Governance documentation patch created in chat; run release/release_check.py locally before final authoritative release."
   },
-  "version": "5.18.00",
+  "version": "5.19.03",
   "legacy_source": "NMS_master_docs_1.03.02_WORKING_JSON_CAPA_GATE_MERGED.zip",
   "versioning_policy": "rules/MASTER_DOC_VERSIONING_POLICY.md",
   "release_level": "patch",
-  "release_reason": "Owner confirmed 5.04.03 is current and requested package hygiene correction through release checks.",
-  "supersedes_version": "5.04.02",
+  "release_reason": "Lighting/effect part data mapping + placement-promotion runbook repair; preserves verified part map as anchor.",
+  "supersedes_version": "5.19.02",
   "update_type": "patch_scope_precision_and_metadata_hygiene",
   "1.03.00_updates": {
     "json_evidence_mapping_gate": true,
@@ -276,7 +276,7 @@
     "request_router_updated_for_source_doc_and_protocol_correction": true
   },
   "release_name": "WAVE3_RUNTIME_MAPPING_SCOPE_PRECISION",
-  "summary": "5.04.03 normalizes active version labels, resolves file-count and dangling-reference drift, adds transfer placeholder files, adds RPAM coverage for transfer/triage rules, and records release-check pass status.",
+  "summary": "Mapped user-supplied lighting/effect behavior into existing runtime stores; added provisional JSON-only partmaps for SWARM_TROPHY_G/B/R and B_SHL_D; repaired placement-promotion runbook; resolver now surfaces part_effect_findings.",
   "updated_rules": [
     "rules/FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL.md"
   ],
@@ -379,5 +379,17 @@
     "dangling_transfer_refs_resolved": true,
     "rpam_coverage_completed": true,
     "release_check_required": true
+  },
+  "5.19.03_updates": {
+    "placement_promotion_runbook_repair": true,
+    "lighting_effect_behavior_mapped": true,
+    "json_only_buildable_effect_parts_added": [
+      "SWARM_TROPHY_G",
+      "SWARM_TROPHY_B",
+      "SWARM_TROPHY_R",
+      "B_SHL_D"
+    ],
+    "verified_extraction_overlay_hand_edited": false,
+    "resolver_part_effect_findings": true
   }
 }

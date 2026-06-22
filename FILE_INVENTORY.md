@@ -1,6 +1,6 @@
-# NMS master docs 5.18.00 file inventory
+# NMS master docs 5.19.03 file inventory
 
-Total files: 252
+Total files: 257
 
 - `00_FOUNDATIONAL_DOCTRINE.md`
 - `00_KICKOFF_INTAKE_GATE.md`
@@ -62,6 +62,7 @@ Total files: 252
 - `library/nms_partmap_verified_exceptions_v3_01_02.csv`
 - `library/part_placement_maps/BILLBOARD.partmap.json`
 - `library/part_placement_maps/B_RAMP.partmap.json`
+- `library/part_placement_maps/B_SHL_D.partmap.json`
 - `library/part_placement_maps/C_RAMP.partmap.json`
 - `library/part_placement_maps/C_TRIFLOOR.partmap.json`
 - `library/part_placement_maps/C_TRIFLOOR_Q.partmap.json`
@@ -69,6 +70,9 @@ Total files: 252
 - `library/part_placement_maps/F_TRIFLOOR.partmap.json`
 - `library/part_placement_maps/F_TRIFLOOR_Q.partmap.json`
 - `library/part_placement_maps/M_RAMP.partmap.json`
+- `library/part_placement_maps/SWARM_TROPHY_B.partmap.json`
+- `library/part_placement_maps/SWARM_TROPHY_G.partmap.json`
+- `library/part_placement_maps/SWARM_TROPHY_R.partmap.json`
 - `library/part_placement_maps/S_RAMP.partmap.json`
 - `library/part_placement_maps/T_RAMP.partmap.json`
 - `library/part_placement_maps/W_RAMP.partmap.json`
@@ -78,7 +82,8 @@ Total files: 252
 - `library/part_placement_maps/part_placement_worklist.json`
 - `library/part_placement_maps/parts_status.csv`
 - `release/APPROVED_FILES.json`
-- `release/RELEASE_NOTES_5.18.00.md`
+- `release/RELEASE_NOTES_5.19.00.md`
+- `release/RELEASE_NOTES_5.19.03.md`
 - `release/VERSION.json`
 - `release/VERSION_LOCATIONS.json`
 - `release/VERSION_LOCATIONS.md`
