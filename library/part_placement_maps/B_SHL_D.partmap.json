@@ -1,0 +1,101 @@
+{
+  "schema": "NMS_PART_PLACEMENT_MAP_JSON_ONLY_EFFECT_5.19.03",
+  "part_id": "B_SHL_D",
+  "part_family": "CORVETTE_SHIELD_ANIMATED_EFFECT",
+  "status": "DISCOVERED",
+  "source_evidence": {
+    "source_docs_revision": "5.19.03",
+    "evidence_type": "user_exported_json_plus_in_game_screenshot",
+    "json_export": "/mnt/data/Pasted text.txt or user-pasted JSON in chat",
+    "user_observation": "User JSON contains B_SHL_D and user reports the shield/effect family moves/rotates/spins between frames.",
+    "scope_note": "JSON/in-game confirmed buildable effect object; not verified extraction overlay; not structural geometry."
+  },
+  "fbx_bounds": {
+    "FBXPath": "",
+    "extent_x": 0.0,
+    "extent_y": 0.0,
+    "extent_z": 0.0,
+    "center_x": 0.0,
+    "center_y": 0.0,
+    "center_z": 0.0,
+    "provenance": "UNKNOWN_NO_VERIFIED_GEOMETRY"
+  },
+  "canonical_local_frame": {
+    "Up": "normalize(source.Up)",
+    "At": "normalize(source.At projected perpendicular to Up)",
+    "Right": "normalize(Up cross At)",
+    "Origin": "source.Position",
+    "note": "JSON current-build transforms are authority; no plugin/FBX geometry available."
+  },
+  "scale_mapping": {
+    "baseline_scale": "source/control scale unless explicitly parameterized",
+    "scale_behavior": "unknown; do not scale to hide placement/visual issues"
+  },
+  "source_transform_invariants": [
+    "Position",
+    "Up",
+    "At",
+    "UserData"
+  ],
+  "neighbor_offset_clusters_local": {
+    "status": "NEED_STUDY",
+    "provenance": "DERIVED_RULE_PENDING",
+    "note": "No snap/neighbor fitment validated."
+  },
+  "rotation_delta_clusters": {
+    "status": "UNTESTED",
+    "provenance": "DERIVED_RULE_PENDING",
+    "note": "Use exported JSON orientation; no plugin geometry available for orientation validation."
+  },
+  "fitment_modes": [
+    "free_place_effect_decor_only",
+    "in_game_visual_review_required"
+  ],
+  "construction_applications": [
+    {
+      "application": "animated Corvette shield/effect display",
+      "status": "user_observed_in_game_motion"
+    }
+  ],
+  "failure_modes": [
+    "No verified geometry.",
+    "Do not assume B_SHL_A/B/C dimensions.",
+    "Do not use structurally; verify in-game motion/clearance."
+  ],
+  "allowed_variation_slots": [
+    "free placement",
+    "motion/effect composition",
+    "corvette-themed kinetic decor"
+  ],
+  "forbidden_substitutions": [
+    "structural geometry",
+    "snap/connection authority",
+    "verified-map claim"
+  ],
+  "validation": {
+    "status": "UNTESTED",
+    "note": "B_SHL_D is JSON-confirmed but absent from active verified extraction/dimensions baseline; use as motion/effect decor only until measured.",
+    "validated_with_algorithm": null,
+    "validated_date": null,
+    "validation_build": null,
+    "validation_evidence": {
+      "json_export": "user provided JSON export",
+      "in_game_visual": "user provided screenshots/observation",
+      "fbx": "none",
+      "plugin_geometry": "none / cube proxy where applicable"
+    }
+  },
+  "storage_receipt": {
+    "part_id": "B_SHL_D",
+    "partmap_path": "library/part_placement_maps/B_SHL_D.partmap.json",
+    "index_path": "library/part_placement_maps/part_placement_map_index.json",
+    "master_sheet_path": "library/part_placement_maps/part_placement_master_sheet.csv",
+    "source": "user lighting/effect intake 2026-06-22",
+    "validation": "partmap_storage_check + generate_partmaps --check"
+  },
+  "effect_behavior": {
+    "motion_behavior": "animated/moving/spinning visual effect reported by user",
+    "geometry_authority": "JSON_ONLY_NO_VERIFIED_GEOMETRY",
+    "visual_role": "Corvette energy shield / kinetic machine effect"
+  }
+}

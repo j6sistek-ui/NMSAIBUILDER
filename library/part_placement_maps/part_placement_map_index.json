@@ -20,6 +20,13 @@
       "validation_status": "BLENDER_USER_CHECK",
       "source": "per_part_partmap"
     },
+    "B_SHL_D": {
+      "part_family": "CORVETTE_SHIELD_ANIMATED_EFFECT",
+      "partmap_path": "library/part_placement_maps/B_SHL_D.partmap.json",
+      "status": "DISCOVERED",
+      "validation_status": "UNTESTED",
+      "source": "per_part_partmap"
+    },
     "C_RAMP": {
       "part_family": "STAIR_FULL_RAMP",
       "partmap_path": "library/part_placement_maps/C_RAMP.partmap.json",
@@ -67,6 +74,27 @@
       "partmap_path": "library/part_placement_maps/M_RAMP.partmap.json",
       "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
       "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "SWARM_TROPHY_B": {
+      "part_family": "SWARM_TROPHY_COLOR_VARIANT",
+      "partmap_path": "library/part_placement_maps/SWARM_TROPHY_B.partmap.json",
+      "status": "DISCOVERED",
+      "validation_status": "UNTESTED",
+      "source": "per_part_partmap"
+    },
+    "SWARM_TROPHY_G": {
+      "part_family": "SWARM_TROPHY_COLOR_VARIANT",
+      "partmap_path": "library/part_placement_maps/SWARM_TROPHY_G.partmap.json",
+      "status": "DISCOVERED",
+      "validation_status": "UNTESTED",
+      "source": "per_part_partmap"
+    },
+    "SWARM_TROPHY_R": {
+      "part_family": "SWARM_TROPHY_COLOR_VARIANT",
+      "partmap_path": "library/part_placement_maps/SWARM_TROPHY_R.partmap.json",
+      "status": "DISCOVERED",
+      "validation_status": "UNTESTED",
       "source": "per_part_partmap"
     },
     "S_RAMP": {

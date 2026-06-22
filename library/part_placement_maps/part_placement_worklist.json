@@ -2,10 +2,10 @@
   "schema": "NMS_PART_PLACEMENT_WORKLIST",
   "generated": "2026-06-07",
   "summary": {
-    "total_tracked_parts": 2078,
-    "bounds_validated": 2078,
+    "total_tracked_parts": 2082,
+    "bounds_validated": 2082,
     "placement_validated": 0,
-    "per_part_partmaps": 12,
+    "per_part_partmaps": 16,
     "orientation_override_parts": [
       "BILLBOARD"
     ],
@@ -20,6 +20,11 @@
     {
       "part_id": "B_RAMP",
       "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "B_SHL_D",
+      "validation_status": "UNTESTED",
       "orientation_override": false
     },
     {
@@ -55,6 +60,21 @@
     {
       "part_id": "M_RAMP",
       "validation_status": "BLENDER_USER_CHECK",
+      "orientation_override": false
+    },
+    {
+      "part_id": "SWARM_TROPHY_B",
+      "validation_status": "UNTESTED",
+      "orientation_override": false
+    },
+    {
+      "part_id": "SWARM_TROPHY_G",
+      "validation_status": "UNTESTED",
+      "orientation_override": false
+    },
+    {
+      "part_id": "SWARM_TROPHY_R",
+      "validation_status": "UNTESTED",
       "orientation_override": false
     },
     {
