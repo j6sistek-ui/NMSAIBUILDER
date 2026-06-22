@@ -1,0 +1,175 @@
+{
+ "schema": "PROJECT_BUILD_PLACEMENT_PACKET_1.1",
+ "generated_from_rev": "5.04.00",
+ "build_intent": "fixture enclosure door",
+ "MANDATORY_PLACEMENT_CONTEXT": {
+  "parts": {
+   "S_GDOOR": {
+    "governing_precedence_tier": 2,
+    "data_backed_tiers": [
+     2,
+     4
+    ],
+    "snap": {
+     "nature": "snap",
+     "group_label": "WALL_;_WALL;WALL_;_WALL_T;WALL_;_WALL_B;WALL_;_WALL_H;WALL_;_WALL_H_T;WALL_;_FLOOR;WALL_;_FLOOR_Q_A;WALL_;_FLOOR_Q_B"
+    },
+    "geometry": {
+     "MeasuredWorldSize_DEFAULT": "[5.691406, 3.117647, 3.332042]",
+     "WorldBottomOffsetFromOriginZ_DEFAULT": -1e-06,
+     "WorldTopOffsetFromOriginZ_DEFAULT": 3.332041,
+     "DefaultRotationDegrees": "[90.000207, 0.0, 0.0]"
+    },
+    "allowed_methods": [],
+    "forbidden": null,
+    "recipe_candidates": [
+     "toolkit/PLACEMENT_RECIPE_LIBRARY.json",
+     "data/JSON_RECIPE_SIGNATURE_INDEX.json"
+    ],
+    "applicable_rule_behaviors": [
+     {
+      "rule_id": "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+      "kind": "RULE",
+      "authority": "mandatory",
+      "required_behavior": "Connected assemblies must have no unplanned floating or disconnected segments before delivery.",
+      "check": "connectivity / no-float gate on exported build",
+      "applies_to": "family/assembly context"
+     },
+     {
+      "rule_id": "SPACING_CONNECTION_SCALE_RULES",
+      "kind": "RULE",
+      "authority": "active",
+      "required_behavior": "Apply validated spacing/connection/scale (e.g., step = native_size x scale x 0.92); connected pieces must touch or overlap.",
+      "check": "spacing formula honored; no unintended gaps",
+      "applies_to": "family/assembly context"
+     }
+    ],
+    "applicable_part_rules": [
+     "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE",
+     "SPACING_CONNECTION_SCALE_RULES"
+    ],
+    "build_application": "entrance door of the perimeter wall shell"
+   }
+  },
+  "universal_process_rules": [
+   "AI_CAPTURE_COMPLIANCE_CONTRACT",
+   "BLENDER_PARITY_RULE",
+   "BUILD_COMPLIANCE_MANIFEST_RULE",
+   "BUILD_PLACEMENT_SNAPSHOT_PROTOCOL",
+   "DOCS_UPDATE_AVAILABILITY_PROTOCOL",
+   "FULL_VERSION_CONTINUITY_REVIEW_RULE",
+   "GROUND_ZERO_FOUNDATION_RULE",
+   "GROUND_ZERO_FOUNDATION_RULE",
+   "MASTER_DOC_VERSIONING_POLICY",
+   "OBJECT_USE_RECORDING_PROTOCOL",
+   "OPEN_TOPICS_LOG_PROTOCOL",
+   "PART_PLACEMENT_MAP_SCHEMA",
+   "PER_RESPONSE_PROTOCOL_CONFIRMATION_RULE",
+   "PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE",
+   "PROJECT_CONTEXT_PROTOCOL",
+   "PROTOCOL_BANNER_HARD_FAIL_RULE",
+   "PROTOCOL_BANNER_HARD_FAIL_RULE",
+   "REQUEST_ROUTER_CHECKLIST",
+   "SESSION_ONBOARDING_CHECKLIST_RULE",
+   "SINGLE_MASTER_CHANGELOG_GOVERNANCE_RULE",
+   "SOURCE_DOC_EVALUATION_CHECKLIST",
+   "SYSTEMATIC_FAILURE_CAPA_PROTOCOL",
+   "VERIFIED_PARTMAP_DATA_PROTOCOL",
+   "VERIFIED_PARTMAP_DATA_PROTOCOL",
+   "PROJECT_TRANSFER_SUMMARY_RULE",
+   "TRIAGE_REVIEW_ASSISTANCE_TOOL_RULE",
+   "SINGLE_CURRENT_STATE_SOURCE_RULE"
+  ],
+  "assembly_rule_behaviors": [
+   {
+    "rule_id": "WALL_SHELL_ENCLOSURE_RECIPE",
+    "kind": "RECIPE",
+    "authority": "mandatory",
+    "required_behavior": "For any building/tower/room/city block/enclosure, build a continuous wall shell; never assemble enclosures from loose wall panels.",
+    "check": "enclosure is a continuous shell; no loose panels or unplanned gaps",
+    "applies_to": "build assembly (intent: enclosure)"
+   }
+  ],
+  "note": "FORCED. Build only from these parts; cite each in the BUILD COMPLIANCE MANIFEST; verified by compliance_manifest_check.py. assembly_rule_behaviors are build-level recipes triggered by the build intent."
+ },
+ "CREATIVE_CONTEXT": {
+  "style_index": "data/CREATIVE_USE_CASE_AND_STYLE_INDEX.json",
+  "creative_rules": [
+   "PART_USE_CASE_CATALOG",
+   "PART_USE_CASE_CATALOG",
+   "PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE"
+  ],
+  "part_character": {},
+  "applicable_failure_modes": {},
+  "placement_recipes": [
+   {
+    "id": "CONVERGING_RIB_CONE",
+    "orientation": "rib_aim",
+    "parts": [
+     "S_WALL_Q"
+    ],
+    "params": [
+     "rib_count",
+     "base_radius",
+     "apex_height",
+     "scale"
+    ],
+    "note": "ribs chained to one apex; double rib_count to close gaps; half-scale + tighter base = tall pointy spire"
+   },
+   {
+    "id": "CONVERGING_BEAM_CONE",
+    "orientation": "aim_at_apex",
+    "parts": [
+     "SET_CLASS_A",
+     "SET_CLASS_B",
+     "SET_CLASS_S"
+    ],
+    "params": [
+     "emitter_count",
+     "radius",
+     "apex_height",
+     "color_variant"
+    ],
+    "note": "single rim ring tilted to one apex = true converging light cone; density = ring spacing"
+   },
+   {
+    "id": "COUNTER_CHEVRON_GAP_FILL",
+    "orientation": "lean(opposite sign to spire)",
+    "parts": [
+     "match the spire part"
+    ],
+    "note": "snap to the drum top; counter the spire's lean to close a floating base gap"
+   },
+   {
+    "id": "SHINGLE_INFILL",
+    "orientation": "lean",
+    "parts": [
+     "S_WALLM_H"
+    ],
+    "note": "tile between ribs with scale variation + azimuth stagger for overlap texture"
+   },
+   {
+    "id": "SOLID_FINIAL_CAP",
+    "orientation": "n/a",
+    "parts": [
+     "CORNERPOST",
+     "single small cap"
+    ],
+    "note": "truncate facets BEFORE convergence; cap with a single un-stacked piece; anti-swirl"
+   }
+  ],
+  "orientation_recipes": {
+   "lean": "base Euler(90,0,a+90); rotate phi about tangent t=(-sin a, cos a, 0). NEGATIVE phi = inward (clean cone); positive = outward (spiky).",
+   "aim_at_apex": "vertical at azimuth a; tilt by -atan(radius/apex_height) about the tangent so the axis converges on the apex point.",
+   "rib_aim": "basis columns (d, up x d, d x (up x d)) with d=(apex-base).normalized(); the part's LOCAL X maps to d; chain copies along d for length.",
+   "api_quirk": "BUILDER.add_part(id) templates; .duplicate() returns an UNLINKED object - must collection.objects.link(obj) or it will not render."
+  },
+  "fit_rules": [
+   "ring z-spacing <= facet vertical extent (else tier gaps)",
+   "facet width <= base circumference / facet count (else chaotic overlap; N=8 octagon min for _M walls)",
+   "truncate a lower cone stage WIDE before a collar (else the upper stage collapses)",
+   "solidity/smoothness = part count at a fixed envelope and scale; add segments, do not enlarge (finding 19)"
+  ],
+  "note": "OFFERED, not gated. part_character, failure-mode cautions, recipes and fit-rules inform part choice & composition; they can never override precedence/negative-knowledge or fail the gate. MANDATORY_PLACEMENT_CONTEXT is the only forced surface."
+ }
+}

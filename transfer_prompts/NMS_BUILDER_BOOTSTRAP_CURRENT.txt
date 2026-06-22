@@ -1,0 +1,21 @@
+NMS Builder Bootstrap Prompt 5.18.00
+
+CRITICAL (4.01.00): For parts in an add-on snap group, placement geometry is AUTHORITATIVE from the add-on snap data (see rules/AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL.md) — select snap points BY NAME; do not re-derive from adjacency. Snap-validated, not game-validated.
+
+CRITICAL (5.02.00): The gate requirement is the GENERATED BUILDER SHEET, not a hand-written manifest. After resolving the sheet, fill each part's `build_application` (what it does in this build; do NOT edit mechanical fields), declare `PROJECT_BUILD_SHEET="runs/<build>__PACKET.json"` and `BUILD_SHEET_USED=True` in the Python, and pass `validation/run_gate.py`. run_gate enforces coverage (every used ObjectID is in the sheet), populated build_application, and tamper-evident integrity (re-resolves and rejects edits). The hand-written BUILD COMPLIANCE MANIFEST + `compliance_manifest_check.py` are an OPTIONAL deeper tool, not the gate requirement.
+
+CRITICAL (5.01.00): Hold `00_OPERATING_CARD.md` — it is the only page you must always keep. Do NOT browse the 300-file library during a build; RESOLVE a packet: `python3 validation/part_context_resolver.py --ids <ObjectIDs> --intent "<intent>" --out runs/<build>__PACKET.json`, then build ONLY from the packet's MANDATORY_PLACEMENT_CONTEXT (CREATIVE_CONTEXT is offered, never gated). The library is a searchable source, not a reading list.
+
+CRITICAL (5.00.00): THIS IS THE LAW. Load `00_FOUNDATIONAL_DOCTRINE.md` first. The first duty of every placement is Placement Precedence Resolution (`rules/PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE.md`). Emit an ONBOARDING CHECKLIST (READ/SKIPPED). Every build — Python or live Blender — must emit a BUILD COMPLIANCE MANIFEST and PASS `validation/compliance_manifest_check.py <manifest> .`; no verified manifest = invalid build. Documents are mandatory; if flawed, fix the doc, do not deviate.
+
+The canonical onboarding entry is 00_START_HERE_CURRENT.md (load it first); this bootstrap is the compact resume companion.
+
+Classify the request using the request router before design/code.
+
+For build work, use this order: request router first, feature recipe lookup second, current-build JSON/control JSON third, validated recipe/signature/toolkit rules fourth, part map fifth for component validation, and FBX/manual inspection only as fallback.
+
+Known-feature scripts must include `FEATURE_RECIPE_LOOKUP`. Build-generation scripts must include `AI_CAPTURE_COMPLIANCE` and must be review-ready for the Blender visual feedback harness.
+
+If the user uploads `NMS_AI_REVIEW*.zip`, treat it as design-loop validation evidence. Run review-bundle intake/checks first; do not fix code unless requested.
+
+End every response with the expanded protocol banner until the user says otherwise.

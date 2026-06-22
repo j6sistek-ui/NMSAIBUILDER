@@ -1,0 +1,50 @@
+{
+  "schema": "NMS_VALIDATION_INDEX_1.0",
+  "purpose": "Authoritative execution-tier classification for every validation/ script, so 'used vs not used' is objective and maintainable. Tiers are evidence-based: traced by invocation in run_gate.py / release_check.py / create_gpt_runtime_upload_pack.py and cross-imports. Audited by validation/runtime_reachability_audit.py.",
+  "tiers": {
+    "RUNTIME_ORCHESTRATOR": "The build-time gate entry point.",
+    "BUILD_GATE": "Invoked by run_gate.py during every build validation; a build cannot PASS without it.",
+    "RUNTIME_LIB": "Imported by build-runtime code (e.g. the resolver) rather than invoked standalone.",
+    "RELEASE_SELFTEST": "Invoked by release_check.py (and/or the upload-pack builder) during release gating; validates the package, not an individual build.",
+    "AUDIT_TOOL": "Advisory, run on demand (not gating). Measures the package.",
+    "REDUNDANT": "Capability fully covered elsewhere (e.g. by a BUILD_GATE); scheduled for purge."
+  },
+  "scripts": {
+    "run_gate.py": "RUNTIME_ORCHESTRATOR",
+    "ai_capture_compliance_check.py": "BUILD_GATE",
+    "build_sheet_check.py": "BUILD_GATE",
+    "capa_escalation.py": "BUILD_GATE",
+    "compliance_manifest_check.py": "BUILD_GATE",
+    "feature_recipe_lookup_check.py": "BUILD_GATE",
+    "intent_graph_conformance_check.py": "BUILD_GATE",
+    "recipe_conformance_check.py": "BUILD_GATE",
+    "validated_logic_reuse_check.py": "BUILD_GATE",
+    "part_context_resolver.py": "RUNTIME_LIB",
+    "ai_review_bundle_check.py": "RELEASE_SELFTEST",
+    "blender_runtime_script_check.py": "RELEASE_SELFTEST",
+    "build_objective_conformance_check.py": "RELEASE_SELFTEST",
+    "discover_by_quality_check.py": "RELEASE_SELFTEST",
+    "geometry_construction_manifest_check.py": "RELEASE_SELFTEST",
+    "onboarding_gauntlet_check.py": "RELEASE_SELFTEST",
+    "open_topics_structure_check.py": "RELEASE_SELFTEST",
+    "partmap_storage_check.py": "RELEASE_SELFTEST",
+    "placement_intelligence_infrastructure_check.py": "RELEASE_SELFTEST",
+    "protocol_banner_check.py": "RELEASE_SELFTEST",
+    "request_router_check.py": "RELEASE_SELFTEST",
+    "rpam_coverage_check.py": "RELEASE_SELFTEST",
+    "rule_classification_check.py": "RELEASE_SELFTEST",
+    "version_callout_check.py": "RELEASE_SELFTEST",
+    "runtime_reachability_audit.py": "AUDIT_TOOL",
+    "NMS_BUILD_USE_CASE_MINER.py": "AUDIT_TOOL",
+    "new_file_guard_check.py": "RELEASE_SELFTEST"
+  },
+  "tier_counts": {
+    "RUNTIME_ORCHESTRATOR": 1,
+    "BUILD_GATE": 8,
+    "RUNTIME_LIB": 1,
+    "RELEASE_SELFTEST": 15,
+    "AUDIT_TOOL": 2,
+    "REDUNDANT": 0
+  },
+  "notes": "NMS_NONUNIFORM_SCALE_SCANNER.py was classified REDUNDANT (its non-uniform-scale check is enforced by run_gate + PROHIBITED_AND_PLACEHOLDER_OBJECTS) and purged in 5.11.00. NMS_BUILD_USE_CASE_MINER.py is retained as an AUDIT_TOOL: it mines base-JSON exports to grow the single creative store (data/CREATIVE_USE_CASE_AND_STYLE_INDEX.json); it has no BUILD_GATE equivalent."
+}

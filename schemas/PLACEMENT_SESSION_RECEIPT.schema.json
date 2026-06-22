@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PLACEMENT_SESSION_RECEIPT",
+  "type": "object",
+  "required": [
+    "session_id",
+    "source_docs_rev",
+    "placement_index_version",
+    "objects_placed",
+    "unique_objectids",
+    "placement_methods_used",
+    "exceptions_triggered",
+    "requires_exported_json_review",
+    "requires_ai_visual_review"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "source_docs_rev": {
+      "type": "string"
+    },
+    "placement_index_version": {
+      "type": "string"
+    },
+    "objects_placed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unique_objectids": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "placement_methods_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exceptions_triggered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requires_exported_json_review": {
+      "type": "boolean"
+    },
+    "requires_ai_visual_review": {
+      "type": "boolean"
+    }
+  }
+}

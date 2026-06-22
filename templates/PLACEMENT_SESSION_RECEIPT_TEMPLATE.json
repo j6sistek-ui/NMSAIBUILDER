@@ -1,0 +1,11 @@
+{
+  "session_id": "BUILD_ID",
+  "source_docs_rev": "<current>",
+  "placement_index_version": "MPII_4.02.00",
+  "objects_placed": 0,
+  "unique_objectids": 0,
+  "placement_methods_used": [],
+  "exceptions_triggered": [],
+  "requires_exported_json_review": true,
+  "requires_ai_visual_review": true
+}

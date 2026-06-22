@@ -1,0 +1,6 @@
+[
+ {"ObjectID":"^S_FLOOR","Position":[0,0,0],"Up":[0,0,-1],"At":[0,1,0]},
+ {"ObjectID":"^S_RAMP","Position":[5.2488,0,0],"Up":[0,0,-1],"At":[0,1,0]},
+ {"ObjectID":"^S_RAMP","Position":[10.5021,0,-3.28333],"Up":[0,0,-1],"At":[0,1,0]},
+ {"ObjectID":"^S_RAMP","Position":[15.7554,0,-6.56666],"Up":[0,0,-1],"At":[0,1,0]}
+]

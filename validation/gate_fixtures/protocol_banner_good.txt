@@ -1,0 +1,3 @@
+# protocol banner good fixture
+
+PROTOCOL ✓ — type: build_generation | source docs rev: 5.18.00 | bundle: request_router -> feature_recipe_lookup | precedence: resolved per ObjectID | gate: run_gate PASS | ambiguity: none | Docs Avail for Update?: No (0)
