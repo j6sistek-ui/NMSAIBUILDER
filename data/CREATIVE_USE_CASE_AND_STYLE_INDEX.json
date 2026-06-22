@@ -1,6 +1,6 @@
 {
  "schema": "NMS_Creative_Use_Case_And_Style_Index_0.2",
- "source_docs_rev": "5.04.00",
+ "source_docs_rev": "5.19.03",
  "status": "active_creative_index",
  "rule": "This index records style/use-case/concept knowledge only. It must not override MASTER_PLACEMENT_INTELLIGENCE_INDEX or METHOD_AUTHORITY_TABLE placement mechanics.",
  "planned_domains": [
@@ -123,6 +123,11 @@
    "id": "airlock_iris_densified",
    "finding": 19,
    "note": "12->32 S_GDOOR on identical circle to close gaps; envelope unchanged"
+  },
+  {
+   "id": "lighting_effect_colorability_20260622",
+   "finding": "lighting_colorability_and_effect_composition",
+   "note": "User in-game study: most fixtures only tint the body; LIGHTBOX/L_FLOOR_Q/BASE_BEAMSTONE are color-responsive emitters; SET_CLASS beams can be composed as visual cones; SWARM_TROPHY G/B/R are JSON-confirmed game-file buildable colored trophy effects."
   }
  ],
  "supersedes": "CREATIVE_USE_CASE_AND_STYLE_INDEX_STUB.json (0.1)",
@@ -175,34 +180,139 @@
    "note": "NOT a pyramid/point; fans when stacked (see FAN_VAULT_MISUSE_AS_POINT)"
   },
   "SET_CLASS_A": {
-   "profile": "beam_emitter",
+   "profile": "fixed_colored_volumetric_beam_emitter",
    "dims": [
     1.31,
     11.22,
     1.31
    ],
    "color": "magenta",
-   "color_variant_family": "SET_CLASS"
+   "color_variant_family": "SET_CLASS",
+   "note": " User study: fixed-class beam color can be composed into volumetric cone/beacon effects; not stone spire geometry."
   },
   "SET_CLASS_B": {
-   "profile": "beam_emitter",
+   "profile": "fixed_colored_volumetric_beam_emitter",
    "dims": [
     1.31,
     11.22,
     1.31
    ],
    "color": "blue",
-   "color_variant_family": "SET_CLASS"
+   "color_variant_family": "SET_CLASS",
+   "note": " User study: fixed-class beam color can be composed into volumetric cone/beacon effects; not stone spire geometry."
   },
   "SET_CLASS_S": {
-   "profile": "beam_emitter",
+   "profile": "fixed_colored_volumetric_beam_emitter",
    "dims": [
     1.31,
     11.22,
     1.31
    ],
    "color": "gold",
-   "color_variant_family": "SET_CLASS"
+   "color_variant_family": "SET_CLASS",
+   "note": " User study: fixed-class beam color can be composed into volumetric cone/beacon effects; not stone spire geometry."
+  },
+  "SWARM_TROPHY_G": {
+   "profile": "circular_illuminated_trophy_ring",
+   "smooth_surface_capable": false,
+   "note": "green game-file discovered trophy/ring light effect; Blender cube proxy only; JSON confirmed; use as display centerpiece/faction marker, not structure.",
+   "dims": [
+    2.0,
+    2.0,
+    2.0
+   ]
+  },
+  "SWARM_TROPHY_B": {
+   "profile": "circular_illuminated_trophy_ring",
+   "smooth_surface_capable": false,
+   "note": "blue game-file discovered trophy/ring light effect; Blender cube proxy only; JSON confirmed; use as display centerpiece/faction marker, not structure.",
+   "dims": [
+    2.0,
+    2.0,
+    2.0
+   ]
+  },
+  "SWARM_TROPHY_R": {
+   "profile": "circular_illuminated_trophy_ring",
+   "smooth_surface_capable": false,
+   "note": "red game-file discovered trophy/ring light effect; Blender cube proxy only; JSON confirmed; use as display centerpiece/faction marker, not structure.",
+   "dims": [
+    2.0,
+    2.0,
+    2.0
+   ]
+  },
+  "BASE_BEAMSTONE": {
+   "profile": "vertical_colorable_beam_fissure",
+   "smooth_surface_capable": false,
+   "note": "Colorable vertical beam/light fissure; strong beacon/energy column; beam responds to color; visual effect not physical support.",
+   "dims": [
+    2.72,
+    10.85,
+    2.59
+   ],
+   "long_axis": "local_Y"
+  },
+  "LIGHTBOX": {
+   "profile": "colorable_emissive_box",
+   "smooth_surface_capable": false,
+   "note": "Object color changes emitted light; use for colored panel/box glow.",
+   "dims": [
+    1.01,
+    0.76,
+    0.76
+   ]
+  },
+  "L_FLOOR_Q": {
+   "profile": "colorable_emissive_floor_panel",
+   "smooth_surface_capable": false,
+   "note": "Object color changes emitted floor/panel glow; use for colored floor light and sci-fi runway panels.",
+   "dims": [
+    2.65,
+    0.61,
+    2.67
+   ]
+  },
+  "RACE_BOOSTER": {
+   "profile": "purple_surface_glow_strip",
+   "smooth_surface_capable": false,
+   "note": "Purple glow along surface; use as sci-fi runway/power strip/energy accent.",
+   "long_axis": "long_axis"
+  },
+  "BLD_PLANET_HOLO": {
+   "profile": "blue_planet_solar_system_hologram",
+   "smooth_surface_capable": false,
+   "note": "Blue solar-system/planet hologram; use for observatory/navigation/science displays.",
+   "dims": [
+    9.96,
+    3.7,
+    9.96
+   ]
+  },
+  "BASE_SHELLWHITE": {
+   "profile": "large_colorable_shell_display",
+   "smooth_surface_capable": false,
+   "note": "Large shell/barrier/display field whose visible shell color changes; colorable surface not point-light emitter."
+  },
+  "B_SHL_A": {
+   "profile": "animated_corvette_shield_effect",
+   "smooth_surface_capable": false,
+   "note": "Corvette shield/effect object; user observed moving/rotating/spinning behavior; kinetic sci-fi decor, not static structure."
+  },
+  "B_SHL_B": {
+   "profile": "animated_corvette_shield_effect",
+   "smooth_surface_capable": false,
+   "note": "Corvette shield/effect object; user observed moving/rotating/spinning behavior; kinetic sci-fi decor, not static structure."
+  },
+  "B_SHL_C": {
+   "profile": "animated_corvette_shield_effect",
+   "smooth_surface_capable": false,
+   "note": "Corvette shield/effect object; user observed moving/rotating/spinning behavior; kinetic sci-fi decor, not static structure."
+  },
+  "B_SHL_D": {
+   "profile": "animated_corvette_shield_effect",
+   "smooth_surface_capable": false,
+   "note": "Corvette shield/effect object; user observed moving/rotating/spinning behavior; kinetic sci-fi decor, not static structure."
   }
  },
  "color_variant_families": {
@@ -219,11 +329,79 @@
     1.31
    ],
    "colors": {
-    "A": "magenta",
+    "A": "purple/magenta",
     "B": "blue",
-    "S": "gold"
+    "S": "gold/yellow"
    },
-   "note": "swap freely for color; footprint 1.31 (pack on 1.31, not the 11.22 height)"
+   "note": "Fixed-color beam emitters; swap ObjectID for beam color. Useful for volumetric cone/beacon compositions; beam is visual/effect geometry only."
+  },
+  "WALLLIGHT_COLOR_VARIANTS": {
+   "members": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "identical_or_similar_geometry": "assumed_by_variant_family_pending_measurement",
+   "colors": {
+    "WALLLIGHTBLUE": "blue",
+    "WALLLIGHTGREEN": "green",
+    "WALLLIGHTPINK": "pink",
+    "WALLLIGHTRED": "red",
+    "WALLLIGHTWHITE": "white",
+    "WALLLIGHTYELLOW": "yellow"
+   },
+   "note": "Use ObjectID variant for emitted wall-light color; do not rely on repainting a generic light."
+  },
+  "SWARM_TROPHY_COLOR_VARIANTS": {
+   "members": [
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_R"
+   ],
+   "geometry_authority": "JSON_ONLY_NO_FBX_PLUGIN_PROXY",
+   "colors": {
+    "SWARM_TROPHY_G": "green",
+    "SWARM_TROPHY_B": "blue",
+    "SWARM_TROPHY_R": "red"
+   },
+   "note": "Modded/game-file discovered circular trophy/ring effects; Blender cube proxy is not true appearance."
+  },
+  "COLOR_RESPONSIVE_EMITTERS": {
+   "members": [
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "BASE_BEAMSTONE"
+   ],
+   "color_response": "selected object color changes emitted light/beam for this group",
+   "note": "Confirmed exception class: these are valid when AI needs actual emitted color changes."
+  },
+  "FIXTURE_TINT_ONLY_LIGHTS": {
+   "members": [
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "BUILDLABLAMP",
+    "CEILINGLIGHT",
+    "SMALLLIGHT",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "LIGHTFRAME",
+    "S_STREETLAMP0",
+    "B_STREETLAMP0",
+    "S_TABLELAMP0",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_GLOWGLOBE"
+   ],
+   "color_response": "fixture body may tint; emitted light generally does not materially recolor",
+   "note": "Failure prevention: do not promise colored emitted light by repainting these fixture classes."
   }
  },
  "orientation_recipes": {
@@ -529,6 +707,347 @@
      "generic antenna crowns with no role",
      "unconnected signal objects"
     ]
+   },
+   {
+    "status": "user in-game lighting study",
+    "members": [
+     {
+      "ObjectID": "LIGHTBOX"
+     },
+     {
+      "ObjectID": "L_FLOOR_Q"
+     },
+     {
+      "ObjectID": "BASE_BEAMSTONE"
+     }
+    ],
+    "effect": "Selected object color changes emitted light/beam for this exception class.",
+    "rules": [
+     "Use these when actual emitted-light color must change with selected color.",
+     "Do not generalize this to all light fixtures."
+    ],
+    "applications": [
+     "colored floor/panel glow",
+     "energy beam",
+     "neon accent",
+     "sci-fi runway"
+    ],
+    "family_id": "COLOR_RESPONSIVE_EMITTERS"
+   },
+   {
+    "status": "user in-game lighting study",
+    "members": [
+     {
+      "ObjectID": "BUILDLIGHT"
+     },
+     {
+      "ObjectID": "BUILDLIGHT2"
+     },
+     {
+      "ObjectID": "BUILDLIGHT3"
+     },
+     {
+      "ObjectID": "BUILDLIGHTTABLE"
+     },
+     {
+      "ObjectID": "BUILDLABLAMP"
+     },
+     {
+      "ObjectID": "CEILINGLIGHT"
+     },
+     {
+      "ObjectID": "SMALLLIGHT"
+     },
+     {
+      "ObjectID": "LIGHT_PLINTH"
+     },
+     {
+      "ObjectID": "LIGHT_TALL"
+     },
+     {
+      "ObjectID": "LIGHT_VERT"
+     },
+     {
+      "ObjectID": "LIGHTFRAME"
+     },
+     {
+      "ObjectID": "S_STREETLAMP0"
+     },
+     {
+      "ObjectID": "B_STREETLAMP0"
+     },
+     {
+      "ObjectID": "S_TABLELAMP0"
+     },
+     {
+      "ObjectID": "S_HANGLAMP0"
+     },
+     {
+      "ObjectID": "S_HANGLAMP1"
+     },
+     {
+      "ObjectID": "S_HANGLAMP2"
+     },
+     {
+      "ObjectID": "S_HANGLAMP3"
+     },
+     {
+      "ObjectID": "S_GLOWGLOBE"
+     }
+    ],
+    "effect": "Fixture body may tint slightly, but emitted light generally remains the same.",
+    "rules": [
+     "Do not make colored lighting by repainting these fixtures.",
+     "Use color variants or color-responsive emitters instead."
+    ],
+    "applications": [
+     "ambient fixture lighting",
+     "white/warm illumination",
+     "lamp bodies"
+    ],
+    "family_id": "FIXTURE_TINT_ONLY_LIGHTS"
+   },
+   {
+    "status": "user in-game lighting study",
+    "members": [
+     {
+      "ObjectID": "WALLLIGHTBLUE"
+     },
+     {
+      "ObjectID": "WALLLIGHTGREEN"
+     },
+     {
+      "ObjectID": "WALLLIGHTPINK"
+     },
+     {
+      "ObjectID": "WALLLIGHTRED"
+     },
+     {
+      "ObjectID": "WALLLIGHTWHITE"
+     },
+     {
+      "ObjectID": "WALLLIGHTYELLOW"
+     }
+    ],
+    "effect": "Emitted wall-light color is controlled by ObjectID variant.",
+    "rules": [
+     "Select the desired color variant ObjectID directly.",
+     "Do not rely on generic recolor."
+    ],
+    "applications": [
+     "color-coded corridors",
+     "wall accents",
+     "signage edges"
+    ],
+    "family_id": "WALLLIGHT_COLOR_VARIANTS"
+   },
+   {
+    "status": "user in-game study / AI spire trial",
+    "members": [
+     {
+      "ObjectID": "SET_CLASS_A",
+      "color": "purple/magenta"
+     },
+     {
+      "ObjectID": "SET_CLASS_B",
+      "color": "blue"
+     },
+     {
+      "ObjectID": "SET_CLASS_S",
+      "color": "gold/yellow"
+     }
+    ],
+    "effect": "Volumetric colored beams can overlap into triangular/conical visual forms.",
+    "rules": [
+     "Beam-as-form is a creative effect material, not physical structure.",
+     "Can create beacons, portal crowns, reactor columns, hologram cones.",
+     "May clash with stone towers as a spire replacement; style-check before using."
+    ],
+    "applications": [
+     "beacon",
+     "portal crown",
+     "reactor column",
+     "energy spire",
+     "stage lighting",
+     "holographic monument"
+    ],
+    "family_id": "SET_CLASS_BEAM_CONE_COMPOSITION"
+   },
+   {
+    "status": "JSON_CONFIRMED_GAME_BUILDABLE_NO_FBX",
+    "members": [
+     {
+      "ObjectID": "SWARM_TROPHY_G",
+      "color": "green"
+     },
+     {
+      "ObjectID": "SWARM_TROPHY_B",
+      "color": "blue"
+     },
+     {
+      "ObjectID": "SWARM_TROPHY_R",
+      "color": "red"
+     }
+    ],
+    "effect": "Large circular illuminated trophy/ring centerpiece with strong colored glow; Blender cube proxy only.",
+    "rules": [
+     "Use as decorative effect/display, not structural geometry.",
+     "Use JSON/in-game evidence; no FBX/plugin validation."
+    ],
+    "applications": [
+     "faction trophy",
+     "beacon display",
+     "ritual/portal marker",
+     "colored centerpiece"
+    ],
+    "family_id": "SWARM_TROPHY_COLOR_EFFECTS"
+   },
+   {
+    "status": "user in-game motion observation",
+    "members": [
+     {
+      "ObjectID": "B_SHL_A"
+     },
+     {
+      "ObjectID": "B_SHL_B"
+     },
+     {
+      "ObjectID": "B_SHL_C"
+     },
+     {
+      "ObjectID": "B_SHL_D"
+     }
+    ],
+    "effect": "Moving/rotating/spinning Corvette shield effects.",
+    "rules": [
+     "Use as kinetic sci-fi machinery/effect decor.",
+     "Do not treat motion parts as static structural geometry.",
+     "B_SHL_D is JSON-only/provisional in this package."
+    ],
+    "applications": [
+     "energy shield",
+     "kinetic reactor",
+     "rotating machinery",
+     "Corvette-themed display"
+    ],
+    "family_id": "CORVETTE_SHIELD_ANIMATED_EFFECTS"
+   },
+   {
+    "status": "user in-game lighting study",
+    "members": [
+     {
+      "ObjectID": "RACE_BOOSTER"
+     }
+    ],
+    "effect": "Purple glow along booster surface.",
+    "rules": [
+     "Use as sci-fi surface/track/runway energy accent.",
+     "Not a general room light."
+    ],
+    "applications": [
+     "runway strip",
+     "power conduit",
+     "race track accent",
+     "energy panel"
+    ],
+    "family_id": "RACE_BOOSTER_PURPLE_SURFACE_GLOW"
+   },
+   {
+    "status": "user in-game lighting study",
+    "members": [
+     {
+      "ObjectID": "BLD_PLANET_HOLO"
+     }
+    ],
+    "effect": "Blue planet/solar-system hologram light/display.",
+    "rules": [
+     "Use as science/navigation/observatory display.",
+     "Not a generic blue lamp."
+    ],
+    "applications": [
+     "observatory",
+     "navigation room",
+     "science lab",
+     "command center"
+    ],
+    "family_id": "PLANET_HOLOGRAM_DISPLAY"
+   },
+   {
+    "status": "user JSON/in-game study",
+    "members": [
+     {
+      "ObjectID": "BLD_DATASIGN"
+     },
+     {
+      "ObjectID": "WALLSCREEN"
+     },
+     {
+      "ObjectID": "WALLSCREENB"
+     },
+     {
+      "ObjectID": "WALLSCREENB2"
+     },
+     {
+      "ObjectID": "HOLO_EXP"
+     },
+     {
+      "ObjectID": "HOLO_MED1"
+     },
+     {
+      "ObjectID": "HOLO_MED2"
+     },
+     {
+      "ObjectID": "HOLO_SMALL1"
+     },
+     {
+      "ObjectID": "HOLO_SMALL2"
+     },
+     {
+      "ObjectID": "HOLO_SMALL3"
+     },
+     {
+      "ObjectID": "HOLO_TRA"
+     },
+     {
+      "ObjectID": "HOLO_WAR"
+     },
+     {
+      "ObjectID": "BLD_HOLOGEK"
+     }
+    ],
+    "effect": "Readable / holographic display surfaces and floating display props.",
+    "rules": [
+     "Use for information/UI/science context.",
+     "Orient for readability and avoid clipping."
+    ],
+    "applications": [
+     "data wall",
+     "lab display",
+     "archive",
+     "command room UI",
+     "alien-tech display"
+    ],
+    "family_id": "SCREEN_AND_HOLOGRAM_DISPLAY_CLUSTER"
+   },
+   {
+    "status": "user in-game lighting/effect study",
+    "members": [
+     {
+      "ObjectID": "BASE_SHELLWHITE"
+     }
+    ],
+    "effect": "Large shell/display field changes visible color.",
+    "rules": [
+     "Use as colorable shell/barrier/display surface.",
+     "Do not confuse colorable surface with emitted lighting behavior."
+    ],
+    "applications": [
+     "energy container",
+     "shield shell",
+     "large display field",
+     "colored barrier"
+    ],
+    "family_id": "BASE_SHELL_COLORABLE_DISPLAY_FIELD"
    }
   ]
  },
@@ -540,12 +1059,71 @@
    "aband": [
     "TURRET_ABAND"
    ],
+   "accent": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "RACE_BOOSTER"
+   ],
+   "accents": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
    "aeron": [
     "B_WNG_R",
     "B_WNG_R_T"
    ],
    "aimed": [
     "S_WALL_Q"
+   ],
+   "alien": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "along": [
+    "RACE_BOOSTER"
+   ],
+   "ambient": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "animated": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "antenna": [
     "B_ANTENNA0",
@@ -557,6 +1135,21 @@
    "apex": [
     "S_WALL_Q"
    ],
+   "archive": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
    "automation": [
     "BASE_ROBOTOY",
     "BLD_CRYS_DRONE",
@@ -567,34 +1160,270 @@
     "SERVERBOX2",
     "SERVERSTACK"
    ],
+   "barrier": [
+    "BASE_SHELLWHITE"
+   ],
+   "base": [
+    "BASE_SHELLWHITE"
+   ],
+   "beacon": [
+    "BASE_BEAMSTONE",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
    "beam": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
     "SET_CLASS_A",
     "SET_CLASS_B",
     "SET_CLASS_S",
     "TURRET_ABAND"
    ],
    "beams": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
     "TURRET_ABAND"
+   ],
+   "behavior": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "blade": [
     "B_WNG_R",
     "B_WNG_R_T"
    ],
+   "blender": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
    "blue": [
-    "B_WNG_A"
+    "BLD_PLANET_HOLO",
+    "B_WNG_A",
+    "SWARM_TROPHY_B"
+   ],
+   "bodies": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "body": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
    ],
    "booster": [
-    "B_WNG_A"
+    "B_WNG_A",
+    "RACE_BOOSTER"
    ],
    "ceiling": [
     "TURRET_ABAND"
    ],
+   "center": [
+    "BLD_PLANET_HOLO"
+   ],
+   "centerpiece": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
    "chain": [
     "S_WALL_Q"
    ],
+   "changes": [
+    "BASE_BEAMSTONE",
+    "BASE_SHELLWHITE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
+   "circular": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "class": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "cluster": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "coded": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "color": [
+    "BASE_BEAMSTONE",
+    "BASE_SHELLWHITE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R",
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "colorable": [
+    "BASE_BEAMSTONE",
+    "BASE_SHELLWHITE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
+   "colored": [
+    "BASE_BEAMSTONE",
+    "BASE_SHELLWHITE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "column": [
+    "BASE_BEAMSTONE",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "command": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "BLD_PLANET_HOLO",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "composed": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "composition": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "conduit": [
+    "RACE_BOOSTER"
+   ],
    "cone": [
     "B_WNG_R",
-    "B_WNG_R_T"
+    "B_WNG_R_T",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "confirmed": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "conical": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "container": [
+    "BASE_SHELLWHITE"
+   ],
+   "controlled": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "corridors": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "corvette": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "courses": [
     "S_WALLM"
@@ -604,11 +1433,72 @@
     "B_ANTENNA1",
     "B_ANTENNA2",
     "B_ANTENNA3",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
     "S_ANTENNA0"
+   ],
+   "cube": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "data": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "decor": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "deep": [
     "MAINROOMCUBE_W",
     "MAINROOM_WATER"
+   ],
+   "discovered": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "display": [
+    "BASE_SHELLWHITE",
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "BLD_PLANET_HOLO",
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "displays": [
+    "BLD_PLANET_HOLO"
    ],
    "dotted": [
     "TURRET_ABAND"
@@ -616,9 +1506,37 @@
    "drum": [
     "S_WALLM"
    ],
+   "edges": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
    "effect": [
+    "BASE_BEAMSTONE",
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
     "B_SHL_E",
-    "B_WNG_A"
+    "B_WNG_A",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "effects": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
    ],
    "electric": [
     "B_WNG_A"
@@ -626,13 +1544,77 @@
    "electricity": [
     "B_WNG_A"
    ],
+   "emissive": [
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
+   "emitted": [
+    "BASE_BEAMSTONE",
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTBOX",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "L_FLOOR_Q",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0",
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
    "emitter": [
+    "BASE_SHELLWHITE",
     "SET_CLASS_A",
     "SET_CLASS_B",
     "SET_CLASS_S"
    ],
+   "emitters": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
+   "energy": [
+    "BASE_BEAMSTONE",
+    "BASE_SHELLWHITE",
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "RACE_BOOSTER",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "exception": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
    "facets": [
     "S_WALLM_H"
+   ],
+   "faction": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
    ],
    "fades": [
     "B_WNG_A"
@@ -640,11 +1622,78 @@
    "fans": [
     "S_LARGETRYE0"
    ],
+   "field": [
+    "BASE_SHELLWHITE"
+   ],
+   "file": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
    "finer": [
     "S_WALLM_H"
    ],
+   "fissure": [
+    "BASE_BEAMSTONE"
+   ],
+   "fixed": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "fixture": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "floating": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "floor": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
    "form": [
     "S_ROOF_M_WIN"
+   ],
+   "forms": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "game": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
    ],
    "gantry": [
     "BASE_ROBOTOY",
@@ -656,11 +1705,49 @@
     "SERVERBOX2",
     "SERVERSTACK"
    ],
+   "generally": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "geometry": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
    "glass": [
     "S_ROOF_M_WIN"
    ],
    "glitch": [
     "B_WNG_A"
+   ],
+   "glow": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "RACE_BOOSTER",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "green": [
+    "SWARM_TROPHY_G"
    ],
    "grid": [
     "TURRET_ABAND"
@@ -681,8 +1768,106 @@
    "heavy": [
     "B_WNG_A"
    ],
+   "hologram": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "BLD_PLANET_HOLO",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "holographic": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "illuminated": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "illumination": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
    "infill": [
     "S_WALLM_H"
+   ],
+   "json": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "kinetic": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
+   ],
+   "lamp": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "large": [
+    "BASE_SHELLWHITE",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
    ],
    "length": [
     "S_WALL_Q"
@@ -691,12 +1876,91 @@
     "B_SHL_E"
    ],
    "light": [
-    "TURRET_ABAND"
+    "BASE_BEAMSTONE",
+    "BASE_SHELLWHITE",
+    "BLD_PLANET_HOLO",
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTBOX",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "L_FLOOR_Q",
+    "SMALLLIGHT",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0",
+    "TURRET_ABAND",
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "lighting": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "lights": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
    ],
    "load": [
     "B_WNG_A"
    ],
    "long": [
+    "RACE_BOOSTER",
     "S_WALL_Q"
    ],
    "machine": [
@@ -709,6 +1973,17 @@
     "SERVERBOX2",
     "SERVERSTACK"
    ],
+   "machinery": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
+   ],
+   "marker": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
    "minimum": [
     "S_WALLM"
    ],
@@ -718,14 +1993,59 @@
    "misuse": [
     "S_LARGETRYE0"
    ],
+   "monument": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "moving": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
+   ],
    "narrow": [
     "S_WALLM_H"
+   ],
+   "navigation": [
+    "BLD_PLANET_HOLO"
+   ],
+   "neon": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
    ],
    "nodes": [
     "TURRET_ABAND"
    ],
    "nonsmooth": [
     "S_ROOF_M_WIN"
+   ],
+   "object": [
+    "BASE_BEAMSTONE",
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
+   "objectid": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "observatory": [
+    "BLD_PLANET_HOLO"
+   ],
+   "observed": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "octagon": [
     "S_WALLM"
@@ -734,8 +2054,49 @@
     "B_WNG_R",
     "B_WNG_R_T"
    ],
+   "only": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
    "orange": [
     "TURRET_ABAND"
+   ],
+   "overlap": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "panel": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "RACE_BOOSTER"
+   ],
+   "panels": [
+    "L_FLOOR_Q"
+   ],
+   "physical": [
+    "BASE_BEAMSTONE"
    ],
    "pink": [
     "TURRET_ABAND"
@@ -743,11 +2104,24 @@
    "plane": [
     "TURRET_ABAND"
    ],
+   "planet": [
+    "BLD_PLANET_HOLO"
+   ],
    "point": [
+    "BASE_SHELLWHITE",
     "S_LARGETRYE0"
    ],
    "portal": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R",
     "TURRET_ABAND"
+   ],
+   "power": [
+    "RACE_BOOSTER"
    ],
    "profiled": [
     "S_ROOF_M_WIN"
@@ -755,17 +2129,104 @@
    "projector": [
     "TURRET_ABAND"
    ],
+   "props": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "proxy": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "purple": [
+    "RACE_BOOSTER"
+   ],
    "pyramid": [
     "S_LARGETRYE0"
+   ],
+   "race": [
+    "RACE_BOOSTER"
    ],
    "radial": [
     "S_WALL_Q"
    ],
    "reactor": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
     "TURRET_ABAND"
+   ],
+   "readable": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "remains": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "responds": [
+    "BASE_BEAMSTONE"
+   ],
+   "responsive": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
    ],
    "ribs": [
     "S_WALLM_H"
+   ],
+   "ring": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "ritual": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
    ],
    "robotic": [
     "BASE_ROBOTOY",
@@ -781,11 +2242,58 @@
     "S_ROOF_M_WIN"
    ],
    "room": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "BLD_PLANET_HOLO",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
     "MAINROOMCUBE_W",
-    "MAINROOM_WATER"
+    "MAINROOM_WATER",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "rotating": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "roughly": [
     "B_WNG_A"
+   ],
+   "runway": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q",
+    "RACE_BOOSTER"
+   ],
+   "same": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
    ],
    "scales": [
     "S_ROOF_M_WIN"
@@ -793,8 +2301,41 @@
    "scanner": [
     "TURRET_ABAND"
    ],
+   "science": [
+    "BLD_PLANET_HOLO"
+   ],
+   "screen": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
    "security": [
     "TURRET_ABAND"
+   ],
+   "selected": [
+    "BASE_BEAMSTONE",
+    "LIGHTBOX",
+    "L_FLOOR_Q"
+   ],
+   "shell": [
+    "BASE_SHELLWHITE"
+   ],
+   "shield": [
+    "BASE_SHELLWHITE",
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "shingle": [
     "S_WALLM_H"
@@ -804,6 +2345,14 @@
    ],
    "shingling": [
     "S_ROOF_M_WIN"
+   ],
+   "signage": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
    ],
    "signal": [
     "B_ANTENNA0",
@@ -817,16 +2366,56 @@
     "MAINROOM_WATER",
     "TURRET_ABAND"
    ],
+   "slightly": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
    "smooth": [
     "S_ROOF_M_WIN",
     "S_WALLM",
     "S_WALLM_H"
    ],
+   "solar": [
+    "BLD_PLANET_HOLO"
+   ],
    "solid": [
     "TURRET_ABAND"
    ],
+   "spinning": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
+   ],
+   "spire": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
    "stacked": [
     "S_LARGETRYE0"
+   ],
+   "stage": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
    ],
    "standard": [
     "S_WALLM"
@@ -834,17 +2423,121 @@
    "star": [
     "S_LARGETRYE0"
    ],
+   "static": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
+   ],
+   "stone": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "strip": [
+    "RACE_BOOSTER"
+   ],
+   "strong": [
+    "BASE_BEAMSTONE",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "structure": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "study": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "support": [
+    "BASE_BEAMSTONE"
+   ],
    "surface": [
+    "BASE_SHELLWHITE",
+    "RACE_BOOSTER",
     "S_ROOF_M_WIN"
+   ],
+   "surfaces": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "swarm": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
+   ],
+   "system": [
+    "BLD_PLANET_HOLO"
+   ],
+   "tech": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
    ],
    "temporary": [
     "B_WNG_A"
+   ],
+   "themed": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D"
    ],
    "threshold": [
     "TURRET_ABAND"
    ],
    "tile": [
     "S_ROOF_M_WIN"
+   ],
+   "tint": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
    ],
    "titan": [
     "B_WNG_A"
@@ -853,25 +2546,148 @@
     "MAINROOMCUBE_W",
     "MAINROOM_WATER"
    ],
+   "track": [
+    "RACE_BOOSTER"
+   ],
    "triangular": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
     "TURRET_ABAND"
+   ],
+   "trophy": [
+    "SWARM_TROPHY_B",
+    "SWARM_TROPHY_G",
+    "SWARM_TROPHY_R"
    ],
    "turret": [
     "TURRET_ABAND"
    ],
+   "user": [
+    "B_SHL_A",
+    "B_SHL_B",
+    "B_SHL_C",
+    "B_SHL_D",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "variant": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "variants": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
    "vault": [
     "S_LARGETRYE0"
    ],
+   "vertical": [
+    "BASE_BEAMSTONE"
+   ],
+   "visible": [
+    "BASE_SHELLWHITE"
+   ],
    "visual": [
-    "B_WNG_A"
+    "BASE_BEAMSTONE",
+    "B_WNG_A",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
+   ],
+   "volumetric": [
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S"
    ],
    "wall": [
+    "BLD_DATASIGN",
+    "BLD_HOLOGEK",
+    "HOLO_EXP",
+    "HOLO_MED1",
+    "HOLO_MED2",
+    "HOLO_SMALL1",
+    "HOLO_SMALL2",
+    "HOLO_SMALL3",
+    "HOLO_TRA",
+    "HOLO_WAR",
     "S_WALLM",
     "S_WALLM_H",
-    "S_WALL_Q"
+    "S_WALL_Q",
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW",
+    "WALLSCREEN",
+    "WALLSCREENB",
+    "WALLSCREENB2"
+   ],
+   "walllight": [
+    "WALLLIGHTBLUE",
+    "WALLLIGHTGREEN",
+    "WALLLIGHTPINK",
+    "WALLLIGHTRED",
+    "WALLLIGHTWHITE",
+    "WALLLIGHTYELLOW"
+   ],
+   "warm": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
    ],
    "when": [
     "S_LARGETRYE0"
+   ],
+   "white": [
+    "BUILDLABLAMP",
+    "BUILDLIGHT",
+    "BUILDLIGHT2",
+    "BUILDLIGHT3",
+    "BUILDLIGHTTABLE",
+    "B_STREETLAMP0",
+    "CEILINGLIGHT",
+    "LIGHTFRAME",
+    "LIGHT_PLINTH",
+    "LIGHT_TALL",
+    "LIGHT_VERT",
+    "SMALLLIGHT",
+    "S_GLOWGLOBE",
+    "S_HANGLAMP0",
+    "S_HANGLAMP1",
+    "S_HANGLAMP2",
+    "S_HANGLAMP3",
+    "S_STREETLAMP0",
+    "S_TABLELAMP0"
+   ],
+   "whose": [
+    "BASE_SHELLWHITE"
    ],
    "will": [
     "S_ROOF_M_WIN"

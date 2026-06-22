@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-run_gate.py (v5.18.00) — executable validation gate.
+run_gate.py (v5.19.03) — executable validation gate.
 
 Usage:
     python3 validation/run_gate.py <generated_script.py> [library.json] [tag_prefix] [--require-json-evidence] [--require-router] [--require-validated-reuse] [--require-ai-capture-compliance] [--require-conformance <exported.json>]
@@ -866,7 +866,7 @@ def main():
         err = f"{type(e).__name__}: {e}"
 
     placed = [o for o in ALL if str(o.name).startswith(tag) and "TPL_" not in str(o.name)]
-    # 5.18.00 — template-leak detector. The line above excludes TPL_ from the placed
+    # 5.19.03 — template-leak detector. The line above excludes TPL_ from the placed
     # count; that exclusion previously MASKED stray templates that survive the
     # tag-scoped cleanup and still get exported by the add-on (they pile at the origin,
     # the cluttered stack seen in failed builds). Detect them so the gate FAILS the
@@ -1124,7 +1124,7 @@ def main():
         json_evidence_missing.append("JSON recreation constants OR generated-build audit markers")
 
     P = lambda b: "PASS" if b else "FAIL"
-    print("SCRIPT VALIDATION — EXECUTABLE GATE (v5.18.00)")
+    print("SCRIPT VALIDATION — EXECUTABLE GATE (v5.19.03)")
     print(f"  script: {script}")
     print("--- static linter ---")
     print(f"  no raw mesh primitives: {P(raw_prim==0)} ({raw_prim} found)")

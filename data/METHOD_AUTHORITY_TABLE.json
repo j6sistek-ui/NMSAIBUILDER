@@ -1,6 +1,6 @@
 {
   "schema": "NMS_Method_Authority_Table_1.0",
-  "source_docs_rev": "4.02.00",
+  "source_docs_rev": "5.19.03",
   "purpose": "Seed authority table for method/context-level placement governance. This supports future external validation but is also used by source-doc release gates and generated-build receipts.",
   "method_definitions": {
     "FLOOR_GRID_STANDARD": {
@@ -81,6 +81,21 @@
       "geometry_validated": true,
       "appearance_validated": false,
       "description": "Tapered radial-ring dome/cone: N panels per ring on a shared center axis; radius decreases and height increases per ring on a linear taper to an apex fan. Geometry validated by round-trip (residual <=0.01) vs measured base JSON; in-game appearance/color not yet validated."
+    },
+    "JSON_ONLY_GAME_BUILDABLE_EFFECT_DECOR": {
+      "confidence": "LOW",
+      "allowed_for_structural": false,
+      "requires_conformance": false,
+      "requires_game_or_json_validation": true,
+      "requires_visual_review": true,
+      "description": "Use ObjectIDs confirmed by exported JSON/in-game observation but absent from the verified extraction/plugin geometry as decorative/effect parts only."
+    },
+    "CREATIVE_LIGHT_EFFECT_COMPOSITION": {
+      "confidence": "MEDIUM",
+      "allowed_for_structural": false,
+      "requires_conformance": false,
+      "requires_visual_review": true,
+      "description": "Compose lighting/effect ObjectIDs for color, beam, hologram, screen, motion, or volumetric visual effects. Creative guidance only; never overrides placement mechanics."
     }
   },
   "object_contexts": {
@@ -251,6 +266,278 @@
             "WALL_SHELL_GRID_COURSE"
           ],
           "requires_assembly_conformance": true
+        }
+      }
+    },
+    "SWARM_TROPHY_G": {
+      "component_data_status": "json_only_no_verified_geometry",
+      "contexts": {
+        "effect_decor": {
+          "allowed_methods": [
+            "JSON_ONLY_GAME_BUILDABLE_EFFECT_DECOR",
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_game_or_json_validation": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "SWARM_TROPHY_B": {
+      "component_data_status": "json_only_no_verified_geometry",
+      "contexts": {
+        "effect_decor": {
+          "allowed_methods": [
+            "JSON_ONLY_GAME_BUILDABLE_EFFECT_DECOR",
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_game_or_json_validation": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "SWARM_TROPHY_R": {
+      "component_data_status": "json_only_no_verified_geometry",
+      "contexts": {
+        "effect_decor": {
+          "allowed_methods": [
+            "JSON_ONLY_GAME_BUILDABLE_EFFECT_DECOR",
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_game_or_json_validation": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "B_SHL_D": {
+      "component_data_status": "json_only_no_verified_geometry",
+      "contexts": {
+        "effect_decor": {
+          "allowed_methods": [
+            "JSON_ONLY_GAME_BUILDABLE_EFFECT_DECOR",
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_game_or_json_validation": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "BASE_BEAMSTONE": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "LIGHTBOX": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "L_FLOOR_Q": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "SET_CLASS_A": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "SET_CLASS_B": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "SET_CLASS_S": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "RACE_BOOSTER": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "BLD_PLANET_HOLO": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "BASE_SHELLWHITE": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "B_SHL_A": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "B_SHL_B": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "B_SHL_C": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "WALLLIGHTBLUE": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "WALLLIGHTGREEN": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "WALLLIGHTPINK": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "WALLLIGHTRED": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "WALLLIGHTWHITE": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
+        }
+      }
+    },
+    "WALLLIGHTYELLOW": {
+      "component_data_status": "verified_component_creative_effect_context",
+      "contexts": {
+        "creative_light_or_effect": {
+          "allowed_methods": [
+            "CREATIVE_LIGHT_EFFECT_COMPOSITION"
+          ],
+          "manual_direct_placement_allowed": true,
+          "requires_visual_review": true
         }
       }
     }

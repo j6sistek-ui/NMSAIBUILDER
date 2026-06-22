@@ -249,6 +249,60 @@
       ],
       "rule": "rules/PROHIBITED_AND_PLACEHOLDER_OBJECTS.md",
       "summary": "PIPE/BUBPIPE Blender extraction and visual orientation are not authoritative for connected in-game pipe assemblies; require in-game/exported JSON validation."
+    },
+    {
+      "part_or_family": "lighting_effect_colorability_20260622",
+      "objectids_or_examples": [
+        "LIGHTBOX",
+        "L_FLOOR_Q",
+        "BASE_BEAMSTONE",
+        "SET_CLASS_A",
+        "SET_CLASS_B",
+        "SET_CLASS_S",
+        "WALLLIGHTBLUE",
+        "WALLLIGHTGREEN",
+        "WALLLIGHTPINK",
+        "WALLLIGHTRED",
+        "WALLLIGHTWHITE",
+        "WALLLIGHTYELLOW"
+      ],
+      "visual_role": "lighting/effect composition and emitted-color behavior",
+      "assembly_roles": [
+        "creative_effect",
+        "lighting_plan",
+        "color_selection"
+      ],
+      "native_axis_status": "existing verified geometry remains source where available; behavior evidence is user in-game study",
+      "default_orientation_rule": "Do not infer emitted light color from fixture material color. Use ObjectID variants or confirmed color-responsive emitters.",
+      "part_map_role": "creative/effect behavior routed to CREATIVE_USE_CASE_AND_STYLE_INDEX and dimensions-library guidance; verified extraction overlay unchanged",
+      "rules": [
+        "LIGHTBOX/L_FLOOR_Q/BASE_BEAMSTONE are color-responsive emitter exceptions.",
+        "SET_CLASS_A/B/S are fixed colored beams that can compose volumetric cones/beacons.",
+        "Most fixture/post/pole lamps only tint the fixture body; emitted light does not materially recolor."
+      ],
+      "fallback_policy": "If colored light is required, select a validated color-responsive emitter or a fixed-color variant; do not repaint arbitrary lights."
+    },
+    {
+      "part_or_family": "swarm_trophy_json_only_effect_objects",
+      "objectids_or_examples": [
+        "SWARM_TROPHY_G",
+        "SWARM_TROPHY_B",
+        "SWARM_TROPHY_R"
+      ],
+      "visual_role": "colored circular trophy/ring lighting centerpiece",
+      "assembly_roles": [
+        "decorative_effect",
+        "faction_marker",
+        "portal_or_ritual_marker"
+      ],
+      "native_axis_status": "JSON current-build transforms only; no plugin/FBX geometry; Blender cube proxy is not visual truth",
+      "default_orientation_rule": "Use exported JSON Up/At; floor placement observed around vertical origin +1.0 for approx 2m proxy height.",
+      "part_map_role": "provisional partmap entries only; not verified extraction data",
+      "exceptions": {
+        "geometry": "NO_FBX_NO_PLUGIN_GEOMETRY",
+        "placement": "JSON_ONLY_REVIEW_REQUIRED"
+      },
+      "fallback_policy": "Use in-game visual validation for appearance; never structural/snap authority."
     }
   ],
   "verified_partmap_priority": "Use verified builder extraction fields before original FBX-derived extents when the fields disagree; preserve recipe-first rule for assemblies.",
