@@ -1,0 +1,260 @@
+{
+  "schema": "NMS_PART_PLACEMENT_AID_LEDGER_5.00.00",
+  "status": "active_operational_bridge_between_recipes_and_part_map",
+  "purpose": "Capture placement intelligence not fully represented by raw ObjectID dimensions so recipes do not need to rediscover anchors, roles, orientation, and failure modes.",
+  "priority_rule": "Recipes control assembly; this ledger and the part map validate/support component geometry.",
+  "fallback_policy": "Use raw FBX/manual inspection only when current-build JSON, recipe/control data, this ledger, and the part map are insufficient.",
+  "entries": [
+    {
+      "part_or_family": "verified_builder_extraction_overlay_v3_01_02",
+      "objectids_or_examples": [
+        "ALL_EXTRACTED_OBJECTIDS",
+        "CUBEWALL_SPACE",
+        "BASE_FLORAL03",
+        "TELEPORTER",
+        "FRE_FACE_WALL",
+        "FRE_ROOM_IND1",
+        "PIPE",
+        "FOS_LIMBS",
+        "FOS_SKULL",
+        "FOS_TAIL",
+        "SET_B_MONU_FA",
+        "SET_LZ",
+        "SET_SFXCONST_S0"
+      ],
+      "visual_role": "global component placement-mechanics verification overlay",
+      "assembly_roles": [
+        "component_validation",
+        "origin_rotation_scale_measurement",
+        "exception_tracking"
+      ],
+      "native_axis_status": "measured via Builder spawn variants DEFAULT ABS_RX90 ABS_RY90 ABS_RZ90 REL_X90 REL_Y90 REL_Z90 SCALE_050 SCALE_150 SCALE_200",
+      "default_orientation_rule": "Use verified DefaultRotationDegrees and measured world/local bbox data for component mechanics; recipes still control assemblies.",
+      "part_map_role": "verified component geometry overlay; supports recipes, does not replace recipes",
+      "exceptions": {
+        "CUBEWALL_SPACE": "DO_NOT_USE invisible/zero-bbox placeholder",
+        "BASE_FLORAL03": "Visual OK; bbox/model variant mismatch diagnostic only",
+        "TELEPORTER": "Use with caution; measured spawned model extents differ from mapped TELEPORTER_F extents",
+        "FRE_FACE_WALL": "zero-bbox review before use",
+        "FRE_ROOM_IND1": "zero-bbox review before use",
+        "PIPE": "zero-bbox review before use",
+        "FOS_LIMBS": "live null placeholder (~0.01u); DO_NOT_USE per 5.00.00 study",
+        "FOS_SKULL": "live null placeholder (~0.01u); DO_NOT_USE per 5.00.00 study",
+        "FOS_TAIL": "live null placeholder (~0.01u); DO_NOT_USE per 5.00.00 study",
+        "SET_B_MONU_FA": "live null placeholder (~0.01u); DO_NOT_USE per 5.00.00 study",
+        "SET_LZ": "live null placeholder (~0.01u); DO_NOT_USE per 5.00.00 study",
+        "SET_SFXCONST_S0": "live null placeholder (~0.01u); DO_NOT_USE per 5.00.00 study"
+      },
+      "fallback_policy": "If verified data contradicts old FBX-derived mapping, prefer verified spawn data for placement mechanics and log exception; for decorative proxy parts, require in-game context before visual-footprint claims."
+    },
+    {
+      "part_or_family": "wall_family_structural",
+      "objectids_or_examples": [
+        "S_WALL",
+        "S_WALLM",
+        "S_WALL_WIN1",
+        "S_WALL_WIN2",
+        "S_WALL_WINDOW",
+        "CUBEWALL"
+      ],
+      "visual_role": "structural wall shell / wall grid / facade base",
+      "assembly_roles": [
+        "structural_wall_shell",
+        "window_substitution",
+        "corner_closure",
+        "facade_surface"
+      ],
+      "native_axis_status": "part_map_bounds_available_axis_mapping_must_account_for_rotation",
+      "default_orientation_policy": "use recipe or part-specific override before generic rx/rz",
+      "host_requirement": "must contact floor, foundation, adjacent wall, corner join, or declared shell grid",
+      "valid_scale_behavior": "uniform unless exported JSON proves non-uniform survives and is visually acceptable",
+      "connection_model": "closed_grid_shell_or_declared_facade_segment",
+      "known_recipe_links": [
+        "wall_shell_enclosure_recipe_v2_19_00",
+        "tower_stacked_facade_recipe_v2_19_00"
+      ],
+      "failure_notes": [
+        "do not present isolated wall panels as enclosed buildings",
+        "do not count relief/detail as enclosure unless it satisfies contact and closure",
+        "check corner closure and roof/top closure"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "part_or_family": "short_wall_trim_family",
+      "objectids_or_examples": [
+        "S_WALL_Q_H1",
+        "B_WALL_Q_H1",
+        "F_WALLB_H"
+      ],
+      "visual_role": "cornice / trim / iris blade support / wall banding",
+      "assembly_roles": [
+        "trim",
+        "ring_layer",
+        "airlock_component",
+        "wall_band"
+      ],
+      "native_axis_status": "requires recipe orientation for rings and bands",
+      "default_orientation_policy": "recipe first; part map only confirms dimensions",
+      "host_requirement": "must attach to wall, ring, frame, or shell layer",
+      "valid_scale_behavior": "uniform unless recipe explicitly proves otherwise",
+      "connection_model": "ring_layer_or_grid_band",
+      "known_recipe_links": [
+        "radial_airlock_iris_s_gdoor_control",
+        "wall_shell_enclosure_recipe_v2_19_00"
+      ],
+      "failure_notes": [
+        "do not use as free-floating blade or loose trim",
+        "do not bypass airlock recipe when used in iris/vault/portal feature"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "part_or_family": "airlock_iris_components",
+      "objectids_or_examples": [
+        "S_GDOOR",
+        "B_FLOOR_Q",
+        "B_WALL_Q_H1",
+        "F_WALLB_H"
+      ],
+      "visual_role": "radial iris / vault door / airlock aperture",
+      "assembly_roles": [
+        "iris_blade",
+        "ring_layer",
+        "depth_layer",
+        "frame"
+      ],
+      "native_axis_status": "controlled by airlock recipe/control JSON",
+      "default_orientation_policy": "never generate from part dimensions alone; load AIRLOCK_IRIS recipes first",
+      "host_requirement": "ring layers must close around center pivot and attach to declared wall/facade/frame",
+      "valid_scale_behavior": "uniform; recipe parameters control radius/panel count/depth",
+      "connection_model": "radial_ring_depth_layers",
+      "known_recipe_links": [
+        "radial_airlock_iris_s_gdoor_control",
+        "airlock_iris_parametric_recipe_v2_04_00"
+      ],
+      "failure_notes": [
+        "component ObjectIDs in part map do not define the airlock assembly",
+        "must include FEATURE_RECIPE_LOOKUP",
+        "check ring closure and overlap direction"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "part_or_family": "stairs_ramps_catwalks_bridges",
+      "objectids_or_examples": [
+        "B_RAMP",
+        "C_RAMP",
+        "F_RAMP",
+        "M_RAMP",
+        "S_RAMP",
+        "T_RAMP",
+        "W_RAMP",
+        "B_CON2_1"
+      ],
+      "visual_role": "access route / skybridge / ramp / stairs / catwalk",
+      "assembly_roles": [
+        "path_segment",
+        "landing",
+        "support",
+        "rail",
+        "endpoint_socket"
+      ],
+      "native_axis_status": "path basis must drive yaw/orientation",
+      "default_orientation_policy": "endpoint_path recipe before part map",
+      "host_requirement": "must contact endpoint landings and support/load path unless exact JSON proves exception",
+      "valid_scale_behavior": "uniform; repeat spacing from JSON recipe or part map extents",
+      "connection_model": "endpoint_path_with_landings_and_supports",
+      "known_recipe_links": [
+        "endpoint_stair_ramp_connection_template",
+        "continuous_path_assembly_rule"
+      ],
+      "failure_notes": [
+        "no center-only floating segments",
+        "all modules in a route share the same path basis",
+        "run no-float and intent graph checks"
+      ],
+      "part_map_role": "component_geometry_support"
+    },
+    {
+      "part_or_family": "billboard",
+      "objectids_or_examples": [
+        "BILLBOARD"
+      ],
+      "visual_role": "vertical sign plane / wall-mounted city sign",
+      "assembly_roles": [
+        "sign",
+        "facade_attachment",
+        "directional_marker"
+      ],
+      "native_axis_status": "native vertical plane; special override",
+      "default_orientation_policy": "rx=0; use side map N/S/E/W; do not apply generic rx=90 facade convention",
+      "host_requirement": "wall or facade attachment unless intentionally freestanding and supported",
+      "valid_scale_behavior": "uniform in generated builds unless exported JSON proves non-uniform survives",
+      "connection_model": "wall_mounted_vertical_plane",
+      "known_recipe_links": [
+        "part_orientation_overrides_billboard"
+      ],
+      "failure_notes": [
+        "generic rx=90 makes billboard perpendicular/shelf-like",
+        "do not use non-uniform scaling without proof"
+      ],
+      "part_map_role": "component_geometry_support"
+    },
+    {
+      "part_or_family": "gotham_dark_city_towers",
+      "objectids_or_examples": [
+        "wall_family_structural",
+        "short_wall_trim_family",
+        "BLD_SKULL",
+        "BILLBOARD",
+        "lighting_props"
+      ],
+      "visual_role": "dense dark city / Gotham skyscraper district",
+      "assembly_roles": [
+        "tower_shell",
+        "roofline",
+        "alley_path",
+        "signage",
+        "danger_lighting",
+        "rooftop_detail"
+      ],
+      "native_axis_status": "recipe/local-frame driven",
+      "default_orientation_policy": "city/tower recipe before component lookup",
+      "host_requirement": "towers must have wall shell/foundation/roof closure; rooftop details must attach to roof/plinth",
+      "valid_scale_behavior": "uniform unless current-build exported JSON proves otherwise",
+      "connection_model": "grid_shell_plus_connected_alley_network",
+      "known_recipe_links": [
+        "wall_shell_enclosure_recipe_v2_19_00",
+        "tower_stacked_facade_recipe_v2_19_00",
+        "gotham_dark_city_recipe_v2_19_00"
+      ],
+      "failure_notes": [
+        "do not create decorative skyline without enclosure",
+        "do not lose wall-shell invariants between chats",
+        "AI Review bundle may validate design loop"
+      ],
+      "part_map_role": "component_validation_only"
+    },
+    {
+      "part_or_family": "PIPE_BUBPIPE_EXCEPTION",
+      "status": "active_exception",
+      "objectids": [
+        "BASE_BUBPIPE",
+        "BASE_BUBPIPE_L",
+        "BASE_BUBPIPE_S",
+        "BASE_BUBPIPE_T",
+        "BASE_BUBPIPE_X",
+        "PIPE"
+      ],
+      "rule": "rules/PROHIBITED_AND_PLACEHOLDER_OBJECTS.md",
+      "summary": "PIPE/BUBPIPE Blender extraction and visual orientation are not authoritative for connected in-game pipe assemblies; require in-game/exported JSON validation."
+    }
+  ],
+  "verified_partmap_priority": "Use verified builder extraction fields before original FBX-derived extents when the fields disagree; preserve recipe-first rule for assemblies.",
+  "verified_partmap_files": [
+    "library/nms_master_part_map_verified_data_v3_01_02.json",
+    "library/nms_partmap_verified_exceptions_v3_01_02.csv",
+    "data/PARTMAP_VERIFIED_EXCEPTION_INDEX.json"
+  ]
+}

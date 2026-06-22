@@ -1,0 +1,281 @@
+{
+  "schema": "NMS_JSON_RECIPE_SIGNATURE_INDEX_2.19.00",
+  "status": "active_compact_index",
+  "updated": "2026-06-16",
+  "purpose": "Store compact executable signatures mined from working JSON, validated recipes, and extracted source lessons so future chats reuse known assemblies before part-map component lookup.",
+  "signatures": [
+    {
+      "signature_id": "gothic_metal_castle_facade_template",
+      "feature_type": "gothic_castle_facade",
+      "source": "2.06.01 routing/test prompt template; awaits exact JSON promotion",
+      "objectid_multiset": {},
+      "geometry_basis": "hybrid_grid_local_frame_ring",
+      "locked_invariants": [
+        "symmetric_front_axis",
+        "flush_entrance_wall_plane",
+        "radial_airlock_center_on_facade_axis",
+        "airlock_ring_depth_layers",
+        "tower_wall_contact_grid",
+        "buttress_support_contact",
+        "connected_entrance_wall_to_airlock_frame"
+      ],
+      "allowed_parameters": [
+        "overall_width",
+        "tower_count",
+        "tower_height",
+        "wall_height",
+        "airlock_panel_count",
+        "airlock_radius",
+        "metal_part_family",
+        "detail_density",
+        "spire_density"
+      ],
+      "validation_required": [
+        "airlock_panel_count_12",
+        "flush_plane_check",
+        "objectid_exists",
+        "no_disconnected_assemblies",
+        "evidence_manifest",
+        "run_gate_router_and_json_evidence_flags"
+      ],
+      "promotion_status": "template_requires_generated_control_json_or_user_json_for_exact_control"
+    },
+    {
+      "signature_id": "radial_airlock_iris_s_gdoor_control",
+      "feature_type": "airlock_iris",
+      "source": "Default PlayerShipBase airlock JSON / existing recipe library",
+      "objectid_multiset": {
+        "S_GDOOR": 12,
+        "B_FLOOR_Q": 24,
+        "B_WALL_Q_H1": 12,
+        "F_WALLB_H": 24
+      },
+      "geometry_basis": "ring_depth_layers",
+      "locked_invariants": [
+        "center_pivot",
+        "local_radial_frame",
+        "blade_overlap_direction",
+        "opening_radius_rule",
+        "ring_closure",
+        "connection_contact_proof"
+      ],
+      "allowed_parameters": [
+        "panel_count",
+        "radius",
+        "uniform_scale",
+        "material_userdata",
+        "depth_layers",
+        "compatible_garage_door_family"
+      ],
+      "validation_required": [
+        "objectid_exists",
+        "ring_closure",
+        "overlap_density",
+        "orientation_basis_checked",
+        "evidence_manifest"
+      ],
+      "promotion_status": "validated_control"
+    },
+    {
+      "signature_id": "endpoint_stair_ramp_connection_template",
+      "feature_type": "stairs_or_ramp",
+      "source": "protocol template pending source-specific JSON promotion",
+      "objectid_multiset": {},
+      "geometry_basis": "endpoint_path",
+      "locked_invariants": [
+        "start_landing_anchor",
+        "end_landing_anchor",
+        "path_vector",
+        "yaw_from_path",
+        "rise_run",
+        "segment_contact",
+        "first_last_landing_connection"
+      ],
+      "allowed_parameters": [
+        "run_length",
+        "rise_height",
+        "segment_count",
+        "uniform_scale",
+        "selected_stair_or_ramp_objectid",
+        "support_style"
+      ],
+      "validation_required": [
+        "fbx_bounds_or_json_spacing",
+        "endpoint_contact",
+        "no_float",
+        "support_load_path",
+        "exported_json_audit_when_available"
+      ],
+      "promotion_status": "template_requires_user_json_for_exact_control"
+    },
+    {
+      "signature_id": "dome_latitude_shell_template",
+      "feature_type": "dome_or_curved_shell",
+      "source": "connected-piece curvature grammar / dome study lessons; exact control JSON may need re-ingestion",
+      "objectid_multiset": {},
+      "geometry_basis": "latitude_shell",
+      "locked_invariants": [
+        "center_axis",
+        "layer_profile_table",
+        "radius_per_layer",
+        "height_per_layer",
+        "segment_count_per_ring",
+        "chord_spacing",
+        "tangent_orientation",
+        "vertical_layer_contact",
+        "cap_or_oculus_condition"
+      ],
+      "allowed_parameters": [
+        "base_radius",
+        "height",
+        "ring_count",
+        "segments_per_ring",
+        "part_family",
+        "uniform_scale",
+        "oculus_radius",
+        "material_userdata"
+      ],
+      "validation_required": [
+        "ring_closure",
+        "layer_contact",
+        "connected_piece_curvature_proof",
+        "fbx_bounds",
+        "exported_json_audit_when available"
+      ],
+      "promotion_status": "concept_template_pending_source_specific_json_control"
+    },
+    {
+      "signature_id": "connected_piece_curvature_general",
+      "feature_type": "curved_wall_shell_spire_hull_canopy",
+      "source": "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md",
+      "objectid_multiset": {},
+      "geometry_basis": "ring_arc_shell_profile",
+      "locked_invariants": [
+        "local_feature_frame",
+        "curve_or_profile_control_points",
+        "repeated_part_roles",
+        "contact_or_overlap_tolerance",
+        "orientation_transformed_with_position"
+      ],
+      "allowed_parameters": [
+        "path_curve",
+        "radius_profile",
+        "segment_density",
+        "part_family",
+        "uniform_scale",
+        "material_userdata",
+        "detail_layers"
+      ],
+      "validation_required": [
+        "connection_proof",
+        "no_unintended_disconnected_assemblies",
+        "objectid_exists",
+        "fbx_bounds_or_json_precedent"
+      ],
+      "promotion_status": "broad_grammar_active"
+    },
+    {
+      "signature_id": "wall_shell_enclosure_recipe_v2_19_00",
+      "feature_type": "wall_shell_enclosure",
+      "source": "2.19.00 consolidation of V15/Gotham building shell lessons and wall enclosure failures",
+      "objectid_multiset": {},
+      "geometry_basis": "closed_grid_shell_with_local_frame",
+      "locked_invariants": [
+        "foundation_or_plinth",
+        "floor_slab_or_grid",
+        "structural_wall_shell",
+        "corner_closure",
+        "window_or_opening_substitutions",
+        "facade_relief_separate_from_structure",
+        "roof_or_top_closure",
+        "rooftop_attachment_contact",
+        "access_path_or_door_relationship"
+      ],
+      "allowed_parameters": [
+        "footprint_width",
+        "footprint_depth",
+        "height",
+        "story_count",
+        "wall_family",
+        "window_density",
+        "facade_relief_density",
+        "roof_style",
+        "material_userdata"
+      ],
+      "validation_required": [
+        "FEATURE_RECIPE_LOOKUP",
+        "BUILD_INTENT_GRAPH",
+        "USED_PART_LOGIC",
+        "no_floating_walls",
+        "corner_closure_check",
+        "roof_or_top_closure_check",
+        "run_gate_router_and_json_evidence_flags"
+      ],
+      "promotion_status": "active_validated_pattern_requirement"
+    },
+    {
+      "signature_id": "tower_stacked_facade_recipe_v2_19_00",
+      "feature_type": "tower_or_skyscraper_shell",
+      "source": "Megacity/Gotham tower lessons extracted from prior scripts and AI review loop",
+      "objectid_multiset": {},
+      "geometry_basis": "repeated_wall_grid_with_local_frame_and_roof_cap",
+      "locked_invariants": [
+        "vertical_story_grid",
+        "closed_or_declared_open_footprint",
+        "corner_closure",
+        "foundation_contact",
+        "roofline_or_cap",
+        "facade_relief_not_structural_without_contact"
+      ],
+      "allowed_parameters": [
+        "story_count",
+        "tower_width",
+        "tower_depth",
+        "setbacks",
+        "window_pattern",
+        "roofline_silhouette",
+        "gotham_dark_materials"
+      ],
+      "validation_required": [
+        "wall_shell_enclosure_recipe",
+        "no_float",
+        "intent_graph_connected_components",
+        "AI_review_bundle_optional"
+      ],
+      "promotion_status": "active_toolkit_recipe"
+    },
+    {
+      "signature_id": "gotham_dark_city_recipe_v2_19_00",
+      "feature_type": "gotham_dark_city",
+      "source": "User-directed Gotham megacity pivot and V15 design-loop evidence; not a V15 repair instruction",
+      "objectid_multiset": {},
+      "geometry_basis": "district_grid_with_enclosed_tower_shells_and_connected_alley_paths",
+      "locked_invariants": [
+        "dense_tower_cluster",
+        "wall_shell_enclosure_for_each_major_tower",
+        "small_connected_walkways_or_alleys",
+        "rooftop_use",
+        "dark_material_palette",
+        "danger_lighting_zones",
+        "decorative_parts_attached_to_hosts"
+      ],
+      "allowed_parameters": [
+        "district_size",
+        "tower_count",
+        "alley_width",
+        "light_density",
+        "rooftop_detail_density",
+        "crime_danger_effect_density",
+        "vehicle_or_batmobile_microbuild"
+      ],
+      "validation_required": [
+        "wall_shell_enclosure_recipe",
+        "continuous_path_assembly_rule",
+        "AI_review_bundle_if_provided",
+        "screenshots_or_exported_json_review"
+      ],
+      "promotion_status": "project_recipe_active_when_gotham_requested"
+    }
+  ],
+  "if_signature_missing": "Ask user to provide the original JSON or identify which previous submission should be re-mined."
+}

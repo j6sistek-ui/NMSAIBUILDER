@@ -1,0 +1,237 @@
+{
+ "schema": "NMS_Negative_Knowledge_Index_1.0",
+ "source_docs_rev": "5.00.00",
+ "purpose": "Machine-readable list of known forbidden placement methods, prohibited ObjectIDs, and contextual traps.",
+ "entries": {
+  "CUBEWALL_SPACE": {
+   "status": "DO_NOT_USE",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Invisible / zero-bbox placeholder; exclude from normal builds."
+  },
+  "PIPE": {
+   "status": "CONTEXTUAL_CONNECTOR_VALIDATION_REQUIRED",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "BLENDER_BBOX_ONLY",
+    "BLENDER_ORIENTATION_ONLY",
+    "ISOLATED_COMPONENT_VALIDATION",
+    "MANUAL_DIRECT_PLACEMENT_AS_CONNECTED_PIPE"
+   ],
+   "required_method": "PIPE_CONTEXTUAL_CONNECTOR_VALIDATION",
+   "reason": "PIPE can be invisible/zero-bbox in Blender while valid in game; validate as contextual connector."
+  },
+  "BASE_BUBPIPE": {
+   "status": "CONTEXTUAL_CONNECTOR_VALIDATION_REQUIRED",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "BLENDER_BBOX_ONLY",
+    "BLENDER_ORIENTATION_ONLY",
+    "ISOLATED_COMPONENT_VALIDATION",
+    "MANUAL_DIRECT_PLACEMENT_AS_CONNECTED_PIPE"
+   ],
+   "required_method": "PIPE_CONTEXTUAL_CONNECTOR_VALIDATION",
+   "reason": "BUBPIPE Blender visual/orientation can differ from in-game connected result."
+  },
+  "BASE_BUBPIPE_S": {
+   "status": "CONTEXTUAL_CONNECTOR_VALIDATION_REQUIRED",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "BLENDER_BBOX_ONLY",
+    "BLENDER_ORIENTATION_ONLY",
+    "ISOLATED_COMPONENT_VALIDATION"
+   ],
+   "required_method": "PIPE_CONTEXTUAL_CONNECTOR_VALIDATION"
+  },
+  "BASE_BUBPIPE_L": {
+   "status": "CONTEXTUAL_CONNECTOR_VALIDATION_REQUIRED",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "BLENDER_BBOX_ONLY",
+    "BLENDER_ORIENTATION_ONLY",
+    "ISOLATED_COMPONENT_VALIDATION"
+   ],
+   "required_method": "PIPE_CONTEXTUAL_CONNECTOR_VALIDATION"
+  },
+  "BASE_BUBPIPE_T": {
+   "status": "CONTEXTUAL_CONNECTOR_VALIDATION_REQUIRED",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "BLENDER_BBOX_ONLY",
+    "BLENDER_ORIENTATION_ONLY",
+    "ISOLATED_COMPONENT_VALIDATION"
+   ],
+   "required_method": "PIPE_CONTEXTUAL_CONNECTOR_VALIDATION"
+  },
+  "BASE_BUBPIPE_X": {
+   "status": "CONTEXTUAL_CONNECTOR_VALIDATION_REQUIRED",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "BLENDER_BBOX_ONLY",
+    "BLENDER_ORIENTATION_ONLY",
+    "ISOLATED_COMPONENT_VALIDATION"
+   ],
+   "required_method": "PIPE_CONTEXTUAL_CONNECTOR_VALIDATION"
+  },
+  "MANUAL_STRUCTURAL_RAMP": {
+   "status": "FORBIDDEN_PATTERN",
+   "severity": "CRITICAL",
+   "forbidden_methods": [
+    "MANUAL_DIRECT_PLACEMENT"
+   ],
+   "required_method": "STAIR_RAMP_ENDPOINT_RECIPE",
+   "reason": "B_RAMP/B_RAMP_H component validation does not prove stair/ramp assembly correctness."
+  },
+  "U_POWERLINE": {
+   "status": "BLENDER_EXCLUDE_WIRE_IN_GAME",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "BLENDER_BUILD_USE",
+    "BLENDER_SCRIPT_PLACEMENT"
+   ],
+   "reason": "Blender does not represent power/connectors (powerlines, bytebeat cable, mineral pipes, electrical) reliably; build structure only in Blender and wire/power in game."
+  },
+  "U_SOLAR_S": {
+   "status": "BLENDER_EXCLUDE_WIRE_IN_GAME",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "BLENDER_BUILD_USE",
+    "BLENDER_SCRIPT_PLACEMENT"
+   ],
+   "reason": "Blender does not represent power/connectors (powerlines, bytebeat cable, mineral pipes, electrical) reliably; build structure only in Blender and wire/power in game."
+  },
+  "U_BATTERY_S": {
+   "status": "BLENDER_EXCLUDE_WIRE_IN_GAME",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "BLENDER_BUILD_USE",
+    "BLENDER_SCRIPT_PLACEMENT"
+   ],
+   "reason": "Blender does not represent power/connectors (powerlines, bytebeat cable, mineral pipes, electrical) reliably; build structure only in Blender and wire/power in game."
+  },
+  "U_BIOGENERATOR": {
+   "status": "BLENDER_EXCLUDE_WIRE_IN_GAME",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "BLENDER_BUILD_USE",
+    "BLENDER_SCRIPT_PLACEMENT"
+   ],
+   "reason": "Blender does not represent power/connectors (powerlines, bytebeat cable, mineral pipes, electrical) reliably; build structure only in Blender and wire/power in game."
+  },
+  "U_SWITCHWALL": {
+   "status": "BLENDER_EXCLUDE_WIRE_IN_GAME",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "BLENDER_BUILD_USE",
+    "BLENDER_SCRIPT_PLACEMENT"
+   ],
+   "reason": "Blender does not represent power/connectors (powerlines, bytebeat cable, mineral pipes, electrical) reliably; build structure only in Blender and wire/power in game."
+  },
+  "GENERIC_CONNECTORS_BYTEBEAT_MINERALPIPE_ELECTRICAL": {
+   "status": "BLENDER_EXCLUDE_WIRE_IN_GAME",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "BLENDER_BUILD_USE",
+    "BLENDER_SCRIPT_PLACEMENT"
+   ],
+   "reason": "Connector families (bytebeat cable, mineral pipes, electrical/powerlines) are unreliable in Blender; exclude and handle in game."
+  },
+  "FOS_LIMBS": {
+   "status": "DO_NOT_USE",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Live add-on spawn is a null placeholder (~0.01u all axes), deterministic across repeated spawns (5.00.00 build study). Part-map stored size is from a prior extraction and overstates usability."
+  },
+  "FOS_SKULL": {
+   "status": "DO_NOT_USE",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Live add-on spawn is a null placeholder (~0.01u all axes), deterministic across repeated spawns (5.00.00 build study). Part-map stored size is from a prior extraction and overstates usability."
+  },
+  "FOS_TAIL": {
+   "status": "DO_NOT_USE",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Live add-on spawn is a null placeholder (~0.01u all axes), deterministic across repeated spawns (5.00.00 build study). Part-map stored size is from a prior extraction and overstates usability."
+  },
+  "SET_B_MONU_FA": {
+   "status": "DO_NOT_USE",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Live add-on spawn is a null placeholder (~0.01u all axes), deterministic across repeated spawns (5.00.00 build study). Part-map stored size is from a prior extraction and overstates usability."
+  },
+  "SET_SFXCONST_S0": {
+   "status": "DO_NOT_USE",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Live add-on spawn is a null placeholder (~0.01u all axes), deterministic across repeated spawns (5.00.00 build study). Part-map stored size is from a prior extraction and overstates usability."
+  },
+  "SET_LZ": {
+   "status": "DO_NOT_USE",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "ANY_BUILD_USE"
+   ],
+   "reason": "Live null placeholder AND anomalous serialised orientation (Up/At deviate ~1.0 from baseline). Landing-zone setpiece; exclude from builds."
+  },
+  "BASE_FLAG": {
+   "status": "DO_NOT_USE_AS_DESIGN",
+   "severity": "HIGH",
+   "forbidden_methods": [
+    "DECORATIVE_FINIAL",
+    "REPEAT_PLACEMENT"
+   ],
+   "reason": "BASE_FLAG is the base-claim flag: limited to exactly ONE per base and required to claim the base. It is not a design/decoration part.",
+   "guidance": "Use a non-flag tip (CORNERPOST/S_LARGETRYE0 spike) or SET_CLASS_B beam for roof crowns. Never repeat BASE_FLAG.",
+   "source": "User live report 2026-06-19",
+   "source_docs_rev": "5.03.00"
+  }
+ },
+ "retractions": [
+  {
+   "id": "powerline_At_run_vector",
+   "retracted_in": "4.03.00",
+   "claim": "powerlines break |At|=1 with At as a non-unit run vector",
+   "reason": "observed only via Blender, whose connector representation is unreliable; not a trustworthy convention. Finding #11 (At=unit, scale=|Up|) stands for RIGID PLACED parts only and is NOT extended to connectors."
+  }
+ ],
+ "promotions": [
+  {
+   "id": "nonsnap_placement_study_null_spawn",
+   "promoted_in": "5.00.00",
+   "added": [
+    "FOS_LIMBS",
+    "FOS_SKULL",
+    "FOS_TAIL",
+    "SET_B_MONU_FA",
+    "SET_SFXCONST_S0",
+    "SET_LZ"
+   ],
+   "evidence": "reports/NONSNAP_PLACEMENT_STUDY_5.00.00_FINDINGS.md"
+  }
+ ],
+ "FLYING_BUTTRESS": {
+  "status": "NO_VALIDATED_RECIPE",
+  "severity": "HIGH",
+  "forbidden_methods": [
+   "RAMP_ADAPTATION",
+   "S_RAMP_AS_BUTTRESS",
+   "IMPROVISED_DIAGONAL_STRUT",
+   "UNVALIDATED_ASSEMBLY_INVENTION"
+  ],
+  "reason": "No validated flying-buttress recipe exists. gothic_castle_v02 used S_RAMP as buttresses, which reads as side-stairs, not structure. Until a recipe is validated, express buttress READ via wall offsets, pilasters, and arches; if a true buttress is required, mark REVIEW_REQUIRED and request user/in-game validation.",
+  "feature_scope": true
+ }
+}

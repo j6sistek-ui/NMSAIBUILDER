@@ -1,0 +1,82 @@
+{
+  "schema": "NMS_Plugin_Environment_Versions_v50",
+  "updated": "2026-05-28",
+  "current": {
+    "nms_base_builder_addon": "6.4.1",
+    "blender_user_environment": "5.1.1",
+    "blender_min_from_manifest": "4.2.0",
+    "source_zip": "No Man's Sky Base Builder-984-6-4-1-1779969861.zip"
+  },
+  "library_counts": {
+    "plugin_part_definition_rows": 2097,
+    "plugin_unique_objectids": 2097,
+    "plugin_fbx_files": 2104,
+    "new_objectids_vs_v49": 26,
+    "removed_objectids_vs_v49": 0,
+    "updated_master_library_rows": 2097,
+    "updated_master_library_unique_objectids": 2097,
+    "updated_fbx_bounds_rows": 2104
+  },
+  "new_objectids": [
+    "EXPD_DECAL22",
+    "EXPD_POSTER22A",
+    "EXPD_POSTER22B",
+    "EXPD_POSTER22C",
+    "HOLO_DISCO_0",
+    "SET_B_MONU_FA",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SET_FISHPOND",
+    "SET_LZ",
+    "SET_LZ_SHIPBUIL",
+    "SET_SFXCONST_S0",
+    "SET_STAFFBUILD",
+    "SPEC_FIREWORK07",
+    "SPEC_FIREWORK08",
+    "SPEC_FIREWORK09",
+    "SWARM_FLAG_B1",
+    "SWARM_FLAG_B2",
+    "SWARM_FLAG_B3",
+    "SWARM_FLAG_G1",
+    "SWARM_FLAG_G2",
+    "SWARM_FLAG_G3",
+    "SWARM_FLAG_R1",
+    "SWARM_FLAG_R2",
+    "SWARM_FLAG_R3"
+  ],
+  "new_fbx_objectids": [
+    "EXPD_DECAL22",
+    "EXPD_POSTER22A",
+    "EXPD_POSTER22B",
+    "EXPD_POSTER22C",
+    "SWARM_FLAG_B1",
+    "SWARM_FLAG_B2",
+    "SWARM_FLAG_B3",
+    "SWARM_FLAG_G1",
+    "SWARM_FLAG_G2",
+    "SWARM_FLAG_G3",
+    "SWARM_FLAG_R1",
+    "SWARM_FLAG_R2",
+    "SWARM_FLAG_R3"
+  ],
+  "definition_or_existing_model_objectids": [
+    "HOLO_DISCO_0",
+    "SET_B_MONU_FA",
+    "SET_CLASS_A",
+    "SET_CLASS_B",
+    "SET_CLASS_S",
+    "SET_FISHPOND",
+    "SET_LZ",
+    "SET_LZ_SHIPBUIL",
+    "SET_SFXCONST_S0",
+    "SET_STAFFBUILD",
+    "SPEC_FIREWORK07",
+    "SPEC_FIREWORK08",
+    "SPEC_FIREWORK09"
+  ],
+  "prohibited_generated_objects": [
+    "HOLO_DISCO",
+    "HOLO_DISCO_0"
+  ]
+}

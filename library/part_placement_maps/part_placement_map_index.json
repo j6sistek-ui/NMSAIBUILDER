@@ -1,0 +1,94 @@
+{
+  "schema": "NMS_PART_PLACEMENT_MAP_INDEX",
+  "updated": "2026-06-07",
+  "status": "active",
+  "storage_protocol": "rules/PART_PLACEMENT_MAP_SCHEMA.md",
+  "schema_doc": "rules/PART_PLACEMENT_MAP_SCHEMA.md",
+  "mapping_algorithm": "rules/PART_PLACEMENT_MAP_SCHEMA.md",
+  "parts": {
+    "BILLBOARD": {
+      "part_family": "BILLBOARD",
+      "partmap_path": "library/part_placement_maps/BILLBOARD.partmap.json",
+      "status": "SEEDED",
+      "validation_status": "UNTESTED",
+      "source": "rules/PART_ORIENTATION_OVERRIDES.json"
+    },
+    "B_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/B_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "C_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/C_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "C_TRIFLOOR": {
+      "part_family": "TRIFLOOR",
+      "partmap_path": "library/part_placement_maps/C_TRIFLOOR.partmap.json",
+      "status": "PLACEMENT_VALIDATED",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "reports/triangle_part_behavior_signature_v1.json"
+    },
+    "C_TRIFLOOR_Q": {
+      "part_family": "TRIFLOOR",
+      "partmap_path": "library/part_placement_maps/C_TRIFLOOR_Q.partmap.json",
+      "status": "DISCOVERED_DISTINCT_GEOMETRY_UNVALIDATED",
+      "validation_status": "UNTESTED",
+      "source": "reports/triangle_part_behavior_signature_v1.json"
+    },
+    "F_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/F_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "F_TRIFLOOR": {
+      "part_family": "TRIFLOOR",
+      "partmap_path": "library/part_placement_maps/F_TRIFLOOR.partmap.json",
+      "status": "DISCOVERED_ALIAS",
+      "validation_status": "UNTESTED",
+      "source": "reports/triangle_part_behavior_signature_v1.json"
+    },
+    "F_TRIFLOOR_Q": {
+      "part_family": "TRIFLOOR",
+      "partmap_path": "library/part_placement_maps/F_TRIFLOOR_Q.partmap.json",
+      "status": "DISCOVERED_ALIAS",
+      "validation_status": "UNTESTED",
+      "source": "reports/triangle_part_behavior_signature_v1.json"
+    },
+    "M_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/M_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "S_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/S_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "T_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/T_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    },
+    "W_RAMP": {
+      "part_family": "STAIR_FULL_RAMP",
+      "partmap_path": "library/part_placement_maps/W_RAMP.partmap.json",
+      "status": "USER_ACCEPTED_GENERAL_PLACEMENT",
+      "validation_status": "BLENDER_USER_CHECK",
+      "source": "per_part_partmap"
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+ "schema": "NMS_Rule_Classification_1.0",
+ "generated": "2026-06-21",
+ "source": "rule-by-rule review waves",
+ "kinds": [
+  "RULE",
+  "RECIPE",
+  "FINDING",
+  "PROCESS",
+  "GOVERNANCE",
+  "REFERENCE",
+  "NEGATIVE"
+ ],
+ "runtime_status_values": [
+  "KEEP",
+  "CONSOLIDATE",
+  "FOLD",
+  "SUPERSEDED",
+  "RELOCATE",
+  "REPAIR",
+  "DEVERSION",
+  "RETIRE_TO_FINDING"
+ ],
+ "rules": {
+  "AIRLOCK_IRIS_EXACT_JSON_RECIPE_RULE": {
+   "kind": "RECIPE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed AIRLOCK_IRIS_PARAMETRIC_OVERLAP_RULE, AIRLOCK_IRIS_PARAMETRIC_RECIPE_RULE"
+  },
+  "AI_CAPTURE_COMPLIANCE_CONTRACT": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed AI_REVIEW_BUNDLE_INTAKE_PROTOCOL, BLENDER_VISUAL_FEEDBACK_HARNESS_PROTOCOL"
+  },
+  "AUTHORITATIVE_SNAP_PLACEMENT_PROTOCOL": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Snap-data authority"
+  },
+  "BLENDER_PARITY_RULE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Live-Blender parity law"
+  },
+  "BUILD_COMPLIANCE_MANIFEST_RULE": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Build manifest receipt (proof-of-application family)"
+  },
+  "BUILD_PLACEMENT_SNAPSHOT_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Build snapshot receipt (re-scoped UNIVERSAL_PROCESS in 5.05.00)"
+  },
+  "COMPOSITE_BUILD_INTENT_GRAPH_PROTOCOL": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Intent-connectivity layer (distinct from no-float)"
+  },
+  "CONNECTED_PIECE_CURVATURE_GRAMMAR": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR of geometry-derived-placement family; absorbs no-stepped-offset"
+  },
+  "CONTINUOUS_PATH_ASSEMBLY_RULE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Path-assembly rule (re-keyed FAMILY path tokens in 5.05.00)"
+  },
+  "CURATED_DETAIL_HIERARCHY_RULE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Composition principle; absorbs SCALE_OVER_QUANTITY finding + recognition-first"
+  },
+  "C_TRIFLOOR_EDGE_CONTACT_GRAPH_PROTOCOL": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "C_TRIFLOOR freeform method (the rule)"
+  },
+  "DISCONNECTED_ASSEMBLY_HARDSTOP_RULE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Executable no-float gate"
+  },
+  "DOCS_UPDATE_AVAILABILITY_PROTOCOL": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Banner field"
+  },
+  "DOME_STUDY_LESSONS": {
+   "kind": "RECIPE",
+   "runtime_status": "KEEP",
+   "disposition": "Measured dome method (rewritten 4.02.00)"
+  },
+  "EXPERIMENTAL_REQUEST_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Experimental-request routing"
+  },
+  "FOCAL_BUILD_GEOMETRY_STRATEGY_PROTOCOL": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed CURVE_FOLLOW_TRANSFORM_PROPAGATION_PROTOCOL, HYBRID_SCENE_PLACEMENT_AID_PROTOCOL, SINGLE_PART_SURFACE_MESH_CONSTRUCTION_PROTOCOL"
+  },
+  "FULL_VERSION_CONTINUITY_REVIEW_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Cumulative-change review"
+  },
+  "GROUND_ZERO_FOUNDATION_RULE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Build-datum rule; re-key by intent"
+  },
+  "ISSUE_FIX_LIBRARY": {
+   "kind": "REFERENCE",
+   "runtime_status": "KEEP",
+   "disposition": "Reference (issue->fix preflight); not a rule"
+  },
+  "JSON_EVIDENCE_MAPPING_GATE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Gate enforcing WORKING_JSON_FIRST_PRINCIPLE; dedupe source-check list"
+  },
+  "JSON_GEOMETRY_VALIDATION_LOOP": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Round-trip validation loop"
+  },
+  "JSON_TO_PYTHON_RECREATION_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed JSON_FEATURE_CONCEPT_EXTRACTION_PROTOCOL, JSON_GEOMETRY_INTELLIGENCE_PROTOCOL, JSON_STUDY_PLACEMENT_RECIPE_PROTOCOL"
+  },
+  "MASTER_DOC_VERSIONING_POLICY": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Versioning law"
+  },
+  "MONUMENT_BUILD_WORKFLOW": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Landmark workflow; de-dup recognition-first principle"
+  },
+  "NMS_BUILDER_EXECUTION_KERNEL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Procedure spine"
+  },
+  "NMS_BUILD_VS_IMAGE_ROUTING_GUARD": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Build-vs-image guard"
+  },
+  "OBJECT_USE_RECORDING_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Build receipt; points to creative catalog; re-scoped UNIVERSAL in 5.05.00"
+  },
+  "OPEN_TOPICS_LOG_PROTOCOL": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Open-topics governance"
+  },
+  "PART_BUDGET_OPTIMIZATION_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Recognition-first/optimize-second (de-dup principle into one place)"
+  },
+  "PART_FAMILY_RULES": {
+   "kind": "FINDING",
+   "runtime_status": "KEEP",
+   "disposition": "Demoted to informative findings in place; effect findings mirrored in creative index; placement assertions retired (cross-linked to survivors)"
+  },
+  "PART_ORIENTATION_OVERRIDES": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Canonical orientation-override registry"
+  },
+  "PART_PLACEMENT_MAP_SCHEMA": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed PARTMAP_STORAGE_COMPLIANCE_PROTOCOL, PART_DATA_MAPPING_ALGORITHM, PART_PLACEMENT_MAP_USAGE_AND_VALIDATION_RULE"
+  },
+  "PART_USE_CASE_CATALOG": {
+   "kind": "REFERENCE",
+   "runtime_status": "KEEP",
+   "disposition": "Reference creative store; reconcile-with-index tracked in OPEN_TOPICS_LOG"
+  },
+  "PER_RESPONSE_PROTOCOL_CONFIRMATION_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "DEVERSION",
+   "disposition": "Banner format; strip stale version-prose"
+  },
+  "PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "The rule-vs-finding boundary law"
+  },
+  "PLACEMENT_PRECEDENCE_RESOLUTION_PROCEDURE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed ASSEMBLY_CONTEXT_SUPERSEDES_COMPONENT_CONTEXT_RULE, PART_DATA_AUTHORITY_STATEMENT, PLACEMENT_INTELLIGENCE_GOVERNANCE_PROTOCOL"
+  },
+  "PLUGIN_VERSION_AND_ENVIRONMENT": {
+   "kind": "REFERENCE",
+   "runtime_status": "KEEP",
+   "disposition": "Reference (environment/config); not a rule"
+  },
+  "PROHIBITED_AND_PLACEHOLDER_OBJECTS": {
+   "kind": "NEGATIVE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed NONUNIFORM_SCALE_SAFETY, PIPE_BUBPIPE_CONTEXTUAL_CONNECTOR_RULE"
+  },
+  "PROJECT_CONTEXT_PROTOCOL": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "REPAIR",
+   "disposition": "Damaged by prior bulk edit; rewrite project-folder bullets"
+  },
+  "PROJECT_TRANSFER_SUMMARY_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Continuity handoff"
+  },
+  "PROMPT_TO_FEATURE_ROUTER": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Process/router layer (relocation is conceptual; file is already a process doc)"
+  },
+  "PROTOCOL_BANNER_HARD_FAIL_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "CONSOLIDATE",
+   "disposition": "-> proof-of-application family (banner)"
+  },
+  "RECIPE_CONFORMANCE_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Process layer (conceptual relocation; already a process doc)"
+  },
+  "RECIPE_PARAMETERIZATION_PROTOCOL": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed CONTROL_TO_VARIANT_PROTOCOL"
+  },
+  "REQUEST_ROUTER_CHECKLIST": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed PROMPT_ROUTING_RULE_APPLICATION_GATE"
+  },
+  "RULE_UPDATE_PROTOCOL": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Tie to classification gate (was not enforced)"
+  },
+  "SCRIPT_VALIDATION_LOOP": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Pre-delivery script loop"
+  },
+  "SELECTIVE_VISUAL_MEMORY_POLICY": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed CREATIVE_USE_CASE_LOGGING_PROTOCOL, PART_BEHAVIOR_LEARNING_PROTOCOL, SCREENSHOT_INTAKE_TAXONOMY, VISUAL_REFERENCE_INTAKE_PROTOCOL, VISUAL_REFERENCE_LESSONS"
+  },
+  "SESSION_ONBOARDING_CHECKLIST_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Onboarding READ/SKIPPED checklist"
+  },
+  "SINGLE_CURRENT_STATE_SOURCE_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Present-tense law (enforced)"
+  },
+  "SINGLE_MASTER_CHANGELOG_GOVERNANCE_RULE": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "One-changelog governance (single-current-state group)"
+  },
+  "SOURCE_DOC_EVALUATION_CHECKLIST": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "Source-doc/transfer evaluation checklist"
+  },
+  "SPACING_CONNECTION_SCALE_RULES": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Spacing/scale rule"
+  },
+  "STAIR_PLACEMENT_DOCTRINE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed CORNER_TRANSITION_ALGORITHMS"
+  },
+  "SYSTEMATIC_FAILURE_CAPA_PROTOCOL": {
+   "kind": "GOVERNANCE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed PROTOCOL_RECEIPT_EVIDENCE_RULE, TRACEABLE_PROTOCOL_VERIFICATION_RULE, VALIDATED_LOGIC_REUSE_PROTOCOL"
+  },
+  "TRIAGE_REVIEW_ASSISTANCE_TOOL_RULE": {
+   "kind": "PROCESS",
+   "runtime_status": "KEEP",
+   "disposition": "Triage tooling (ties to AI-review system)"
+  },
+  "TRIFLOOR_FAMILY_VALIDATION_FRAMEWORK": {
+   "kind": "FINDING",
+   "runtime_status": "KEEP",
+   "disposition": "C_TRIFLOOR validation proof/case-study (finding, not rule)"
+  },
+  "UNIVERSAL_RULES": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Universal hard rules"
+  },
+  "VALIDATION_GATE_HARDENING_RULE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "SURVIVOR \u2014 absorbed BLENDER_RUNTIME_BUILD_SCRIPT_PROTOCOL"
+  },
+  "VERIFIED_PARTMAP_DATA_PROTOCOL": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Data-provenance section of part-map library (re-scoped UNIVERSAL in 5.05.00)"
+  },
+  "WALL_SHELL_ENCLOSURE_RECIPE": {
+   "kind": "RECIPE",
+   "runtime_status": "KEEP",
+   "disposition": "Core enclosure recipe"
+  },
+  "WORKING_JSON_FIRST_PRINCIPLE": {
+   "kind": "RULE",
+   "runtime_status": "KEEP",
+   "disposition": "Foundational JSON-evidence law"
+  }
+ }
+}

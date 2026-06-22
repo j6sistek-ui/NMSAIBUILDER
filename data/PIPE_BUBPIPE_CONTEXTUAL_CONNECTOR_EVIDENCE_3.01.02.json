@@ -1,0 +1,171 @@
+{
+  "schema": "PIPE_BUBPIPE_CONTEXTUAL_CONNECTOR_EVIDENCE_3.01.02",
+  "source_docs_rev": "3.01.02",
+  "evidence_objects": {
+    "^BASE_BUBPIPE": 16,
+    "^PIPE": 3
+  },
+  "interpretation": "JSON transform data is valid evidence for local-axis connector layout, but Blender static visual/bbox extraction is not authoritative for in-game PIPE/BUBPIPE connected assemblies.",
+  "object_policy": {
+    "PIPE": {
+      "status": "GAME_VALIDATION_REQUIRED_PIPE_CONTEXTUAL_CONNECTOR",
+      "recommendation": "USE_ONLY_WITH_PIPE_ASSEMBLY_VALIDATION"
+    },
+    "BASE_BUBPIPE": {
+      "status": "GAME_VALIDATION_REQUIRED_PIPE_CONTEXTUAL_CONNECTOR",
+      "recommendation": "USE_ONLY_WITH_PIPE_ASSEMBLY_VALIDATION"
+    },
+    "BASE_BUBPIPE_S": {
+      "status": "GAME_VALIDATION_REQUIRED_PIPE_CONTEXTUAL_CONNECTOR",
+      "recommendation": "USE_ONLY_WITH_PIPE_ASSEMBLY_VALIDATION"
+    },
+    "BASE_BUBPIPE_L": {
+      "status": "GAME_VALIDATION_REQUIRED_PIPE_CONTEXTUAL_CONNECTOR",
+      "recommendation": "USE_ONLY_WITH_PIPE_ASSEMBLY_VALIDATION"
+    },
+    "BASE_BUBPIPE_T": {
+      "status": "GAME_VALIDATION_REQUIRED_PIPE_CONTEXTUAL_CONNECTOR",
+      "recommendation": "USE_ONLY_WITH_PIPE_ASSEMBLY_VALIDATION"
+    },
+    "BASE_BUBPIPE_X": {
+      "status": "GAME_VALIDATION_REQUIRED_PIPE_CONTEXTUAL_CONNECTOR",
+      "recommendation": "USE_ONLY_WITH_PIPE_ASSEMBLY_VALIDATION"
+    }
+  },
+  "connector_observations": {
+    "^BASE_BUBPIPE": {
+      "count": 16,
+      "first_up": [
+        -0.989277184,
+        -0.000412847,
+        0.1460495
+      ],
+      "first_at": [
+        0.00046395,
+        -0.999999821,
+        0.000315839
+      ],
+      "derived_right": [
+        0.146049343,
+        0.000380212,
+        0.989277199
+      ],
+      "up_norm": 0.999999987,
+      "at_norm": 0.999999979,
+      "up_dot_at": 1.4e-11,
+      "first_deltas_local_components": [
+        {
+          "from_index": 0,
+          "to_index": 1,
+          "magnitude": 1.999981,
+          "local_up_component": 1.999981,
+          "local_at_component": -2e-06,
+          "local_right_component": 3.4e-05
+        },
+        {
+          "from_index": 1,
+          "to_index": 2,
+          "magnitude": 1.999992,
+          "local_up_component": 1.999992,
+          "local_at_component": -2e-06,
+          "local_right_component": 1e-06
+        },
+        {
+          "from_index": 2,
+          "to_index": 3,
+          "magnitude": 1.999985,
+          "local_up_component": -1.9e-05,
+          "local_at_component": 1.999985,
+          "local_right_component": -3e-06
+        },
+        {
+          "from_index": 3,
+          "to_index": 4,
+          "magnitude": 2.0,
+          "local_up_component": -1.4e-05,
+          "local_at_component": 2.0,
+          "local_right_component": 2.7e-05
+        },
+        {
+          "from_index": 4,
+          "to_index": 5,
+          "magnitude": 1.999994,
+          "local_up_component": -1.999994,
+          "local_at_component": -2.9e-05,
+          "local_right_component": -1.6e-05
+        },
+        {
+          "from_index": 5,
+          "to_index": 6,
+          "magnitude": 1.999988,
+          "local_up_component": -1.3e-05,
+          "local_at_component": -2.8e-05,
+          "local_right_component": -1.999988
+        },
+        {
+          "from_index": 6,
+          "to_index": 7,
+          "magnitude": 1.999994,
+          "local_up_component": -1.999994,
+          "local_at_component": -2.9e-05,
+          "local_right_component": -1.6e-05
+        },
+        {
+          "from_index": 7,
+          "to_index": 8,
+          "magnitude": 2.0,
+          "local_up_component": -1.1e-05,
+          "local_at_component": -2.0,
+          "local_right_component": 8e-06
+        }
+      ]
+    },
+    "^PIPE": {
+      "count": 3,
+      "first_up": [
+        0.146049589,
+        0.000489191,
+        0.989277244
+      ],
+      "first_at": [
+        0.000518769,
+        -0.999999762,
+        0.000417906
+      ],
+      "derived_right": [
+        0.989277212,
+        0.000452171,
+        -0.146049808
+      ],
+      "up_norm": 1.000000093,
+      "at_norm": 0.999999983,
+      "up_dot_at": -2.6e-11,
+      "first_deltas_local_components": [
+        {
+          "from_index": 0,
+          "to_index": 1,
+          "magnitude": 2.000009,
+          "local_up_component": 2.000009,
+          "local_at_component": 2e-06,
+          "local_right_component": 1.4e-05
+        },
+        {
+          "from_index": 1,
+          "to_index": 2,
+          "magnitude": 1.999992,
+          "local_up_component": 1.999992,
+          "local_at_component": -1.3e-05,
+          "local_right_component": 1e-06
+        }
+      ]
+    }
+  },
+  "rules": [
+    "Treat BUBPIPE/PIPE as a contextual connector family, not ordinary isolated mesh parts.",
+    "Use exported JSON transform evidence and in-game screenshots as higher authority than Blender static bbox/visual extraction for connected pipe assemblies.",
+    "Segment spacing observed in the provided JSON is approximately 2.0 units along local connector axes.",
+    "RX90 may correct isolated part orientation, but it does not prove bend continuity or connected-pipe assembly correctness.",
+    "Do not mark PIPE as DO_NOT_USE; it is valid in game but Blender-unreliable.",
+    "Do not mark BUBPIPE as verified from Blender-only data; require pipe assembly validation."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "NMS_BUILDER_OBJECTIVE_CHARTER",
+  "status": "active",
+  "updated": "2026-06-01",
+  "primary_goal": "Improve AI accuracy and capability for advanced No Man's Sky building via Blender Base Builder plugin Python generation.",
+  "objectives": [
+    {
+      "id": "advanced_build_capability",
+      "summary": "Generate valid No Man's Sky Base Builder Python using real ObjectIDs, FBX bounds, JSON transform evidence, placement recipes, and validation gates."
+    },
+    {
+      "id": "transferable_master_docs",
+      "summary": "Make the source package disciplined and executable by another AI/chat through routing, rule bundles, and compact protocols."
+    },
+    {
+      "id": "continuous_knowledge_expansion",
+      "summary": "Promote JSON, screenshots, validation output, and build trials into reusable placement/style/technique knowledge."
+    },
+    {
+      "id": "streamlined_mapping",
+      "summary": "Compress reusable knowledge into algorithms, recipe signatures, invariants, and parameter slots rather than large memory-dependent repositories."
+    }
+  ],
+  "must_preserve_from_json": [
+    "ObjectID roles and counts",
+    "Position/Up/At/UserData transform evidence",
+    "local frames and anchors",
+    "endpoint connection logic",
+    "ring/chord/radius/contact logic",
+    "part-family spacing and scale behavior",
+    "which variations preserve connection"
+  ],
+  "success_metric": "Generated builds apply the rules correctly, not merely mention them."
+}

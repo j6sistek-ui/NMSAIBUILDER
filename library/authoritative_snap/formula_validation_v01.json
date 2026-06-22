@@ -1,0 +1,83 @@
+{
+  "candidate_flips_tested": 3,
+  "universal_flips_found": 2,
+  "universal": [
+    {
+      "flip_angle_deg": 180.0,
+      "flip_axis": [
+        -0.707,
+        -0.707,
+        0.0
+      ],
+      "RECONSTRUCTS_ALL_JOINS": true,
+      "per_join": [
+        {
+          "join": "triangle",
+          "pos_err": 0.0,
+          "rot_err_deg": 0.0,
+          "pts": [
+            "NORTH",
+            "SOUTH_UP"
+          ]
+        },
+        {
+          "join": "floor+floor",
+          "pos_err": 0.0,
+          "rot_err_deg": 0.0,
+          "pts": [
+            "SOUTH_UP_Q2",
+            "NORTH_Q1"
+          ]
+        },
+        {
+          "join": "floor+wall",
+          "pos_err": 0.0,
+          "rot_err_deg": 0.0,
+          "pts": [
+            "SOUTH_UP",
+            "BOTTOM_IN"
+          ]
+        }
+      ]
+    },
+    {
+      "flip_angle_deg": 180.0,
+      "flip_axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "RECONSTRUCTS_ALL_JOINS": true,
+      "per_join": [
+        {
+          "join": "triangle",
+          "pos_err": 0.0,
+          "rot_err_deg": 0.0,
+          "pts": [
+            "NORTH",
+            "SOUTH"
+          ]
+        },
+        {
+          "join": "floor+floor",
+          "pos_err": 0.0,
+          "rot_err_deg": 0.0,
+          "pts": [
+            "SOUTH_UP_Q2",
+            "NORTH_DOWN_Q1"
+          ]
+        },
+        {
+          "join": "floor+wall",
+          "pos_err": 0.0,
+          "rot_err_deg": 0.0,
+          "pts": [
+            "SOUTH",
+            "BOTTOM_IN"
+          ]
+        }
+      ]
+    }
+  ],
+  "formula": "B_world = A_world @ Ma @ FLIP @ inv(Mb)"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "NMS_CAPA_Escalation_State_1.0",
+  "active": false,
+  "reason": "Live gothic church build placed S_RAMP as decorative buttresses with guessed rotations and marked it EXPERIMENTAL_VARIANT, skipping the validated STAIR_RAMP_ENDPOINT_RECIPE placement logic surfaced in the builder sheet (SHEET_NOT_UTILIZED).",
+  "opened": "2026-06-19",
+  "trigger_class": "BUILD_SHEET_FABRICATION/SHEET_NOT_UTILIZED",
+  "clearing_criteria": "Open (review-logged) only when a CAPA root cause is skipping known existing information in source docs or the build sheet (BUILD_SHEET_FABRICATION / SHEET_NOT_UTILIZED). While active, run_gate ALSO requires a passing compliance_manifest_check. Clears after one corrective build passes the deeper requirement AND a prevention update is logged per SYSTEMATIC_FAILURE_CAPA_PROTOCOL.",
+  "history": [
+    {
+      "action": "open",
+      "date": "2026-06-19",
+      "reason": "Live gothic church build placed S_RAMP as decorative buttresses with guessed rotations and marked it EXPERIMENTAL_VARIANT, skipping the validated STAIR_RAMP_ENDPOINT_RECIPE placement logic surfaced in the builder sheet (SHEET_NOT_UTILIZED)."
+    },
+    {
+      "action": "clear",
+      "date": "2026-06-20",
+      "note": "Church project RETIRED by owner 2026-06-20; no corrective build (project dead). Root-cause lesson extracted + encoded in MASTER_LESSONS_LEARNED.md and PLACEMENT_MECHANICS_VS_CREATIVE_STYLE_SEPARATION_RULE.md (5.04.01). Probation lifted per owner decision; this is a retirement clear, not a corrective-build clear."
+    }
+  ]
+}
