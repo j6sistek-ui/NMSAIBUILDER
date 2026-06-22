@@ -1,1 +1,0 @@
-temporary connector permission probe; safe to delete
