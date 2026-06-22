@@ -1,0 +1,249 @@
+{
+  "schema": "NMS_Universal_Rules_v43",
+  "updated": "2026-05-31",
+  "mission": "Hard universal process and script rules for NMS Base Builder Python generation.",
+  "rules": [
+    {
+      "rule_id": "REAL_NMS_PARTS_ONLY",
+      "severity": "hard",
+      "scope": "script_contract",
+      "summary": "Generated build geometry must be real NMS Base Builder plugin parts, not generic Blender primitives.",
+      "required_patterns": [
+        "BUILDER.add_part",
+        ".copy()",
+        "ObjectID",
+        "SnapID",
+        "Timestamp",
+        "UserData",
+        "belongs_to_preset"
+      ],
+      "banned_patterns": [
+        "bpy.ops.mesh.primitive_cube_add",
+        "bpy.ops.mesh.primitive_plane_add",
+        "bpy.ops.mesh.primitive_cylinder_add",
+        "bpy.ops.mesh.primitive_uv_sphere_add",
+        "bpy.data.meshes.new",
+        "bpy.data.objects.new"
+      ]
+    },
+    {
+      "rule_id": "FULL_LIBRARY_NOT_WHITELIST",
+      "severity": "hard",
+      "scope": "part_selection",
+      "summary": "The complete object library must be inspected for part selection; short lists are examples only.",
+      "library_files": [
+        "library/nms_part_dimensions_and_rules_updated.json",
+        "library/nms_part_dimensions_and_rules_updated.csv",
+        "library/NMS_FULL_OBJECTID_INDEX.md"
+      ],
+      "current_row_count": 2092
+    },
+    {
+      "rule_id": "SCRIPT_VALIDATION_LOOP_BEFORE_DELIVERY",
+      "severity": "hard",
+      "scope": "workflow",
+      "summary": "Before providing any script, run a validation loop against universal rules, the script ObjectID set, applicable part-family rules, issue/fix lessons, prohibited parts, and audit requirements.",
+      "if_fail": "Rewrite the script before delivery.",
+      "deviation_policy": "If a rule must be violated because it is bad, stale, or constrains design intent, request approval before delivering code."
+    },
+    {
+      "rule_id": "PART_RULE_VALIDATION_SCOPED_TO_USED_OBJECTIDS",
+      "severity": "hard",
+      "scope": "workflow",
+      "summary": "For placement validation, calibrated spacing/depth/orientation rules, issue/fix checks, and part-family lessons, review only ObjectIDs and part families that actually appear in the current script/build.",
+      "design_exception": "Broad library review remains appropriate for design potential and part selection."
+    },
+    {
+      "rule_id": "IMMEDIATE_MASTER_DOC_UPDATE_AFTER_UNDERSTOOD_FIX",
+      "severity": "hard",
+      "scope": "documentation",
+      "summary": "When a design rule, offset correction, orientation fix, spacing formula, or part-specific behavior is understood and correctly applied, immediately update the master docs/rules/registries.",
+      "purpose": "Prevent durable lessons from living only in one chat or one script."
+    },
+    {
+      "rule_id": "ORIGIN_VS_BOUNDS_PLACEMENT",
+      "severity": "hard",
+      "scope": "geometry",
+      "summary": "Object location is the Blender origin, not guaranteed visible center. Use FBX extents and centers to compute bottom/top placement.",
+      "formulas": [
+        "bottom_rel=(center_y-extent_y/2)*scale",
+        "top_rel=(center_y+extent_y/2)*scale"
+      ]
+    },
+    {
+      "rule_id": "CONNECTED_MEANS_CONNECTED",
+      "severity": "hard",
+      "scope": "geometry_continuity",
+      "summary": "Do not name or describe trim/wall rows as continuous unless parts actually touch or overlap from the viewer angle.",
+      "fix": "Compute centers from scaled visible length and deliberate overlap; add end/corner closures where needed."
+    },
+    {
+      "rule_id": "BUILDER_PREFLIGHT_BEFORE_CLEANUP",
+      "severity": "hard",
+      "scope": "script_safety",
+      "summary": "Resolve NMS builder runtime before deleting or modifying scene objects. Never clear a scene before preflight succeeds."
+    },
+    {
+      "rule_id": "PROHIBIT_HOLO_DISCO_WONDER_PROJECTOR",
+      "severity": "hard",
+      "scope": "object_prohibition",
+      "summary": "HOLO_DISCO is Wonder Projector and should not be generated because it requires in-game configuration.",
+      "allowed_exception": "Only preserve an already configured user-provided object when explicitly requested."
+    },
+    {
+      "rule_id": "U_PARAGON_PLACEHOLDER_NOT_WONDER_PROJECTOR",
+      "severity": "info",
+      "scope": "object_interpretation",
+      "summary": "U_PARAGON is plugin/default placeholder or non-visible artifact. Do not classify it as Wonder Projector or design around it as visible geometry."
+    },
+    {
+      "id": "object_use_manifest_required",
+      "status": "universal",
+      "summary": "Every substantial script/build must record ObjectID roles and use types in a BUILD OBJECT USE MANIFEST."
+    },
+    {
+      "id": "creative_use_case_logging_required",
+      "status": "universal",
+      "summary": "Creative/nonliteral part applications from screenshots, JSON, studies, or user feedback must be logged immediately."
+    },
+    {
+      "id": "visual_reference_mining_required",
+      "status": "universal",
+      "summary": "Architecture and base screenshots must be mined for transferable build lessons."
+    },
+    {
+      "rule_id": "EXPERIMENTAL_PROMPT_EXPLORATION_MODE",
+      "severity": "hard",
+      "scope": "creative_generation",
+      "summary": "Broad experimental/creative prompts activate exploration mode, not consolidation mode.",
+      "required_patterns": [
+        "divergent concept plan",
+        "object-use manifest",
+        "part roles stated",
+        "comfort motifs justified or suppressed",
+        "study/core separation"
+      ],
+      "banned_patterns": [
+        "ten variants of the same comfortable motif",
+        "filler rings",
+        "floating antennas",
+        "generic test pads",
+        "weak variants kept only to fill count"
+      ],
+      "source_file": "rules/EXPERIMENTAL_REQUEST_PROTOCOL.md"
+    },
+    {
+      "rule_id": "PURPOSEFUL_PART_USE",
+      "severity": "hard",
+      "scope": "design_quality",
+      "summary": "Every part in an experimental build must have a visible architectural, mechanical, visual, or effect role.",
+      "required_patterns": [
+        "ObjectID role",
+        "use type",
+        "selection reason",
+        "rule checked"
+      ],
+      "banned_patterns": [
+        "part added because it looks finished",
+        "unexplained repeated decoration",
+        "subterrain part with no visible effect"
+      ]
+    },
+    {
+      "rule_id": "SPECIALIZED_MODE_SCOPE_FIREWALL",
+      "severity": "hard",
+      "scope": "documentation_scope",
+      "summary": "Mode-specific repositories such as Corvette must be applied only when the prompt or ObjectID set activates that mode. Universal generator rules still apply, but mode-specific requirements must not leak into unrelated builds.",
+      "current_mode_repositories": {
+        "corvette": [
+          "corvette/CORVETTE_KNOWLEDGE_REPOSITORY.md",
+          "corvette/CORVETTE_KNOWLEDGE_REPOSITORY.json",
+          "corvette/CORVETTE_SCOPE_AND_BUILD_MECHANICS.md",
+          "corvette/CORVETTE_VALIDATION_CHECKLIST.md"
+        ]
+      }
+    },
+    {
+      "id": "corvette_objectid_decorative_use_scope_v44",
+      "status": "universal_scope_rule",
+      "summary": "Corvette ObjectID presence alone does not activate Corvette build validation.",
+      "rule": "If Corvette parts are used decoratively/non-functionally in a non-Corvette build, validate them as normal ObjectIDs and record their use type; do not require seven Corvette categories.",
+      "activates_corvette_mode_when": [
+        "user asks for Corvette/ship/Corvette module/Corvette Workshop output",
+        "script claims to create a valid Corvette",
+        "object-use manifest assigns Corvette functional roles"
+      ],
+      "decorative_use_types": [
+        "decorative_non_corvette",
+        "architectural_kitbash",
+        "greeble",
+        "display",
+        "lighting",
+        "trim",
+        "furniture",
+        "structural_non_corvette"
+      ]
+    },
+    {
+      "rule_id": "PROHIBIT_HOLO_DISCO_0_WONDER_PROJECTOR",
+      "severity": "hard",
+      "scope": "object_prohibition",
+      "summary": "HOLO_DISCO_0 is also a Wonder Projector and should not be generated because it requires in-game configuration.",
+      "allowed_exception": "Only preserve an already configured user-provided object."
+    },
+    {
+      "rule_id": "JSON_TO_PYTHON_RECREATION_TRANSFORM_V53",
+      "severity": "hard_default",
+      "scope": "json_to_python_recreation",
+      "summary": "Use validated XnZY + RIGHT_AT_UP + POST_RX90 + LOCAL_Y_180 transform stack for the current exported NMS base JSON intake path.",
+      "validated_on": [
+        "249-object original-location sample",
+        "1237-object multi-location/multi-axis sample"
+      ],
+      "required_settings": {
+        "COORD_MODE": "XnZY",
+        "AXIS_MODE": "RIGHT_AT_UP",
+        "BASE_ROTATION_MODE": "POST_RX90",
+        "POST_BASELINE_CORRECTION": "LOCAL_Y_180",
+        "SCALE_MODE": "UP_LENGTH_UNIFORM"
+      },
+      "caveat": "Audit and validate new/unseen ObjectID families before treating as universal across all NMS parts.",
+      "source_file": "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md"
+    },
+    {
+      "rule_id": "JSON_STUDY_RECIPE_EXTRACTION_V54",
+      "severity": "required_process",
+      "scope": "json_study",
+      "summary": "Use finished-base JSON as a placement dataset to extract ObjectID roles, scale, spacing, connections, module recipes, and negative lessons.",
+      "source_file": "rules/JSON_TO_PYTHON_RECREATION_PROTOCOL.md"
+    },
+    {
+      "rule_id": "ENDPOINT_LOCAL_FRAME_ASSEMBLIES_V54",
+      "severity": "hard_default",
+      "scope": "generation",
+      "summary": "Stairs/ramps/vehicles/tabletop games/display walls/powerline hubs/rings must use endpoints, local frames, or ring logic rather than independent scatter.",
+      "source_file": "rules/SPACING_CONNECTION_SCALE_RULES.md"
+    },
+    {
+      "rule_id": "POWER_UTILITY_DEFAULT_EXCLUSION_V2_04_04",
+      "severity": "default_exclusion",
+      "scope": "json_study_and_generation",
+      "summary": "Ignore/exclude powerlines, switches, batteries, solar panels, biofuel generators, and related utility devices by default unless explicitly requested.",
+      "source_file": "rules/POWER_UTILITY_EXCLUSION_RULE.md"
+    },
+    {
+      "rule_id": "CONNECTED_PIECE_CURVATURE_GRAMMAR_V2_04_05",
+      "severity": "required_generation_consideration",
+      "scope": "curved_rounded_tapered_shell_features",
+      "summary": "Treat dome/cylinder/spire/hull examples as instances of broad connected-piece curvature grammar, not only exact named recipes.",
+      "source_file": "rules/CONNECTED_PIECE_CURVATURE_GRAMMAR.md"
+    },
+    {
+      "rule_id": "REQUEST_ROUTER_CHECKLIST_V2_04_06",
+      "severity": "mandatory_pre_response_gate",
+      "scope": "all_nms_project_prompts",
+      "summary": "Classify the prompt and apply triggered rules before acting; protocol-sensitive responses require a Protocol confirmation section.",
+      "source_file": "rules/REQUEST_ROUTER_CHECKLIST.md"
+    }
+  ]
+}

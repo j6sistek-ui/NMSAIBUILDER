@@ -1,0 +1,17 @@
+{
+    "schema": "NMS_Master_Docs_Versioning_1.00.00",
+    "current_version": "5.18.00",
+    "version": "5.18.00",
+    "supersedes_version": "5.17.00",
+    "legacy_supersedes": "NMS_master_docs_4.02.00_DOME_RADIAL_RING_TAPER.zip",
+    "updated": "2026-06-21",
+    "version_format": "X.YY.ZZ",
+    "fields": {
+        "X": "Major: groundbreaking / urgent cross-chat capability, safety, or process change",
+        "YY": "Minor: project inputs, toolkit expansion, recipes, general enhancements",
+        "ZZ": "Patch: cleanup, typo/link/reference fixes, low-risk maintenance"
+    },
+    "release_type": "minor_consolidated_per_part_build_sheet_handoff",
+    "summary": "Consolidated per-part build-sheet hand-off. part_context_resolver.py now assembles a COMPLETE placement_spec per part in MANDATORY_PLACEMENT_CONTEXT.parts[oid]: orientation (default rotation + per-facing footprints RX90/RY90/RZ90 + override-registered flag + ring guidance), scaling (world size at scale 0.5/1.0/1.5/2.0 + the size*scale*0.92 rule), placement (concrete snap_spacing + SpacingRule fallback + placement guidance + ring formula + recipe candidates + authority note), role (likely/validated role, mechanics use, known good uses), cautions (known issues, lessons, proxy cautions, validation flags, forbidden). Replaces the piecemeal per_part_curated_guidance/per_part_snap_spacing dicts from 5.16/5.17. All sourced from data already in the library, mapped once, not re-derived. build_sheet integrity unchanged (placement_spec is additive, not a MECH_FIELD; build_sheet_check --self-test PASS). No new files.",
+    "release_reason": "Owner correction: the build sheet's purpose was always to hand-deliver the complete per-part spec - orientation, scaling, placement - which all already exist per part in the library. Deliver the whole mapped spec, not one field at a time."
+}

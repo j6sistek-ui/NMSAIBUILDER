@@ -1,0 +1,12 @@
+ObjectID,RuleType,Summary,Source,Classification
+S_WALLM_H,alternate_role,Small repeated thin wall/half-wall can read as archive/book-spine/server texture when arranged in disciplined bands,Buddies Library & Archives,toolkit_technique
+S_GDOOR,alternate_role,Can be radial iris blade layer in validated airlock module when placed at 12 segments / 30 degree rhythm,Airlock Iris Door,toolkit_technique
+B_FLOOR_Q,alternate_role,Can be radial quarter-floor/fill ring in airlock aperture; observed 24 pieces / 15 degree rhythm,Airlock Iris Door,toolkit_technique
+B_WALL_Q_H1,alternate_role,Can be radial casing/iris rib layer; observed 12 pieces / 30 degree rhythm,Airlock Iris Door,toolkit_technique
+F_WALLB_H,alternate_role,Can be secondary radial casing/support layer in iris door,Airlock Iris Door,toolkit_technique
+B_WNG_R,alternate_role_pending,Possible teleporter/portal alcove ring element; extract separately before locking,Inline portal JSON,pending
+U_POWERLINE,caution,Same-position entries may encode different vectors/connections; do not deduplicate automatically,Multiple JSON studies,universal_caution
+FOS_SKULL,alternate_role,Fossil/skull facade marker when centered on wall/window bay and offset from face normal,Jurassic Beach,toolkit_technique
+BLD_SKULL,alternate_role,Fossil/skull facade marker when centered on wall/window bay and offset from face normal,Jurassic Beach,toolkit_technique
+C_GDOOR,negative_do_not_promote,Jurassic Beach dinosaur-mouth placements were bad mechanics/contextual only; do not promote as recipe,Jurassic Beach,negative_lesson
+S_GDOOR,negative_caveat,Do not confuse validated airlock iris S_GDOOR use with Jurassic Beach dinosaur-mouth free placement,Jurassic Beach/Airlock distinction,caution

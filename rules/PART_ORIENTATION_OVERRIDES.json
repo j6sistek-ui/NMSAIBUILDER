@@ -1,0 +1,35 @@
+{
+  "schema_version": "v59",
+  "purpose": "Canonical registry for validated part-specific orientation overrides. This file stores transform exceptions once so generators do not duplicate or rediscover them.",
+  "scope_rule": "Use an override whenever the ObjectID appears in a placement-sensitive role. Do not generalize an override to nearby parts unless separately validated by JSON/export and screenshots.",
+  "overrides": {
+    "BILLBOARD": {
+      "ObjectID": "BILLBOARD",
+      "NiceName": "STATION BILLBOARD",
+      "native_geometry_evidence": {
+        "extent_x": 1.530273,
+        "extent_y": 0.278203,
+        "extent_z": 2.171875,
+        "interpretation": "Thin local-Y depth with wide/tall sign plane. It is already a vertical sign plane in the tested JSON->Python/Builder path."
+      },
+      "placement_rule": {
+        "default_rx_degrees": 0,
+        "do_not_inherit_generic_rx90": true,
+        "rz_by_side_degrees": {
+          "N": 0,
+          "S": 180,
+          "E": 270,
+          "W": 90
+        },
+        "nonuniform_scale_allowed_when_design_requires_flat_or_landscape_signage": true
+      },
+      "failure_if_ignored": "Generic rx=90 rotates the sign into a perpendicular shelf/projection instead of a flush vertical billboard.",
+      "validated_by": [
+        "Megacity V10B correction screenshots",
+        "Megacity V10C/V11/V12 script lineage",
+        "JSON-mapping principle: compare Python intent to exported serialized transforms"
+      ],
+      "status": "validated_part_specific_exception"
+    }
+  }
+}

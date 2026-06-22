@@ -1,0 +1,17 @@
+{
+  "schema": "PROTOCOL_BANNER_HARD_FAIL_RULE",
+  "status": "mandatory",
+  "source_rule": "rules/PROTOCOL_BANNER_HARD_FAIL_RULE.md",
+  "purpose": "The protocol banner is the smallest visible proof that the request was routed, the correct source baseline was used, the validation gate status was honest, and `Docs Avail for Update?` was tracked. It is not optional formatting.",
+  "required_for": [
+    "all substantive NMS responses"
+  ],
+  "hard_fail_fields": [
+    "type",
+    "source docs rev",
+    "bundle",
+    "gate",
+    "ambiguity",
+    "Docs Avail for Update?"
+  ]
+}
